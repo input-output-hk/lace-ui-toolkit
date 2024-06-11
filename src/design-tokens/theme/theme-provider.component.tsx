@@ -28,7 +28,6 @@ export const ThemeProvider = ({
 
   useEffect(() => {
     if (htmlElement) {
-      // eslint-disable-next-line functional/immutable-data
       htmlElement.dataset.theme = colorScheme;
     }
   }, [colorScheme, htmlElement]);

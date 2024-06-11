@@ -37,5 +37,4 @@ export const ItemRoot = forwardRef<
   ),
 );
 
-// eslint-disable-next-line functional/immutable-data
 ItemRoot.displayName = 'ItemRoot';

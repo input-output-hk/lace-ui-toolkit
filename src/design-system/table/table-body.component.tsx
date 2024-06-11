@@ -29,7 +29,6 @@ export const Body = <T extends object | undefined>({
 
   useLayoutEffect(() => {
     if (scrollableTargetId) {
-      // eslint-disable-next-line functional/immutable-data
       scrollableTargetReference.current = document.querySelector(
         `#${scrollableTargetId}`,
       ) as unknown as HTMLDivElement;

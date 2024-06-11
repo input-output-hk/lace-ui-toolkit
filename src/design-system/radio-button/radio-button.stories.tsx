@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import type { ReactElement } from 'react';
 import React, { useMemo, useState } from 'react';
 
@@ -40,7 +37,6 @@ const getOptions = (
   count: number,
   label: string,
   icon?: Readonly<ReactElement>,
-  // eslint-disable-next-line max-params
 ): RadioButtonGroupOption<string>[] =>
   Array.from({ length: count }).map(_ => ({
     value: `option-${uuid()}`,

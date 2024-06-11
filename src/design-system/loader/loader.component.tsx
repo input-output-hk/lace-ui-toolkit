@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import type { SVGProps } from 'react';
 import React from 'react';
 

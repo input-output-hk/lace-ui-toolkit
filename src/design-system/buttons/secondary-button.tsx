@@ -22,5 +22,5 @@ export const Secondary = forwardRef<
     />
   );
 });
-// eslint-disable-next-line functional/immutable-data
+
 Secondary.displayName = 'Secondary';

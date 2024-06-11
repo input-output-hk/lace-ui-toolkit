@@ -1,4 +1,3 @@
-/* eslint-disable prefer-arrow-functions/prefer-arrow-functions */
 import React from 'react';
 
 import cn from 'classnames';

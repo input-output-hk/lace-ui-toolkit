@@ -1,5 +1,3 @@
-/* eslint-disable prefer-arrow-functions/prefer-arrow-functions */
-/* eslint-disable react/no-multi-comp */
 import React, { forwardRef } from 'react';
 
 import * as Select from '@radix-ui/react-select';
@@ -32,27 +30,25 @@ const getSuggestionComponent = (
 };
 
 export const Suggestion = forwardRef<HTMLDivElement, SuggestionComponentProps>(
-  function Suggestion({ onClick, suggestion }, ref): JSX.Element {
-    return (
-      <Select.Item
-        tabIndex={0}
-        ref={ref}
-        data-testid={`auto-suggest-box-suggestion-${suggestion.value}`}
-        value={suggestion.value}
-        className={cx.suggestion}
-        onClick={(): void => {
+  ({ onClick, suggestion }, ref): JSX.Element => (
+    <Select.Item
+      tabIndex={0}
+      ref={ref}
+      data-testid={`auto-suggest-box-suggestion-${suggestion.value}`}
+      value={suggestion.value}
+      className={cx.suggestion}
+      onClick={(): void => {
+        onClick(suggestion.value);
+      }}
+      onKeyDown={(event): void => {
+        if (event.code === 'Enter') {
           onClick(suggestion.value);
-        }}
-        onKeyDown={(event): void => {
-          if (event.code === 'Enter') {
-            onClick(suggestion.value);
-          }
-        }}
-      >
-        {getSuggestionComponent(suggestion)}
-      </Select.Item>
-    );
-  },
+        }
+      }}
+    >
+      {getSuggestionComponent(suggestion)}
+    </Select.Item>
+  ),
 );
 
 export const SuggestionClassic = ({

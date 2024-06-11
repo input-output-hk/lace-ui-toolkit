@@ -17,5 +17,4 @@ export const StorybookContentRenderer = forwardRef<
   <div ref={forwardedReference}>{children}</div>
 ));
 
-// eslint-disable-next-line functional/immutable-data
 StorybookContentRenderer.displayName = 'StorybookTooltipContent';
