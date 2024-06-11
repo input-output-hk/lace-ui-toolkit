@@ -5,7 +5,6 @@ module.exports = {
   root: true,
   extends: [
     'plugin:react/recommended',
-    'plugin:unicorn/recommended',
     'plugin:storybook/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -72,24 +71,6 @@ module.exports = {
         },
         'newlines-between': 'always',
         pathGroupsExcludedImportTypes: ['react'],
-      },
-    ],
-    'unicorn/prevent-abbreviations': [
-      'error',
-      {
-        allowList: {
-          Props: true,
-          props: true,
-          args: true,
-          vars: true,
-          createVar: true,
-          ref: true,
-        },
-        replacements: {
-          s: {
-            currentState: true,
-          },
-        },
       },
     ],
     '@typescript-eslint/consistent-type-imports': 'error',
@@ -178,7 +159,6 @@ module.exports = {
         '.storybook/*.js',
       ],
       rules: {
-        'unicorn/prefer-module': ['off'],
         '@typescript-eslint/no-unsafe-assignment': ['off'],
         '@typescript-eslint/no-var-requires': ['off'],
         '@typescript-eslint/no-unsafe-call': ['off'],
@@ -206,7 +186,6 @@ module.exports = {
       rules: {
         '@typescript-eslint/restrict-template-expressions': ['off'],
         '@typescript-eslint/no-unsafe-call': ['off'],
-        'unicorn/prefer-module': ['off'],
         'functional/immutable-data': [
           'error',
           {

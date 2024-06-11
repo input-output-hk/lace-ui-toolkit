@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/no-useless-undefined */
 import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
 
