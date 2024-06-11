@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import { action } from '@storybook/addon-actions';
 import type { Meta } from '@storybook/react';
 
 import { LocalThemeProvider, ThemeColorScheme } from '../../design-tokens';
@@ -31,10 +32,15 @@ const VariantsTable = (): JSX.Element => (
             value="Input Text"
             label="Password"
             defaultIsPasswordVisible
+            onSubmit={action('onSubmit')}
           />
         </Variants.Cell>
         <Variants.Cell>
-          <PasswordBox value="Input Text" label="Password" />
+          <PasswordBox
+            value="Input Text"
+            label="Password"
+            onSubmit={action('onSubmit')}
+          />
         </Variants.Cell>
       </Variants.Row>
     </Variants.Table>
@@ -50,6 +56,7 @@ const PasswordBoxComponent = ({
     value={value}
     label={label}
     rootStyle={{ width: '200px' }}
+    onSubmit={action('onSubmit')}
     {...props}
   />
 );
@@ -87,6 +94,7 @@ const MainComponents = (): JSX.Element => (
           defaultIsPasswordVisible
           errorMessage="Error"
           rootStyle={{ width: '200px' }}
+          onSubmit={action('onSubmit')}
         />
       </Variants.Cell>
       <Variants.Cell>
@@ -113,6 +121,7 @@ const MainComponents = (): JSX.Element => (
           defaultIsPasswordVisible
           errorMessage="Error"
           rootStyle={{ width: '200px', marginTop: '20px' }}
+          onSubmit={action('onSubmit')}
         />
       </Variants.Cell>
       <Variants.Cell>
@@ -126,7 +135,7 @@ const MainComponents = (): JSX.Element => (
 );
 
 export const Overview = (): JSX.Element => {
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = useState('');
 
   return (
     <Grid>
@@ -140,6 +149,7 @@ export const Overview = (): JSX.Element => {
                 setValue(event.target.value);
               }}
               rootStyle={{ width: '500px' }}
+              onSubmit={action('onSubmit')}
             />
           </Flex>
         </Section>

@@ -35,7 +35,7 @@ export const TransactionSummary = ({
     {title !== undefined && (
       <Flex justifyContent="flex-start" mb="$18">
         <Text.Body.Normal weight="$semibold">{title}</Text.Body.Normal>
-        {tooltip && (
+        {typeof tooltip !== 'undefined' && (
           <Box ml="$8" className={styles.iconContainer}>
             <Tooltip label={tooltip}>
               <InfoIcon className={styles.tooltipIcon} />

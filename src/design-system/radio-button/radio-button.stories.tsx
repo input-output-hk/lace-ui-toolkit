@@ -38,7 +38,7 @@ const getOptions = (
   label: string,
   icon?: Readonly<ReactElement>,
 ): RadioButtonGroupOption<string>[] =>
-  Array.from({ length: count }).map(_ => ({
+  Array.from({ length: count }).map(() => ({
     value: `option-${uuid()}`,
     label,
     icon,

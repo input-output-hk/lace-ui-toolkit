@@ -30,7 +30,7 @@ export interface TooltipContentRendererProps<T> {
   payload?: T;
 }
 export type TooltipContentRenderer<T> = (
-  props: Readonly<TooltipContentRendererProps<T>>,
+  props: TooltipContentRendererProps<T>,
 ) => ReactNode;
 type TooltipContent<T> = ReactElement | TooltipContentRenderer<T>;
 
@@ -41,7 +41,7 @@ interface RechartTooltipContentRendererProps<T> {
 }
 
 type RechartTooltipContentRenderer<T> = (
-  props: Readonly<RechartTooltipContentRendererProps<T>>,
+  props: RechartTooltipContentRendererProps<T>,
 ) => ReactNode;
 
 // Recharts passes to the renderer for some reason the payload as
@@ -54,10 +54,10 @@ const transformTooltipContentRenderer =
   ({
     active,
     payload,
-  }: Readonly<{
+  }: {
     active?: boolean;
     payload?: { name?: string; payload?: T }[];
-  }>) =>
+  }) =>
     tooltipContentRenderer({ active, ...payload?.[0] });
 
 interface PieChartBaseProps<T extends object> {
@@ -85,7 +85,7 @@ export type PieChartProps<T extends object | { name: string; value: number }> =
     : PieChartCustomKeyProps<T>;
 
 const formatPieColor = (color: PieChartColor): string =>
-  Boolean(PieChartGradientColor[color as PieChartGradientColor])
+  PieChartGradientColor[color as PieChartGradientColor]
     ? `url(#${color})`
     : color;
 
@@ -111,7 +111,7 @@ export const PieChart = <T extends object | { name: string; value: number }>({
   nameKey = 'name',
   tooltip,
   valueKey = 'value',
-}: Readonly<PieChartProps<T>>): JSX.Element => {
+}: PieChartProps<T>): JSX.Element => {
   const data = inputData.slice(0, colors.length);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
 

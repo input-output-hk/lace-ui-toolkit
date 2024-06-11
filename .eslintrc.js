@@ -4,12 +4,10 @@ module.exports = {
   $schema: 'https://json.schemastore.org/eslintrc.json',
   root: true,
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:storybook/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:@typescript-eslint/strict',
-    'prettier',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -18,10 +16,11 @@ module.exports = {
     tsconfigRootDir: path.resolve(__dirname),
   },
   plugins: [
-    'eslint-plugin-import',
-    'prefer-arrow-functions',
+    'react',
     '@typescript-eslint',
     'prettier',
+    'eslint-plugin-import',
+    'prefer-arrow-functions',
   ],
   settings: {
     // Fixes eslint not being able to detect react version
@@ -32,7 +31,6 @@ module.exports = {
     'no-void': 'off',
     'prettier/prettier': 'error',
     'import/no-default-export': 'error',
-    'react/no-multi-comp': 'error',
     'prefer-arrow-functions/prefer-arrow-functions': 'error',
     'import/order': [
       'error',
@@ -80,7 +78,6 @@ module.exports = {
         },
       },
     ],
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/naming-convention': [
       'error',

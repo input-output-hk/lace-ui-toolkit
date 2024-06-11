@@ -65,3 +65,5 @@ export const createText = <
       />
     ),
   );
+
+createText.displayName = 'createText';

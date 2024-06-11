@@ -23,9 +23,9 @@ export const Profile = ({
   description,
 }: Readonly<Props>): JSX.Element => {
   const renderProfileImage = () => {
-    if (icon) {
+    if (typeof icon !== 'undefined') {
       return icon;
-    } else if (imageSrc) {
+    } else if (typeof imageSrc !== 'undefined') {
       return <Image imageSrc={imageSrc} alt={name} />;
     }
   };

@@ -29,7 +29,7 @@ export const Overview = (): JSX.Element => (
               <Variants.Cell>
                 <div style={{ width: '218px' }}>
                   <AccountsList
-                    unlockLabel="Unlock"
+                    label={{ lock: 'Lock', unlock: 'Unlock' }}
                     accounts={[
                       {
                         accountNumber: 1,
