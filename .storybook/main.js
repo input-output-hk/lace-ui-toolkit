@@ -12,8 +12,6 @@ module.exports = {
   webpackFinal: config => {
     config.plugins = [new VanillaExtractPlugin(), ...config.plugins];
 
-    // HMR doesn't work with vanilla-extract
-    // https://github.com/vanilla-extract-css/vanilla-extract/issues/905#issuecomment-1307664487
     if (process.env.NODE_ENV === 'development') {
       config.optimization = {
         ...config.optimization,

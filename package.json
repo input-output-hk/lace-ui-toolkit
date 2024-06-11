@@ -16,7 +16,7 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "run -T rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js",
     "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
     "cleanup": "yarn exec rm -rf dist node_modules",
     "format": "yarn prettier --write .",
@@ -28,18 +28,6 @@
     "test-storybook:ci": "NODE_OPTIONS=--openssl-legacy-provider; export STORYBOOK_TEST=1; concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && http-server storybook-static --port 6006\" \"wait-on http://127.0.0.1:6006/ && yarn test-storybook\"",
     "type-check": "echo \"@lace/icons: no type-check command specified\"",
     "watch": "yarn build --watch"
-  },
-  "resolutions": {
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/jest": "^0.0.10",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/test-runner": "^0.10.0",
-    "@storybook/testing-library": "^0.0.13"
   },
   "dependencies": {
     "@lace/icons": "file:.yalc/@lace/icons",
@@ -106,7 +94,9 @@
     "http-server": "^14.1.1",
     "jest-image-snapshot": "^6.1.0",
     "prettier": "3.2.5",
+    "rollup": "2.56.3",
     "rollup-plugin-copy": "^3.4.0",
+    "storybook": "7.6.7",
     "storybook-addon-pseudo-states": "^1.15.2",
     "typescript": "^4.9.5",
     "url-loader": "^4.1.1",
