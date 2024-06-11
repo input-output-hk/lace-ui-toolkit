@@ -27,7 +27,7 @@ export default {
 const Layout = ({
   maxWidth = 710,
   children,
-}: Readonly<{ children: React.ReactNode; maxWidth?: number }>): JSX.Element => (
+}: Readonly<{ children: React.ReactNode; maxWidth?: number }>) => (
   <TooltipStorybookContextProvider>
     <Flex h="$fill" w="$fill" alignItems="center" justifyContent="center">
       <Box w="$fill" style={{ maxWidth: `${maxWidth}px` }}>
