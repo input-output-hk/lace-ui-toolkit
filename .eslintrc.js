@@ -9,9 +9,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:@typescript-eslint/strict',
-    'plugin:functional/external-typescript-recommended',
-    'plugin:functional/lite',
-    'plugin:functional/stylistic',
     'prettier',
     'plugin:prettier/recommended',
   ],
@@ -24,7 +21,6 @@ module.exports = {
     'eslint-plugin-import',
     'prefer-arrow-functions',
     '@typescript-eslint',
-    'functional',
     'prettier',
   ],
   settings: {
@@ -114,22 +110,6 @@ module.exports = {
     '@typescript-eslint/sort-type-constituents': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
-    'functional/immutable-data': [
-      'error',
-      {
-        ignoreAccessorPattern: [
-          'draft.*',
-          '**.parameters',
-          '**.play',
-          '**.argTypes',
-          '**.args',
-        ],
-      },
-    ],
-    'functional/functional-parameters': 'off',
-    'functional/no-mixed-types': 'off',
-    'functional/no-return-void': 'off',
-    'functional/no-expression-statements': 'off',
     'no-restricted-imports': [
       'error',
       {
@@ -164,8 +144,6 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': ['off'],
         '@typescript-eslint/require-await': ['off'],
         '@typescript-eslint/no-require-imports': ['off'],
-        'functional/no-expression-statements': ['off'],
-        'functional/immutable-data': ['off'],
         '@typescript-eslint/strict-boolean-expressions': ['off'],
         '@typescript-eslint/explicit-module-boundary-types': ['off'],
         '@typescript-eslint/explicit-function-return-type': ['off'],
