@@ -71,7 +71,6 @@ module.exports = {
     ],
     '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/consistent-type-exports': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       {
@@ -146,7 +145,6 @@ module.exports = {
         '@typescript-eslint/no-require-imports': ['off'],
         '@typescript-eslint/strict-boolean-expressions': ['off'],
         '@typescript-eslint/explicit-module-boundary-types': ['off'],
-        '@typescript-eslint/explicit-function-return-type': ['off'],
         'import/no-default-export': ['off'],
         '@typescript-eslint/no-unsafe-member-access': ['off'],
         '@typescript-eslint/no-unsafe-return': ['off'],
