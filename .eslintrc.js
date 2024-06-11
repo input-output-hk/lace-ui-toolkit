@@ -175,13 +175,6 @@ module.exports = {
       },
     },
     {
-      files: ['*.spec.tsx', '*.spec.ts'],
-      rules: {
-        'functional/no-expression-statements': ['off'],
-        'functional/no-return-void': ['off'],
-      },
-    },
-    {
       files: ['src/**/*.stories.tsx'],
       rules: {
         'react/no-multi-comp': ['off'],
