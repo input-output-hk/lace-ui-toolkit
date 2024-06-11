@@ -127,25 +127,6 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        'index.js',
-        '.eslintrc.js',
-        'rollup.config.js',
-        '.storybook/*.js',
-      ],
-      rules: {
-        '@typescript-eslint/no-unsafe-assignment': ['off'],
-        '@typescript-eslint/no-var-requires': ['off'],
-        '@typescript-eslint/no-unsafe-call': ['off'],
-        '@typescript-eslint/require-await': ['off'],
-        '@typescript-eslint/no-require-imports': ['off'],
-        '@typescript-eslint/strict-boolean-expressions': ['off'],
-        '@typescript-eslint/explicit-module-boundary-types': ['off'],
-        '@typescript-eslint/no-unsafe-member-access': ['off'],
-        '@typescript-eslint/no-unsafe-return': ['off'],
-      },
-    },
-    {
       files: ['src/**/*.stories.tsx'],
       rules: {
         'react/no-multi-comp': ['off'],
