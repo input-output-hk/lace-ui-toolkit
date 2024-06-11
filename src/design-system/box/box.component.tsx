@@ -67,5 +67,4 @@ export const Box = forwardRef<HTMLDivElement | null, Readonly<Props>>(
   ),
 );
 
-// eslint-disable-next-line functional/immutable-data
 Box.displayName = 'Box';

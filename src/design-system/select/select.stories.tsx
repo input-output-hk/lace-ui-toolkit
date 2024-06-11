@@ -387,11 +387,8 @@ const pauseBetweenClicksInMs = 300;
 Interactions.play = async ({ canvasElement }): Promise<void> => {
   const canvas = within(canvasElement);
 
-  // eslint-disable-next-line functional/no-loop-statements
   for (const variant of variants) {
-    // eslint-disable-next-line functional/no-loop-statements
     for (const align of ['selected', 'bottom'] as const) {
-      // eslint-disable-next-line functional/no-loop-statements
       for (const colorScheme of [
         ThemeColorScheme.Light,
         ThemeColorScheme.Dark,

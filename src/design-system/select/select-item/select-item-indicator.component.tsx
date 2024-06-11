@@ -25,5 +25,4 @@ export const ItemIndicator = forwardRef<
   </Select.ItemIndicator>
 ));
 
-// eslint-disable-next-line functional/immutable-data
 ItemIndicator.displayName = 'ItemIndicator';

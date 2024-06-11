@@ -22,5 +22,5 @@ export const Primary = forwardRef<
     />
   );
 });
-// eslint-disable-next-line functional/immutable-data
+
 Primary.displayName = 'Primary';

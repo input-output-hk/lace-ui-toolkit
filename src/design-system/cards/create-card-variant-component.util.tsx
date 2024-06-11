@@ -11,7 +11,6 @@ export const createCardVariantComponent =
   <Props extends VariantCardProps>(
     scheme: Scheme,
   ): ((props: Readonly<Props>) => JSX.Element) =>
-  // eslint-disable-next-line react/display-name
   (props: Readonly<Props>): JSX.Element => (
     <BaseCard {...props} scheme={scheme} />
   );

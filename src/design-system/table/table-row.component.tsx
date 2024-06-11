@@ -1,4 +1,3 @@
-/* eslint-disable react/no-multi-comp */
 import type { ReactNode } from 'react';
 import React from 'react';
 

@@ -1,4 +1,3 @@
-/* eslint-disable functional/no-loop-statements */
 import React, { useCallback, useState } from 'react';
 
 import { Root as RadixReactToggleGroupRoot } from '@radix-ui/react-toggle-group';

@@ -25,5 +25,4 @@ export const ItemText = forwardRef<HTMLSpanElement, SelectItemTitleProps>(
   ),
 );
 
-// eslint-disable-next-line functional/immutable-data
 ItemText.displayName = 'ItemTitle';

@@ -24,5 +24,5 @@ export const CallToAction = forwardRef<HTMLButtonElement, Props>(
     );
   },
 );
-// eslint-disable-next-line functional/immutable-data
+
 CallToAction.displayName = 'CallToAction';

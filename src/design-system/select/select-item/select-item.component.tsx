@@ -23,7 +23,6 @@ export const Item = forwardRef<HTMLDivElement, SelectItemProps>(
       description,
       disabled,
       // This is a private prop, passed by the parent using `React.cloneElement()`
-      // eslint-disable-next-line react/prop-types
       variant,
       testId,
     }: Readonly<SelectItemPrivateProps & SelectItemProps>,
@@ -42,5 +41,4 @@ export const Item = forwardRef<HTMLDivElement, SelectItemProps>(
   ),
 );
 
-// eslint-disable-next-line functional/immutable-data
 Item.displayName = 'SelectItem';

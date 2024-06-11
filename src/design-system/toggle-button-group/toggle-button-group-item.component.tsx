@@ -35,5 +35,5 @@ export const Item = forwardRef<HTMLButtonElement, ToggleButtonGroupItemProps>(
     </ToggleGroup.Item>
   ),
 );
-// eslint-disable-next-line functional/immutable-data
+
 Item.displayName = 'Item';

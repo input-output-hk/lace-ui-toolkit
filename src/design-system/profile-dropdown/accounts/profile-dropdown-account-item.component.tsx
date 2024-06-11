@@ -48,7 +48,6 @@ const MaybeWithDisableUnlockTooltip = ({
   return <>{children}</>;
 };
 
-// eslint-disable-next-line react/no-multi-comp
 export const AccountItem = ({
   accountNumber,
   disableUnlock,

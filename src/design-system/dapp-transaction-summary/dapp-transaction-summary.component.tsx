@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
-/* eslint-disable @typescript-eslint/prefer-optional-chain */
 import React from 'react';
 
 import { ReactComponent as CardanoLogoComponent } from '@lace/icons/dist/CardanoLogoComponent';

@@ -87,5 +87,5 @@ export const SkeletonButton = forwardRef<HTMLButtonElement, ButtonProps>(
     );
   },
 );
-// eslint-disable-next-line functional/immutable-data
+
 SkeletonButton.displayName = 'SkeletonButton';

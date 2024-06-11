@@ -11,5 +11,5 @@ export const Backdrop = forwardRef<HTMLDivElement, BackdropProps>(
     <div ref={forwardReference} className={cx.container} style={{ zIndex }} />
   ),
 );
-// eslint-disable-next-line functional/immutable-data
+
 Backdrop.displayName = 'Backdrop';

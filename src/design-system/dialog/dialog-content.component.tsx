@@ -23,5 +23,5 @@ export const Content = forwardRef<HTMLDivElement, DialogContentProps>(
     </div>
   ),
 );
-// eslint-disable-next-line functional/immutable-data
+
 Content.displayName = 'Content';
