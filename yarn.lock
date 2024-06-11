@@ -2967,8 +2967,8 @@ __metadata:
 
 "@lace/icons@file:.yalc/@lace/icons::locator=%40lace%2Fui%40workspace%3A.":
   version: 0.1.0
-  resolution: "@lace/icons@file:.yalc/@lace/icons#.yalc/@lace/icons::hash=925930&locator=%40lace%2Fui%40workspace%3A."
-  checksum: 62e891c259c2640540d25fec717b161a7923ff6ace4f14c405c3be68a4fd337f028b43d0f1e9a5ba0dc57b459cbea942820f277cd6677957ed1fde28ec155366
+  resolution: "@lace/icons@file:.yalc/@lace/icons#.yalc/@lace/icons::hash=762f01&locator=%40lace%2Fui%40workspace%3A."
+  checksum: 41ecb0f54ad6fbf1ff244309e97c1cdd05a1b8178b3d01ec80141302acdc025c516ba6dff95e61125f154dcf785dbe760c65c78fb42f1a25054c905ac5197cb3
   languageName: node
   linkType: hard
 
@@ -3028,7 +3028,6 @@ __metadata:
     eslint: ^8.33.0
     eslint-config-prettier: ^9.1.0
     eslint-plugin-boundaries: ^3.1.0
-    eslint-plugin-functional: ^5.0.4
     eslint-plugin-import: ^2.27.5
     eslint-plugin-max-params-no-constructor: ^0.0.4
     eslint-plugin-prefer-arrow-functions: ^3.1.4
@@ -7492,7 +7491,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/type-utils@npm:5.62.0, @typescript-eslint/type-utils@npm:^5.50.0, @typescript-eslint/type-utils@npm:^5.55.0":
+"@typescript-eslint/type-utils@npm:5.62.0":
   version: 5.62.0
   resolution: "@typescript-eslint/type-utils@npm:5.62.0"
   dependencies:
@@ -7534,7 +7533,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:5.62.0, @typescript-eslint/utils@npm:^5.45.0, @typescript-eslint/utils@npm:^5.50.0":
+"@typescript-eslint/utils@npm:5.62.0, @typescript-eslint/utils@npm:^5.45.0":
   version: 5.62.0
   resolution: "@typescript-eslint/utils@npm:5.62.0"
   dependencies:
@@ -11049,13 +11048,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge-ts@npm:^5.0.0":
-  version: 5.1.0
-  resolution: "deepmerge-ts@npm:5.1.0"
-  checksum: 6b57db93c2985e4a35f24b2451db31715050d143988b7d6346f4049c9aec21a6c289514b88d3ee3d6e0697e72ef5d96ff0bbb7cb75422d56fee55ee85c7168e7
-  languageName: node
-  linkType: hard
-
 "deepmerge@npm:^4.2.2":
   version: 4.3.1
   resolution: "deepmerge@npm:4.3.1"
@@ -12294,26 +12286,6 @@ __metadata:
   peerDependencies:
     eslint: ">=6.0.0"
   checksum: 2d50cba4bfc15b3fd5ebb561279fde786526f49541706dc1f00895e5af3d9984da8c93ff68076f9afdf48ba7ef38e2d8d2b727aa450ce7ae870707f66a03eeb9
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-functional@npm:^5.0.4":
-  version: 5.0.8
-  resolution: "eslint-plugin-functional@npm:5.0.8"
-  dependencies:
-    "@typescript-eslint/type-utils": ^5.50.0
-    "@typescript-eslint/utils": ^5.50.0
-    deepmerge-ts: ^5.0.0
-    escape-string-regexp: ^4.0.0
-    is-immutable-type: ^1.2.5
-    semver: ^7.3.8
-  peerDependencies:
-    eslint: ^8.0.0
-    typescript: ">=4.0.2"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: e2eaed63cbdfff78dcf0aa3751b36f82e0fe1516c57378a51b547d2988ced330e05f7e1a165ce5a563cdad15ebae27fd2ae17cff2473c18d4d8312cec14a23f5
   languageName: node
   linkType: hard
 
@@ -15070,18 +15042,6 @@ __metadata:
   version: 1.0.4
   resolution: "is-hexadecimal@npm:1.0.4"
   checksum: a452e047587b6069332d83130f54d30da4faf2f2ebaa2ce6d073c27b5703d030d58ed9e0b729c8e4e5b52c6f1dab26781bb77b7bc6c7805f14f320e328ff8cd5
-  languageName: node
-  linkType: hard
-
-"is-immutable-type@npm:^1.2.5":
-  version: 1.2.9
-  resolution: "is-immutable-type@npm:1.2.9"
-  dependencies:
-    "@typescript-eslint/type-utils": ^5.55.0
-  peerDependencies:
-    eslint: "*"
-    typescript: ">=4.7.4"
-  checksum: 8403d766d8141f4b3c0e678363b5333581a7aa12e7be092842f70999cc33b48e4b4a1e022a40af5b03d7442e2498bf92ad26db5bc7a257a94bba094f0d74fe81
   languageName: node
   linkType: hard
 
@@ -21093,7 +21053,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.3":
+"semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3":
   version: 7.6.2
   resolution: "semver@npm:7.6.2"
   bin:

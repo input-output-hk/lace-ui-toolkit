@@ -91,7 +91,6 @@
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-boundaries": "^3.1.0",
-    "eslint-plugin-functional": "^5.0.4",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-max-params-no-constructor": "^0.0.4",
     "eslint-plugin-prefer-arrow-functions": "^3.1.4",
