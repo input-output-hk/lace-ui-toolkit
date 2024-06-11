@@ -30,7 +30,6 @@ module.exports = {
     'max-params': ['error', 3],
     'no-void': 'off',
     'prettier/prettier': 'error',
-    'import/no-default-export': 'error',
     'prefer-arrow-functions/prefer-arrow-functions': 'error',
     'import/order': [
       'error',
@@ -142,7 +141,6 @@ module.exports = {
         '@typescript-eslint/no-require-imports': ['off'],
         '@typescript-eslint/strict-boolean-expressions': ['off'],
         '@typescript-eslint/explicit-module-boundary-types': ['off'],
-        'import/no-default-export': ['off'],
         '@typescript-eslint/no-unsafe-member-access': ['off'],
         '@typescript-eslint/no-unsafe-return': ['off'],
       },
@@ -151,7 +149,6 @@ module.exports = {
       files: ['src/**/*.stories.tsx'],
       rules: {
         'react/no-multi-comp': ['off'],
-        'import/no-default-export': ['off'],
       },
     },
   ],
