@@ -28,7 +28,7 @@ module.exports = {
     react: { pragma: 'React', fragment: 'Fragment', version: 'detect' },
   },
   rules: {
-    'max-params': ['error', 2],
+    'max-params': ['error', 3],
     'no-void': 'off',
     'prettier/prettier': 'error',
     'import/no-default-export': 'error',
