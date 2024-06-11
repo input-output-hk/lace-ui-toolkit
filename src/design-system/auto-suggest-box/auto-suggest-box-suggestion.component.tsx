@@ -51,6 +51,8 @@ export const Suggestion = forwardRef<HTMLDivElement, SuggestionComponentProps>(
   ),
 );
 
+Suggestion.displayName = 'Suggestion';
+
 export const SuggestionClassic = ({
   label,
   value,

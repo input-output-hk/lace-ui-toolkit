@@ -8,9 +8,7 @@ import type { Scheme } from './types';
 export type VariantCardProps = Omit<CardProps, 'scheme'>;
 
 export const createCardVariantComponent =
-  <Props extends VariantCardProps>(
-    scheme: Scheme,
-  ): ((props: Readonly<Props>) => JSX.Element) =>
-  (props: Readonly<Props>): JSX.Element => (
-    <BaseCard {...props} scheme={scheme} />
-  );
+  <Props extends VariantCardProps>(scheme: Scheme) =>
+  (props: Readonly<Props>) => <BaseCard {...props} scheme={scheme} />;
+
+createCardVariantComponent.displayName = 'createCardVariantComponent';

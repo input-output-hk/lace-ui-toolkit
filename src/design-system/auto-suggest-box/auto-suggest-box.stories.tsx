@@ -56,7 +56,7 @@ export default {
   decorators: [page({ title: 'Auto Suggest Box', subtitle })],
 } as Meta;
 
-const MainComponents = (): JSX.Element => (
+const MainComponents: React.FC = (): JSX.Element => (
   <>
     <Variants.Row>
       <Variants.Cell>
@@ -189,13 +189,15 @@ Controls.argTypes = {
 
 type Interactions = ComponentStory<typeof AutoSuggestBox>;
 
-const createInteraction: () => Interactions = () => (): JSX.Element => (
+const Interact = () => (
   <Flex flexDirection="column" alignItems="center" w="$fill" my="$32" mb="$312">
     <Box w="$312">
       <AutoSuggestBox suggestions={SUGGESTIONS} label="Auto suggest box" />
     </Box>
   </Flex>
 );
+
+const createInteraction: () => Interactions = () => Interact;
 
 export const SuggestAndErase = createInteraction();
 export const SuggestAndPick = createInteraction();

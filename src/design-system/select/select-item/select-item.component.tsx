@@ -5,6 +5,7 @@ import { ItemRoot } from './select-item-root.component';
 import { ItemText } from './select-item-text.component';
 
 import type { SelectItemPrivateProps } from './types';
+import type { SelectVariant } from '../types';
 
 /* public contract */
 export interface SelectItemProps {
@@ -12,6 +13,7 @@ export interface SelectItemProps {
   title: string;
   description?: string;
   disabled?: boolean;
+  variant?: SelectVariant;
   testId?: string;
 }
 

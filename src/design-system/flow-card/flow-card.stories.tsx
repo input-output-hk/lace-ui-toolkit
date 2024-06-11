@@ -37,7 +37,7 @@ const MainComponents = (): JSX.Element => (
   <>
     <Variants.Row>
       <Variants.Cell>
-        <Card>
+        <Card flowCardClassName="fake-name">
           <Profile
             imageSrc={cardanoImage}
             name="Title"
@@ -50,7 +50,7 @@ const MainComponents = (): JSX.Element => (
     <Variants.Row>
       <Variants.Cell>
         <PopUpView>
-          <Card>
+          <Card flowCardClassName="fake-name">
             <Profile
               imageSrc={cardanoImage}
               name="Title"
@@ -69,7 +69,7 @@ export const Overview = (): JSX.Element => (
     <Cell>
       <Section title="Copy for use">
         <Flex alignItems="center" flexDirection="column">
-          <Card>
+          <Card flowCardClassName="fake-name">
             <Profile
               imageSrc={cardanoImage}
               name="Title"
@@ -86,7 +86,7 @@ export const Overview = (): JSX.Element => (
         <Variants.Table headers={['', '']}>
           <Variants.Row>
             <Variants.Cell>
-              <Card>
+              <Card flowCardClassName="fake-name">
                 <Profile
                   imageSrc={cardanoImage}
                   name="Cardano"
@@ -96,7 +96,7 @@ export const Overview = (): JSX.Element => (
               </Card>
             </Variants.Cell>
             <Variants.Cell>
-              <Card>
+              <Card flowCardClassName="fake-name">
                 <Profile imageSrc={cardanoImage} name="Voting power" />
                 <Details title="12,345" />
               </Card>
@@ -106,7 +106,7 @@ export const Overview = (): JSX.Element => (
         <Variants.Table headers={['', '']}>
           <Variants.Row>
             <Variants.Cell>
-              <Card>
+              <Card flowCardClassName="fake-name">
                 <Profile
                   imageSrc={cardanoImage}
                   name="Steak.and.ADA"
@@ -116,7 +116,7 @@ export const Overview = (): JSX.Element => (
               </Card>
             </Variants.Cell>
             <Variants.Cell>
-              <Card>
+              <Card flowCardClassName="fake-name">
                 <Profile
                   imageSrc={cardanoImage}
                   name="Adam Sampler"
@@ -171,7 +171,7 @@ export const Controls = ({
     <Cell>
       <Section title="Copy for use">
         <Flex alignItems="center" flexDirection="column">
-          <Card>
+          <Card flowCardClassName="fake-name">
             <Profile
               imageSrc={cardanoImage}
               name={title}

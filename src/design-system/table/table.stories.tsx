@@ -167,7 +167,7 @@ const MainComponents = ({
               }}
               items={list}
               itemContent={(index, props): JSX.Element => (
-                <Table.Row<typeof props, Columns>
+                <Table.Row<typeof props>
                   onClick={(...data): void => {
                     console.log(data);
                   }}

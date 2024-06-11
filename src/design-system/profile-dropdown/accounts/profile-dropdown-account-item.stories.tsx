@@ -34,8 +34,11 @@ export const Overview = (): JSX.Element => (
               <Variants.Cell>
                 <div style={{ width: '250px' }}>
                   <AccountItem
-                    label="Account #1"
-                    unlockLabel="Unlock"
+                    label={{
+                      name: 'Account #1',
+                      lock: 'Lock',
+                      unlock: 'Unlock',
+                    }}
                     isDeletable={true}
                     accountNumber={1}
                     isUnlocked={false}
@@ -45,8 +48,11 @@ export const Overview = (): JSX.Element => (
               <Variants.Cell>
                 <div style={{ width: '250px' }}>
                   <AccountItem
-                    label="Account #2"
-                    unlockLabel="Unlock"
+                    label={{
+                      name: 'Account #2',
+                      lock: 'Lock',
+                      unlock: 'Unlock',
+                    }}
                     isDeletable={false}
                     accountNumber={2}
                     isUnlocked
