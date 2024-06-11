@@ -182,19 +182,6 @@ module.exports = {
       },
     },
     {
-      files: ['jest.config.js'],
-      rules: {
-        '@typescript-eslint/restrict-template-expressions': ['off'],
-        '@typescript-eslint/no-unsafe-call': ['off'],
-        'functional/immutable-data': [
-          'error',
-          {
-            ignorePattern: 'module.exports',
-          },
-        ],
-      },
-    },
-    {
       files: ['src/**/*.stories.tsx'],
       rules: {
         'react/no-multi-comp': ['off'],
