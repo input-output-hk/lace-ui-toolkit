@@ -16,7 +16,7 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "yarn build:icons && rollup -c rollup.config.js",
     "build:icons": "svgr ./src/icons/raw --out-dir ./src/icons --typescript",
     "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
     "cleanup": "yarn exec rm -rf dist node_modules",
