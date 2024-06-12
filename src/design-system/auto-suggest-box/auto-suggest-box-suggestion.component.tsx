@@ -30,28 +30,28 @@ const getSuggestionComponent = (
 };
 
 export const Suggestion = forwardRef<HTMLDivElement, SuggestionComponentProps>(
-  ({ onClick, suggestion }, ref): JSX.Element => (
-    <Select.Item
-      tabIndex={0}
-      ref={ref}
-      data-testid={`auto-suggest-box-suggestion-${suggestion.value}`}
-      value={suggestion.value}
-      className={cx.suggestion}
-      onClick={(): void => {
-        onClick(suggestion.value);
-      }}
-      onKeyDown={(event): void => {
-        if (event.code === 'Enter') {
+  function Suggestion({ onClick, suggestion }, ref): JSX.Element {
+    return (
+      <Select.Item
+        tabIndex={0}
+        ref={ref}
+        data-testid={`auto-suggest-box-suggestion-${suggestion.value}`}
+        value={suggestion.value}
+        className={cx.suggestion}
+        onClick={(): void => {
           onClick(suggestion.value);
-        }
-      }}
-    >
-      {getSuggestionComponent(suggestion)}
-    </Select.Item>
-  ),
+        }}
+        onKeyDown={(event): void => {
+          if (event.code === 'Enter') {
+            onClick(suggestion.value);
+          }
+        }}
+      >
+        {getSuggestionComponent(suggestion)}
+      </Select.Item>
+    );
+  },
 );
-
-Suggestion.displayName = 'Suggestion';
 
 export const SuggestionClassic = ({
   label,
