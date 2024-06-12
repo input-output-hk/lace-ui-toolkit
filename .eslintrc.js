@@ -28,9 +28,7 @@ module.exports = {
   },
   rules: {
     'max-params': ['error', 3],
-    'no-void': 'off',
     'prettier/prettier': 'error',
-    'prefer-arrow-functions/prefer-arrow-functions': 'error',
     'import/order': [
       'error',
       {
@@ -45,10 +43,6 @@ module.exports = {
           'type',
         ],
         pathGroups: [
-          {
-            pattern: 'react',
-            group: 'builtin',
-          },
           {
             pattern: 'react',
             group: 'builtin',
