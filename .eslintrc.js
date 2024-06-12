@@ -66,45 +66,6 @@ module.exports = {
         pathGroupsExcludedImportTypes: ['react'],
       },
     ],
-    '@typescript-eslint/consistent-type-imports': 'error',
-    '@typescript-eslint/consistent-type-exports': 'error',
-    '@typescript-eslint/explicit-member-accessibility': [
-      'error',
-      {
-        accessibility: 'explicit',
-        overrides: {
-          parameterProperties: 'no-public',
-        },
-      },
-    ],
-    '@typescript-eslint/member-ordering': 'error',
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        selector: 'variable',
-        types: ['boolean'],
-        format: ['PascalCase'],
-        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-      },
-    ],
-    '@typescript-eslint/no-confusing-void-expression': 'error',
-    '@typescript-eslint/no-redundant-type-constituents': 'error',
-    '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-type-alias': [
-      'off',
-      {
-        allowGenerics: 'always',
-        allowAliases: 'always',
-        allowMappedTypes: 'in-unions-and-intersections',
-      },
-    ],
-    '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/prefer-enum-initializers': 'error',
-    '@typescript-eslint/prefer-readonly': 'error',
-    '@typescript-eslint/promise-function-async': 'error',
-    '@typescript-eslint/sort-type-constituents': 'error',
-    '@typescript-eslint/strict-boolean-expressions': 'error',
-    '@typescript-eslint/switch-exhaustiveness-check': 'error',
     'no-restricted-imports': [
       'error',
       {
