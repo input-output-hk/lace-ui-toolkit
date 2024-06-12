@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as ArrowLeftIcon } from '@lace/icons/dist/ArrowLeftComponent';
+import ArrowLeftIcon from '@icons/ArrowLeftComponent';
 
 import * as cx from './back-button.css';
 import { NavigationSkeletonButton } from './navigation-skeleton-button.component';

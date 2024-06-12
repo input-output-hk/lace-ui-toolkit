@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as CaretIcon } from '@lace/icons/dist/CaretComponent';
+import CaretIcon from '@icons/CaretComponent';
 import cn from 'classnames';
 
 import * as cx from './caret-button.css';

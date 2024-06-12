@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as RefreshIcon } from '@lace/icons/dist/RefreshComponent';
+import RefreshIcon from '@icons/RefreshComponent';
 import type { Meta } from '@storybook/react';
 
 import { Box } from '../box';

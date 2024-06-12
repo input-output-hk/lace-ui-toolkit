@@ -1,3 +1,5 @@
+const path = require('path');
+
 const { VanillaExtractPlugin } = require('@vanilla-extract/webpack-plugin');
 
 module.exports = {
@@ -59,6 +61,11 @@ module.exports = {
     });
 
     config.resolve.extensions.push('.svg');
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      // '@icons/$': resolve.resolve(__dirname, '../src/icons/'),
+      '@icons': path.resolve(__dirname, '../src/icons/'),
+    };
 
     return config;
   },

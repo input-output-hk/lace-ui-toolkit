@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as QuestionMark } from '@lace/icons/dist/QuestionMarkComponent';
+import QuestionMark from '@icons/QuestionMarkComponent';
 import type { Meta } from '@storybook/react';
 
 import { Variants, Section, page, UIStateTable } from '../decorators';

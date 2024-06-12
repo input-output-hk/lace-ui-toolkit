@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as PlainCircle } from '@lace/icons/dist/PlainCircleComponent';
+import PlainCircle from '@icons/PlainCircleComponent';
 import * as Toast from '@radix-ui/react-toast';
 import { expect } from '@storybook/jest';
 import type { ComponentStory, Meta } from '@storybook/react';

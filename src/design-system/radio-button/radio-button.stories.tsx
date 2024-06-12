@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 import React, { useMemo, useState } from 'react';
 
-import { ReactComponent as DocumentDownload } from '@lace/icons/dist/DocumentDownload';
+import DocumentDownload from '@icons/DocumentDownload';
 import type { Meta } from '@storybook/react';
 import { v4 as uuid } from 'uuid';
 

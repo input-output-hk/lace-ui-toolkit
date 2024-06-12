@@ -1,8 +1,8 @@
 import type { SVGProps } from 'react';
 import React from 'react';
 
-import { ReactComponent as LoaderDarkIcon } from '@lace/icons/dist/LoaderDarkGradientComponent';
-import { ReactComponent as LoaderLightIcon } from '@lace/icons/dist/LoaderLightGradientComponent';
+import LoaderDarkIcon from '@icons/LoaderDarkGradientComponent';
+import LoaderLightIcon from '@icons/LoaderLightGradientComponent';
 import cn from 'classnames';
 
 import { ThemeColorScheme, sx, useTheme } from '../../design-tokens';

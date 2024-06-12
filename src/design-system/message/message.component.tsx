@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as HappyEmoji } from '@lace/icons/dist/HappyEmojiComponent';
+import HappyEmoji from '@icons/HappyEmojiComponent';
 
 import { Box } from '../box';
 import { Flex } from '../flex';

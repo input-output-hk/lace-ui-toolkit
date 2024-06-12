@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as ChevronRight } from '@lace/icons/dist/ChevronRightComponent';
+import ChevronRight from '@icons/ChevronRightComponent';
 
 import { Text } from '../text';
 

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 
-import { ReactComponent as CheckIcon } from '@lace/icons/dist/CheckComponent';
+import CheckIcon from '@icons/CheckComponent';
 import * as Select from '@radix-ui/react-select';
 
 import * as cx from './select-item-indicator.css';

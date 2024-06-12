@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as Search } from '@lace/icons/dist/SearchComponent';
+import Search from '@icons/SearchComponent';
 
 import { Flex } from '../flex';
 

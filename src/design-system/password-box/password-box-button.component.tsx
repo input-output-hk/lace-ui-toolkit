@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as CloseEye } from '@lace/icons/dist/EyeCloseComponent';
-import { ReactComponent as OpenEye } from '@lace/icons/dist/EyeOpenComponent';
+import CloseEye from '@icons/EyeCloseComponent';
+import OpenEye from '@icons/EyeOpenComponent';
 import cn from 'classnames';
 
 import * as cx from './password-box-button.css';
