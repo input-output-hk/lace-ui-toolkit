@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import React from 'react';
 
-import { ReactComponent as InfoIcon } from '@lace/icons/dist/InfoComponent';
+import InfoIcon from '@icons/InfoComponent';
 
 import { Box } from '../box';
 import { Flex } from '../flex';

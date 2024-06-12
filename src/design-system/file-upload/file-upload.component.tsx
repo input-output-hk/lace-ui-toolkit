@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as CheckFileUploadIcon } from '@lace/icons/dist/CheckFileUploadComponent';
-import { ReactComponent as UploadIcon } from '@lace/icons/dist/UploadGradientComponent';
+import CheckFileUploadIcon from '@icons/CheckFileUploadComponent';
+import UploadIcon from '@icons/UploadGradientComponent';
 
 import { Box } from '../box';
 import { Divider } from '../divider';

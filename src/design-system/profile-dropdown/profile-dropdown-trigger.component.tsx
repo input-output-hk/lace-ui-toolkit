@@ -1,8 +1,8 @@
 import type { ComponentPropsWithoutRef } from 'react';
 import React from 'react';
 
-import { ReactComponent as ChevronDown } from '@lace/icons/dist/ChevronDownComponent';
-import { ReactComponent as ChevronUp } from '@lace/icons/dist/ChevronUpComponent';
+import ChevronDown from '@icons/ChevronDownComponent';
+import ChevronUp from '@icons/ChevronUpComponent';
 import classNames from 'classnames';
 
 import { Box } from '../box';

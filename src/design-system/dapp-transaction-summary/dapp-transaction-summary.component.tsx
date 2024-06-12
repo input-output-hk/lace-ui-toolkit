@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as CardanoLogoComponent } from '@lace/icons/dist/CardanoLogoComponent';
-import { ReactComponent as InfoIcon } from '@lace/icons/dist/InfoComponent';
+import CardanoLogoComponent from '@icons/CardanoLogoComponent';
+import InfoIcon from '@icons/InfoComponent';
 
 import { Box } from '../box';
 import { Flex } from '../flex';

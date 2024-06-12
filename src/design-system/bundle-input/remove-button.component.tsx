@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as CloseIcon } from '@lace/icons/dist/CloseComponent';
+import CloseIcon from '@icons/CloseComponent';
 import classNames from 'classnames';
 
 import * as cx from './remove-button.css';

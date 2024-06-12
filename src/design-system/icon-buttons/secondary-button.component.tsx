@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as LaceGradient } from '@lace/icons/dist/LaceGradientComponent';
+import LaceGradient from '@icons/LaceGradientComponent';
 import classNames from 'classnames';
 
 import { NavigationSkeletonButton } from './icon-skeleton-button.component';

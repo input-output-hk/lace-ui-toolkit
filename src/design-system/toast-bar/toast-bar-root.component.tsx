@@ -1,7 +1,7 @@
 import React from 'react';
 import type { ComponentProps, ReactNode } from 'react';
 
-import { ReactComponent as CloseIcon } from '@lace/icons/dist/CloseComponent';
+import CloseIcon from '@icons/CloseComponent';
 import * as Toast from '@radix-ui/react-toast';
 import classNames from 'classnames';
 

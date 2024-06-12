@@ -1,7 +1,7 @@
 import React from 'react';
 import type { ReactNode } from 'react';
 
-import { ReactComponent as CheckIcon } from '@lace/icons/dist/CheckBoxComponent';
+import CheckIcon from '@icons/CheckBoxComponent';
 import * as RadixCheckbox from '@radix-ui/react-checkbox';
 import cn from 'classnames';
 

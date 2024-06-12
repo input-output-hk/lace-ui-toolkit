@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as PlusCircle } from '@lace/icons/dist/PlusCircleComponent';
+import PlusCircle from '@icons/PlusCircleComponent';
 import type { Meta } from '@storybook/react';
 
 import { page, Variants, Section, UIStateTable } from '../decorators';

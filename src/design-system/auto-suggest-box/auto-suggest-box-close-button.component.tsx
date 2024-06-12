@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as CloseIcon } from '@lace/icons/dist/CloseComponent';
+import CloseIcon from '@icons/CloseComponent';
 
 import * as cx from './auto-suggest-box-button.css';
 

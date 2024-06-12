@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 import React from 'react';
 
-import { ReactComponent as ColdWallet } from '@lace/icons/dist/HardwareWalletComponent';
-import { ReactComponent as SharedWallet } from '@lace/icons/dist/UserGroupComponent';
-import { ReactComponent as HotWallet } from '@lace/icons/dist/WalletComponent';
+import ColdWallet from '@icons/HardwareWalletComponent';
+import SharedWallet from '@icons/UserGroupComponent';
+import HotWallet from '@icons/WalletComponent';
 
 import { Flex } from '../flex';
 

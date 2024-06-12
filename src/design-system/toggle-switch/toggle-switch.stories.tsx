@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as InfoIcon } from '@lace/icons/dist/InfoComponent';
+import InfoIcon from '@icons/InfoComponent';
 import type { Meta } from '@storybook/react';
 
 import { ThemeColorScheme, LocalThemeProvider } from '../../design-tokens';

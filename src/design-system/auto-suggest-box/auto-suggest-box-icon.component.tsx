@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as CheckIcon } from '@lace/icons/dist/CheckFileUploadComponent';
-import { ReactComponent as LoadingIcon } from '@lace/icons/dist/LoadingComponent';
+import CheckIcon from '@icons/CheckFileUploadComponent';
+import LoadingIcon from '@icons/LoadingComponent';
 import cn from 'classnames';
 
 import { Box } from '../box';

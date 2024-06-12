@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import React from 'react';
 
-import { ReactComponent as ChevronDownIcon } from '@lace/icons/dist/ChevronDownComponent';
+import ChevronDownIcon from '@icons/ChevronDownComponent';
 import * as Select from '@radix-ui/react-select';
 
 import { Item, ItemRoot } from './select-item';

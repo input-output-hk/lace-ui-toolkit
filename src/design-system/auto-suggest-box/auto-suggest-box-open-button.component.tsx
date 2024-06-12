@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as BookIcon } from '@lace/icons/dist/BookComponent';
+import BookIcon from '@icons/BookComponent';
 
 import * as cx from './auto-suggest-box-button.css';
 

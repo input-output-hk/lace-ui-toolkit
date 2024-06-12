@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as ShieldIcon } from '@lace/icons/dist/ShieldGradientComponent';
+import ShieldIcon from '@icons/ShieldGradientComponent';
 import type { Meta } from '@storybook/react';
 
 import { Box } from '../box';
