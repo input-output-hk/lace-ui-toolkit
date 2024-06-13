@@ -1,4 +1,11 @@
 {
   "extends": "./tsconfig.json",
-  "include": [".eslintrc.js", "src/**/*", "rollup.config.js", ".storybook/**/*"]
+  "include": [
+    ".eslintrc.js",
+    ".storybook/**/*",
+    "commitlint.config.js",
+    "lint-staged.config.js",
+    "rollup.config.js",
+    "src/**/*"
+  ]
 }

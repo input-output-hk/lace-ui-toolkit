@@ -47,6 +47,7 @@ export const createText = <
 }: Readonly<CreateTextArguments<T, W>>): ForwardRefExoticComponent<
   TextProps<W>
 > =>
+  // eslint-disable-next-line react/display-name
   forwardRef<typeof Tag, TextProps<W>>(
     (
       { weight = defaultWeight, color = 'primary', className, ...props },
@@ -65,5 +66,3 @@ export const createText = <
       />
     ),
   );
-
-createText.displayName = 'createText';
