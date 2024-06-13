@@ -318,6 +318,7 @@ const getOptionTestId = ({
 }>): string =>
   `theme_${colorScheme}-select-${variant}-align_${align}-${optionValue}`;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Interactions: ComponentStory<any> = (): JSX.Element => {
   const { lightThemePortalContainer, darkThemePortalContainer } =
     usePortalContainer();

@@ -27,6 +27,7 @@ export { Metadata, MetadataLink } from './metadata';
 export { PasswordBox } from './password-box';
 export { TextLink } from './text-link';
 export * as ProfileDropdown from './profile-dropdown';
+export type { AccountData } from './profile-dropdown';
 export { TextBox } from './text-box';
 export { Variants, Section, colorSchemaDecorator } from './decorators';
 export * as EducationalCard from './educational-card';

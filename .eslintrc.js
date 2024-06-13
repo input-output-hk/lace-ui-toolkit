@@ -26,6 +26,10 @@ module.exports = {
     // Fixes eslint not being able to detect react version
     react: { pragma: 'React', fragment: 'Fragment', version: 'detect' },
   },
+  env: {
+    browser: true,
+    node: true,
+  },
   rules: {
     'max-params': ['error', 3],
     'prettier/prettier': 'error',
@@ -85,6 +89,12 @@ module.exports = {
       files: ['src/**/*.stories.tsx'],
       rules: {
         'react/no-multi-comp': ['off'],
+      },
+    },
+    {
+      files: ['**/*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': ['off'],
       },
     },
   ],

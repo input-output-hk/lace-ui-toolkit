@@ -92,6 +92,7 @@ export const Row = <T extends object>({
           data-testid={`${dataTestId}-list-${cell}`}
         >
           <span className={cx.cellInner}>
+            {/* @ts-expect-error improve */}
             {(typeof cellRenderers?.[cell] === 'function'
               ? cellRenderers[cell]?.({ value: data[cell] })
               : data[cell]) ?? '-'}
