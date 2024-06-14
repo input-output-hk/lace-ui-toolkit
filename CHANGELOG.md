@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.0.0...v1.0.1) (2024-06-14)
+
+
+### Bug Fixes
+
+* add LICENSE ([118c3a0](https://github.com/input-output-hk/lace-ui-toolkit/commit/118c3a05e8eb1be78ce030e8c70be5ca18666d08))
+
 # 1.0.0 (2024-06-13)
 
 
