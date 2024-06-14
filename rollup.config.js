@@ -3,7 +3,6 @@ import image from '@rollup/plugin-image';
 import typescript from '@rollup/plugin-typescript';
 import svgr from '@svgr/rollup';
 import { vanillaExtractPlugin } from '@vanilla-extract/rollup-plugin';
-import copy from 'rollup-plugin-copy';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 import packageJson from './package.json';
@@ -23,20 +22,12 @@ export default () => ({
     vanillaExtractPlugin({
       identifiers: 'short',
     }),
-    copy({
-      targets: [{ src: 'src/assets/icons/*', dest: 'dist/assets/icons' }],
-    }),
   ],
   output: [
     {
       file: packageJson.main,
       format: 'cjs',
-      sourcemap: true,
-    },
-    {
-      file: packageJson.module,
-      format: 'esm',
-      sourcemap: true,
+      sourcemap: false,
     },
   ],
   external: [/node_modules/],

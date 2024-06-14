@@ -19,7 +19,6 @@
   "license": "Apache-2.0",
   "author": "IOHK",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "yarn build:icons && rollup -c rollup.config.js",
