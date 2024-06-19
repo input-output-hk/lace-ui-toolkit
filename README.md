@@ -2,15 +2,19 @@
 
 ## Getting Started
 
+### Prerequisites
+
+- yarn v3.8.2. Follow [installation guide](https://yarnpkg.com/getting-started/install)
+
 First, install the dependencies:
 
 ```bash
-yarn install --frozen-lockfile
+yarn install
 ```
 
-## Storybook
+## Development
 
-Storybook is used for development
+Storybook is used for development, run it using command:
 
 ```bash
 yarn storybook
@@ -51,3 +55,59 @@ export default {
 | \*.data.ts       | Defines the data/types representation of the UI component or application logic |
 | \*.context.ts    |    Defines the UI component's inner state to be consumed by nested children    |
 | \*.hooks.ts      |                Defines methods to manipulate the context state                 |
+
+### Icons
+
+Adding new or updating existing icon require:
+
+1. Copy icon to `src/icons/raw` directory
+2. Run command `yarn build:icons`. It will generate tsx component in `src/icons` directory and update `src/icons/index.ts`
+3. Commit moved icon to raw directory and built component
+
+To use icon in this project import it using lookup location `@icons/`
+
+```
+import AdaComponent from '@icons/AdaComponents';
+```
+
+To use icon in dependent project import it like this
+
+```
+import { AdaComponent } from '@input-output-hk/lace-ui-toolkit';
+```
+
+## Link Lace UI Toolkit for local development / testing
+
+We recommend using [yalc](https://github.com/wclr/yalc) for linking a package from your local development environment to another project. This is particularly helpful when developing multiple packages that depend on each other and you want to test changes in real time without needing to publish the package to a registry.
+
+> [!NOTE]
+> Yalc is simple local npm registry which works across package managers. Learn more about [yalc](https://github.com/wclr/yalc)
+
+If you work with projects using different package managers like npm, yarn, or pnpm the recommended approach is to use yalc, as it work across different package managers. You can easily link yarn based repository like **Lace UI Toolkit** to npm, yarn, or pnpm repositories in the same time.
+
+### To use **yalc** follow steps described bellow:
+
+1. Install dependencies: `yarn install`
+2. Build project **Lace UI Toolkit**: `yarn build`
+3. Publish to yalc: `yalc publish`
+4. Link **Lace UI Toolkit** to dependent project: `yalc link @input-output-hk/lace-ui-toolkit`
+5. Update package in dependant project after each published build: `yalc update @input-output-hk/lace-ui-toolkit`
+6. Once development done unlink **Lace UI Toolkit**: `yalc remove @input-output-hk/lace-ui-toolkit`
+
+### To effectively use **yalc** follow steps described bellow:
+
+1. Install dependencies: `yarn install`
+2. Watch for changes and build, publish and push updates: `yarn watch:pub`
+   - `yarn watch:pub` uses commands `yarn build --watch` and `yalc push`.
+   - `yalc push` is alias for `yalc publish --push`. Push will auto update **Lace UI Toolkit** in all linked projects.
+3. Navigate to dependent project and link **Lace UI Toolkit**: `yalc link @input-output-hk/lace-ui-toolkit`
+4. Once development done unlink **Lace UI Toolkit**: `yalc remove @input-output-hk/lace-ui-toolkit`
+
+### Useful yalc commands
+
+- `yalc link @input-output-hk/lace-ui-toolkit`: Link **Lace UI Toolkit** with other projects
+- `yalc remove @input-output-hk/lace-ui-toolkit`: Unlink **Lace UI Toolkit** from other projects
+- `yalc installations show @input-output-hk/lace-ui-toolkit`: List all projects linking to **Lace UI Toolkit**
+- `yalc publish`: Publish package to yalc's registry
+- `yalc update @input-output-hk/lace-ui-toolkit`: Update **Lace UI Toolkit** in dependent project
+- `yalc push` or `yalc publish --push`: Publish package to yalc's registry and auto update dependant projects
