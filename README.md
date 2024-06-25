@@ -1,5 +1,10 @@
 # Lace UI toolkit
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=alert_status&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=coverage&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=security_rating&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=vulnerabilities&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
+
 ## Getting Started
 
 ### Prerequisites
