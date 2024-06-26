@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.0.1...v1.1.0) (2024-06-26)
+
+
+### Features
+
+* add warning text variation ([1951c92](https://github.com/input-output-hk/lace-ui-toolkit/commit/1951c920fbce06aa3c4ec390dc54db8acba6169a))
+
 ## [1.0.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.0.0...v1.0.1) (2024-06-26)
 
 
