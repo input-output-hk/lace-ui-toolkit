@@ -59,4 +59,5 @@ export { default as UserGroupGradientComponent } from './UserGroupGradientCompon
 export { default as UserGroupComponent } from './UserGroupComponent';
 export { default as VideoGradientComponent } from './VideoGradientComponent';
 export { default as WalletComponent } from './WalletComponent';
+export { default as WarningIconCircleComponent } from './WarningIconCircleComponent';
 export { default as WarningIconTriangleComponent } from './WarningIconTriangleComponent';
