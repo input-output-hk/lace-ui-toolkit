@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.0.0...v1.0.1) (2024-06-26)
+
+
+### Bug Fixes
+
+* set strict testid for avatar-root ([b1579bb](https://github.com/input-output-hk/lace-ui-toolkit/commit/b1579bb945a85f9bdf168820e753c4063c97242a))
+
 # 1.0.0 (2024-06-19)
 
 
