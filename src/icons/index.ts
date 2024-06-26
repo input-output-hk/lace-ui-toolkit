@@ -15,6 +15,7 @@ export { default as ChevronUpComponent } from './ChevronUpComponent';
 export { default as ChipGradientComponent } from './ChipGradientComponent';
 export { default as CloseComponent } from './CloseComponent';
 export { default as CodeGradientComponent } from './CodeGradientComponent';
+export { default as Copy } from './Copy';
 export { default as DocumentDownload } from './DocumentDownload';
 export { default as DocumentTextGradientComponent } from './DocumentTextGradientComponent';
 export { default as EyeCloseComponent } from './EyeCloseComponent';
