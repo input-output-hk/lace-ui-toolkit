@@ -48,8 +48,8 @@ export const checkIconBox = style([
     h: '$24',
     fontSize: '$25',
     color: '$data_green',
-    lineHeight: '$0'
-  })
+    lineHeight: '$0',
+  }),
 ]);
 
 export const removeButtonBox = style({
