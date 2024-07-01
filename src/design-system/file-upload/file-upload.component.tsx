@@ -13,25 +13,35 @@ import * as cx from './file-upload.css';
 import type { OmitClassName } from '../../types';
 
 type Props = OmitClassName<'input'> & {
-  label: { text: string; highlight: boolean }[];
+  label: string | React.ReactNode;
   supportedFormats: string;
   files?: string[];
   removeButtonLabel: string;
+  key?: string;
   onRemove?: (file: string, index: number) => void;
 };
 
 export const FileUpload = ({
-  label: labelText,
+  label,
   supportedFormats,
   id = crypto.randomUUID(),
   accept,
   files = [],
   removeButtonLabel,
+  key = 'file-upload',
   onRemove,
   ...props
 }: Readonly<Props>): JSX.Element => (
   <label htmlFor={id} className={cx.root} id={`${id}-label`}>
-    <input type="file" id={id} accept={accept} required hidden {...props} />
+    <input
+      type="file"
+      id={id}
+      accept={accept}
+      required
+      hidden
+      key={key}
+      {...props}
+    />
     <Flex
       className={cx.iconBox}
       mr="$24"
@@ -43,15 +53,7 @@ export const FileUpload = ({
     <Box w="$fill">
       <Box>
         <Box mb="$8">
-          {labelText.map(({ text, highlight }) => (
-            <Text.Body.Normal
-              weight="$medium"
-              color={highlight ? 'highlight' : 'primary'}
-              key={text}
-            >
-              {text}{' '}
-            </Text.Body.Normal>
-          ))}
+          <Text.Body.Normal weight="$medium">{label}</Text.Body.Normal>
         </Box>
         <Text.Body.Small color="secondary" weight="$medium">
           {supportedFormats}
@@ -70,8 +72,10 @@ export const FileUpload = ({
               </Flex>
               <button
                 className={cx.removeButtonBox}
-                onClick={(): void => {
+                onClick={(event): void => {
                   if (onRemove) {
+                    event.preventDefault();
+                    event.stopPropagation();
                     onRemove(file, index);
                   }
                 }}
