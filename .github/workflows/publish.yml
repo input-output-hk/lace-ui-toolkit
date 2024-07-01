@@ -53,6 +53,11 @@ jobs:
       - name: Typecheck
         run: yarn type-check
 
+      - name: Chromatic
+        uses: ./.github/actions/chromatic
+        with:
+          TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+
       - name: Build
         run: yarn build
 
