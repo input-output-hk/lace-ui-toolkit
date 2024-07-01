@@ -1,0 +1,37 @@
+name: deploy chromatic
+description: Deploy storybook to Chromatic
+
+inputs:
+  TOKEN:
+    description: 'Chromatic token'
+    required: true
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Install playwright
+      run: npx playwright install chromium
+      shell: bash
+
+    - name: Tests
+      run: yarn test-storybook:ci
+      shell: bash
+
+    - name: Publish to Chromatic
+      if: github.ref != 'refs/heads/main'
+      uses: chromaui/action@v1
+      with:
+        projectToken: ${{ inputs.TOKEN }}
+        buildScriptName: build-storybook
+        onlyChanged: true
+        exitOnceUploaded: true
+
+    - name: Publish to Chromatic and auto accept changes
+      if: github.ref == 'refs/heads/main'
+      uses: chromaui/action@v1
+      with:
+        projectToken: ${{ inputs.TOKEN }}
+        autoAcceptChanges: true
+        onlyChanged: true
+        exitOnceUploaded: true
