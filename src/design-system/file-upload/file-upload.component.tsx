@@ -71,10 +71,10 @@ export const FileUpload = ({
               </Flex>
               <button
                 className={cx.removeButtonBox}
-                onClick={(e): void => {
+                onClick={(event): void => {
                   if (onRemove) {
-                    e.preventDefault();
-                    e.stopPropagation();
+                    event.preventDefault();
+                    event.stopPropagation();
                     onRemove(file, index);
                   }
                 }}
