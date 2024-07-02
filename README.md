@@ -1,7 +1,6 @@
 # Lace UI toolkit
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=alert_status&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=coverage&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=security_rating&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=input-output-hk_lace-ui-toolkit&metric=vulnerabilities&token=98802db7b585471a39ab75e8baf01cff96c561db)](https://sonarcloud.io/summary/new_code?id=input-output-hk_lace-ui-toolkit)
 
@@ -19,11 +18,33 @@ yarn install
 
 ## Development
 
-Storybook is used for development, run it using command:
+[Storybook](https://storybook.js.org/docs) is used for development, run it using command:
 
 ```bash
 yarn storybook
 ```
+
+or
+
+```bash
+yarn dev
+```
+
+For more details check [CONTRIBUTING.md]('./CONTRIBUTING.md) guide.
+
+## File naming convention
+
+| FILES            |                                    PURPOSE                                     |
+| ---------------- | :----------------------------------------------------------------------------: |
+| \*.index.ts      |             Defines the public API to be imported by other modules             |
+| \*.component.tsx |                            Defines the UI component                            |
+| \*.css.ts        |                           Vanilla-extract CSS files                            |
+| \*.stories.ts    |                                Storybook files                                 |
+| \*.data.ts       | Defines the data/types representation of the UI component or application logic |
+| \*.context.ts    |    Defines the UI component's inner state to be consumed by nested children    |
+| \*.hooks.ts      |                Defines methods to manipulate the context state                 |
+
+## Working with Storybook
 
 ### Stories format
 
@@ -49,25 +70,18 @@ export default {
 } as Meta;
 ```
 
-## File naming convention
+## Working with Icons
 
-| FILES            |                                    PURPOSE                                     |
-| ---------------- | :----------------------------------------------------------------------------: |
-| \*.index.ts      |             Defines the public API to be imported by other modules             |
-| \*.component.tsx |                            Defines the UI component                            |
-| \*.css.ts        |                           Vanilla-extract CSS files                            |
-| \*.stories.ts    |                                Storybook files                                 |
-| \*.data.ts       | Defines the data/types representation of the UI component or application logic |
-| \*.context.ts    |    Defines the UI component's inner state to be consumed by nested children    |
-| \*.hooks.ts      |                Defines methods to manipulate the context state                 |
+Adding a new or updating existing icons require:
 
-### Icons
+1. Add svg icon to `src/icons/raw` directory.
+2. Run `build:icons` command (It will generate tsx components in `src/icons` directory and update `src/icons/index.ts`)
 
-Adding new or updating existing icon require:
+```bash
+yarn build:icons
+```
 
-1. Copy icon to `src/icons/raw` directory
-2. Run command `yarn build:icons`. It will generate tsx component in `src/icons` directory and update `src/icons/index.ts`
-3. Commit moved icon to raw directory and built component
+3. Commit all added and modified files.
 
 To use icon in this project import it using lookup location `@icons/`
 
