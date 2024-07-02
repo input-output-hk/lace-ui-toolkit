@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.2.0...v1.3.0) (2024-07-02)
+
+
+### Features
+
+* add new icon set ([b6802a2](https://github.com/input-output-hk/lace-ui-toolkit/commit/b6802a2beaf686d4be9abe13d3156496f04a35e6))
+
 # [1.2.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.1.0...v1.2.0) (2024-06-26)
 
 
