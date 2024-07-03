@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.4.0...v1.4.1) (2024-07-03)
+
+
+### Bug Fixes
+
+* prevent onRemove from re-triggering file upload dialog ([493ee77](https://github.com/input-output-hk/lace-ui-toolkit/commit/493ee774eaf4942ec22c5bb6fb077287076eba77))
+
 # [1.4.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.3.0...v1.4.0) (2024-07-02)
 
 
