@@ -1,6 +1,6 @@
 {
   "name": "@input-output-hk/lace-ui-toolkit",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Lace UI Toolkit",
   "homepage": "https://github.com/input-output-hk/lace-ui-toolkit/blob/main/README.md",
   "bugs": {
@@ -27,6 +27,7 @@
     "cleanup": "yarn run cleanup:dist && yarn run cleanup:nm",
     "cleanup:dist": "yarn exec rm -rf dist",
     "cleanup:nm": "yarn exec rm -rf node_modules",
+    "dev": "yarn storybook",
     "format": "yarn prettier --write .",
     "format-check": "yarn prettier --check .",
     "lint": "yarn eslint --ext .ts,.tsx,.js,.jsx .",
