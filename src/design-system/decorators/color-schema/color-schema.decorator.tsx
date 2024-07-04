@@ -10,11 +10,7 @@ import * as styles from './color-schema.css';
 
 export const colorSchemaDecorator: DecoratorFunction<ReactFramework> = (
   Story,
-  {
-    parameters: {
-      decorators: { layout = 'horizontal' },
-    },
-  },
+  { parameters: { decorators: { layout = 'horizontal' } = {} } },
 ) => (
   <Flex
     className={styles.root}
