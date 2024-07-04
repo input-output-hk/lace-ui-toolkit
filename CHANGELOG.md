@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.4.1...v1.4.2) (2024-07-04)
+
+
+### Bug Fixes
+
+* add decorators default value ([2a64d24](https://github.com/input-output-hk/lace-ui-toolkit/commit/2a64d24fb6e9af44ef15261a159634e4aa83e1f0))
+
 ## [1.4.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.4.0...v1.4.1) (2024-07-03)
 
 
