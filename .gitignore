@@ -14,3 +14,6 @@
 dist
 node_modules
 storybook-static
+
+# Intellij IDEs
+.idea
