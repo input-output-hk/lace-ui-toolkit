@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.4.2...v1.5.0) (2024-07-05)
+
+
+### Features
+
+* add filled key icon ([fa3b4a7](https://github.com/input-output-hk/lace-ui-toolkit/commit/fa3b4a79be53405331e8c9b6823143eb89e39e10))
+
 ## [1.4.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.4.1...v1.4.2) (2024-07-04)
 
 
