@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.5.0...v1.6.0) (2024-07-05)
+
+
+### Features
+
+* export backdrop component [LW-10640] ([66882a0](https://github.com/input-output-hk/lace-ui-toolkit/commit/66882a0f60642aad7a06a917eee9eaf8c153191d))
+
 # [1.5.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.4.2...v1.5.0) (2024-07-05)
 
 
