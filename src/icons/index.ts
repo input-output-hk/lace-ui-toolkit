@@ -33,6 +33,7 @@ export { default as HappyEmojiComponent } from './HappyEmojiComponent';
 export { default as HardwareWalletComponent } from './HardwareWalletComponent';
 export { default as InfoGradientComponent } from './InfoGradientComponent';
 export { default as InfoComponent } from './InfoComponent';
+export { default as KeyFilledComponent } from './KeyFilledComponent';
 export { default as Key } from './Key';
 export { default as LaceGradientComponent } from './LaceGradientComponent';
 export { default as LaceLogoComponent } from './LaceLogoComponent';
