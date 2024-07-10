@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.6.0...v1.7.0) (2024-07-10)
+
+
+### Features
+
+* **icons:** add warning triangle icon solid ([0ba3e88](https://github.com/input-output-hk/lace-ui-toolkit/commit/0ba3e88658eb46f85e0db02ee86b010621d1372d))
+
 # [1.6.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.5.0...v1.6.0) (2024-07-05)
 
 
