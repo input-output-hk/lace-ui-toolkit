@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.7.0...v1.8.0) (2024-07-11)
+
+
+### Features
+
+* add limited px prop to text link component [LW-10645] ([f9150cf](https://github.com/input-output-hk/lace-ui-toolkit/commit/f9150cfe359945f781c08692bfccbd5c192bd710))
+
 # [1.7.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.6.0...v1.7.0) (2024-07-10)
 
 
