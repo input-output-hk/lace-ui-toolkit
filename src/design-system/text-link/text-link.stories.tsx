@@ -4,6 +4,7 @@ import type { Meta } from '@storybook/react';
 
 import { Variants, Section, page, UIStateTable } from '../decorators';
 import { Grid, Cell } from '../grid';
+import { Text } from '../text';
 
 import { TextLink } from './text-link.component';
 
@@ -15,7 +16,7 @@ export default {
   decorators: [page({ title: 'Text Link', subtitle })],
 } as Meta;
 
-const Buttons = (): JSX.Element => (
+const TextLinkExamples = (): JSX.Element => (
   <>
     <Variants.Row>
       <Variants.Cell>
@@ -69,9 +70,21 @@ export const Overview = (): JSX.Element => (
     <Cell>
       <Section title="Main components">
         <UIStateTable>
-          <Buttons />
+          <TextLinkExamples />
         </UIStateTable>
       </Section>
+    </Cell>
+    <Cell>
+      <Section title="Usage Examples">
+        <Text.Body.Normal>
+          This is an example of a text link in the
+          <TextLink px="$4" label="middle" />
+          of a text using horizontal padding (default).
+        </Text.Body.Normal>
+      </Section>
+    </Cell>
+    <Cell>
+      <TextLink px="$0" label="Example without horizontal padding" />
     </Cell>
   </Grid>
 );
