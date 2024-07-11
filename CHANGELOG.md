@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.9.0...v1.9.1) (2024-07-11)
+
+
+### Bug Fixes
+
+* **icons:** fix warning icon's name ([2bf8bae](https://github.com/input-output-hk/lace-ui-toolkit/commit/2bf8bae2a5f4e85d33139c108c30c50e91cdb5c2))
+
 # [1.9.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.8.0...v1.9.0) (2024-07-11)
 
 
