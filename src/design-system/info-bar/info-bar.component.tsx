@@ -9,7 +9,7 @@ import { Text } from '../text';
 import * as cx from './info-bar.css';
 
 export interface Props {
-  message: string;
+  message: ReactNode;
   icon: ReactNode;
   callToAction?: {
     label?: string;
