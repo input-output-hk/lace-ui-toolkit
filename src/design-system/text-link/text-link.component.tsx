@@ -2,6 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
+import { spacing } from '../../design-tokens';
 import { Flex } from '../flex';
 import { Text } from '../text';
 
@@ -12,10 +13,12 @@ import type { OmitClassName } from '../../types';
 export type Props = OmitClassName<'a'> & {
   disabled?: boolean;
   label?: string;
+  px?: keyof typeof spacing;
 };
 
 export const TextLink = ({
   disabled = false,
+  px = '$8',
   label,
   ...props
 }: Readonly<Props>): JSX.Element => {
@@ -26,6 +29,7 @@ export const TextLink = ({
       className={classNames(cx.button, cx.container)}
       alignItems="center"
       justifyContent="center"
+      px={px}
     >
       <Flex alignItems="center" justifyContent="center">
         <Text.Button
