@@ -45,6 +45,11 @@ export const typography = recipe({
       success: sx({ color: '$data_green' }),
       error: sx({ color: '$data_pink' }),
       warning: sx({ color: '$data_orange' }),
+      laceGradient: sx({
+        backgroundImage: '$text_gradient',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+      }),
     },
   },
 });

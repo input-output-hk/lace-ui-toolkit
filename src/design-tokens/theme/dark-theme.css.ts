@@ -244,6 +244,7 @@ const colors: Colors = {
   $text_secondary: darkColorScheme.$primary_light_grey,
   $text_on_gradient: darkColorScheme.$primary_white,
   $text_accent: darkColorScheme.$primary_accent_purple,
+  $text_gradient: laceGradient,
 
   $metadata_secondary_label_color: darkColorScheme.$primary_light_grey,
 
