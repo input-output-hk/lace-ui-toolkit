@@ -44,6 +44,7 @@ export { default as LoadingComponent } from './LoadingComponent';
 export { default as MnemonicComponent } from './MnemonicComponent';
 export { default as NewspaperGradientComponent } from './NewspaperGradientComponent';
 export { default as PaperwalletComponent } from './PaperwalletComponent';
+export { default as Paste } from './Paste';
 export { default as PencilOutlineComponent } from './PencilOutlineComponent';
 export { default as PlainCircleComponent } from './PlainCircleComponent';
 export { default as PlusCircleGradientComponent } from './PlusCircleGradientComponent';
