@@ -61,7 +61,7 @@ export const RadioButtonGroup = <Value extends string>({
   };
 
   return (
-    <Box className={cn(className, cx.root)}>
+    <Box className={cn(cx.root, className)}>
       <RadixRadioGroup.Root
         {...props}
         value={localSelection}
