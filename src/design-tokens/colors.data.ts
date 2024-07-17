@@ -172,6 +172,7 @@ export const colors = {
   $text_secondary: '',
   $text_on_gradient: '',
   $text_accent: '',
+  $text_dark_grey: '',
 
   $metadata_secondary_label_color: '',
 
