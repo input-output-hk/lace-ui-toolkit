@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.9.1...v1.10.0) (2024-07-17)
+
+
+### Features
+
+* add Paste icon + update Copy icon ([bdc11b8](https://github.com/input-output-hk/lace-ui-toolkit/commit/bdc11b8a0298aa8f9cb5206b125fd0b4b3129ed3))
+* add Paste icon + update Copy icon [LW-10642] ([a20c2a6](https://github.com/input-output-hk/lace-ui-toolkit/commit/a20c2a6e95dff004688cb58917788870a88afd31))
+
 ## [1.9.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.9.0...v1.9.1) (2024-07-11)
 
 
