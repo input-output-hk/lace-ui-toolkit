@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.10.0...v1.10.1) (2024-07-18)
+
+
+### Bug Fixes
+
+* apply radio button group override classname after root styles ([8ff4f5e](https://github.com/input-output-hk/lace-ui-toolkit/commit/8ff4f5ec576aab51da25932aade4b377bf0d1da2))
+
 # [1.10.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.9.1...v1.10.0) (2024-07-17)
 
 
