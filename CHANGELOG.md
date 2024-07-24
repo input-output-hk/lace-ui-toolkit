@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.10.1...v1.11.0) (2024-07-24)
+
+
+### Features
+
+* add wallet onboarding icons and additional colors ([b899917](https://github.com/input-output-hk/lace-ui-toolkit/commit/b8999175deb1a49a0a5d90b7f0faf475e0ae42a6))
+
 ## [1.10.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.10.0...v1.10.1) (2024-07-18)
 
 
