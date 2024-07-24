@@ -105,6 +105,8 @@ const colorProperties = defineProperties({
     borderImageSource: vars.colors,
     backgroundImage: vars.colors,
     backgroundColor: vars.colors,
+    WebkitBackgroundClip: ['text'],
+    WebkitTextFillColor: ['transparent'],
   },
 });
 

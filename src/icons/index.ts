@@ -41,6 +41,7 @@ export { default as LightBulbGradientComponent } from './LightBulbGradientCompon
 export { default as LoaderDarkGradientComponent } from './LoaderDarkGradientComponent';
 export { default as LoaderLightGradientComponent } from './LoaderLightGradientComponent';
 export { default as LoadingComponent } from './LoadingComponent';
+export { default as LockIconGradientComponent } from './LockIconGradientComponent';
 export { default as MnemonicComponent } from './MnemonicComponent';
 export { default as NewspaperGradientComponent } from './NewspaperGradientComponent';
 export { default as PaperwalletComponent } from './PaperwalletComponent';
@@ -49,6 +50,7 @@ export { default as PencilOutlineComponent } from './PencilOutlineComponent';
 export { default as PlainCircleComponent } from './PlainCircleComponent';
 export { default as PlusCircleGradientComponent } from './PlusCircleGradientComponent';
 export { default as PlusCircleComponent } from './PlusCircleComponent';
+export { default as PlusIconGradientComponent } from './PlusIconGradientComponent';
 export { default as PlusSmallComponent } from './PlusSmallComponent';
 export { default as PrinterComponent } from './PrinterComponent';
 export { default as QrcodeComponent } from './QrcodeComponent';
