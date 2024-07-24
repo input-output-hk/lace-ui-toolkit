@@ -10,7 +10,9 @@ export const inputButton = style([
     background: vars.colors.$input_button_bgColor,
     border: 'none',
     cursor: 'pointer',
-    flex: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
 
     ':disabled': {
       cursor: 'default',
