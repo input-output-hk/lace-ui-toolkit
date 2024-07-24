@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.0...v1.11.1) (2024-07-24)
+
+
+### Bug Fixes
+
+* center eye icon in password input component [LW-10644] ([0614871](https://github.com/input-output-hk/lace-ui-toolkit/commit/06148717bdba9df0635a7df43786051573c61de5))
+
 # [1.11.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.10.1...v1.11.0) (2024-07-24)
 
 
