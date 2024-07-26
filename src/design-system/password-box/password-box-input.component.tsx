@@ -21,6 +21,7 @@ export interface PasswordInputProps extends Form.FormControlProps {
   defaultIsPasswordVisible?: boolean;
   containerClassName?: string;
   containerStyle?: React.CSSProperties;
+  testId?: string;
 }
 
 export const PasswordInput = ({
@@ -35,6 +36,7 @@ export const PasswordInput = ({
   onChange,
   defaultIsPasswordVisible = false,
   containerStyle,
+  testId,
 }: Readonly<PasswordInputProps>): JSX.Element => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(
     defaultIsPasswordVisible,
@@ -62,6 +64,7 @@ export const PasswordInput = ({
               value={value}
               onChange={onChange}
               id={id}
+              data-testid={testId}
             />
           </Form.Control>
           <Form.Label
@@ -70,6 +73,7 @@ export const PasswordInput = ({
             {label}
           </Form.Label>
           <PasswordInputButton
+            testId={testId && `${testId}-toggle`}
             onClick={(event): void => {
               event.preventDefault();
               setIsPasswordVisible(!isPasswordVisible);

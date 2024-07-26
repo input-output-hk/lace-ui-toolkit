@@ -10,12 +10,14 @@ interface PasswordBoxButtonProps {
   onClick: (event: Readonly<React.MouseEvent<HTMLButtonElement>>) => void;
   disabled: boolean;
   isPasswordVisible: boolean;
+  testId?: string;
 }
 
 export const PasswordInputButton = ({
   onClick,
   disabled,
   isPasswordVisible,
+  testId,
 }: Readonly<PasswordBoxButtonProps>): JSX.Element => {
   return (
     <button
@@ -23,6 +25,7 @@ export const PasswordInputButton = ({
       className={cx.inputButton}
       onClick={onClick}
       disabled={disabled}
+      data-testid={testId}
     >
       {isPasswordVisible ? (
         <CloseEye
