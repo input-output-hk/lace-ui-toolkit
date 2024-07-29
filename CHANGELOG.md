@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.1...v1.11.2) (2024-07-29)
+
+
+### Bug Fixes
+
+* add missing testId for dialog-description ([68b03f5](https://github.com/input-output-hk/lace-ui-toolkit/commit/68b03f555856455d34f290c42baeee1045c460a7))
+
 ## [1.11.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.0...v1.11.1) (2024-07-24)
 
 
