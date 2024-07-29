@@ -14,7 +14,7 @@ export interface DialogDescriptionProps {
 export const Description = ({
   children,
 }: Readonly<DialogDescriptionProps>): JSX.Element => (
-  <AlertDialog.Description asChild>
+  <AlertDialog.Description asChild data-testid="dialog-description">
     {typeof children === 'string' ? (
       <Text.Body.Normal className={cx.dialogDescription} weight="$medium">
         {children}
