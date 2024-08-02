@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.2...v1.11.3) (2024-08-02)
+
+
+### Bug Fixes
+
+* add baseline to alignItems property options ([a509cdc](https://github.com/input-output-hk/lace-ui-toolkit/commit/a509cdc9e6d79e4ba97811fb7d410aa7c1bef9e8))
+
 ## [1.11.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.1...v1.11.2) (2024-07-29)
 
 
