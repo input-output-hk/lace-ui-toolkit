@@ -24,7 +24,13 @@ export { ToastBar } from './toast-bar';
 export * from './tooltip';
 export { Message } from './message';
 export { Metadata, MetadataLink } from './metadata';
-export { PasswordBox } from './password-box';
+export { PasswordBox, UncontrolledPasswordBox } from './password-box';
+export type {
+  UncontrolledPasswordBoxProps,
+  PasswordBoxProps,
+  OnPasswordChange,
+  Password,
+} from './password-box';
 export { TextLink } from './text-link';
 export * as ProfileDropdown from './profile-dropdown';
 export type { AccountData } from './profile-dropdown';
