@@ -17,7 +17,7 @@ export type Props = Omit<ComponentPropsWithoutRef<'button'>, 'type'> & {
   disabled?: boolean;
   active?: boolean;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   profile?: {
     imageSrc: string;
     fallbackText: string;

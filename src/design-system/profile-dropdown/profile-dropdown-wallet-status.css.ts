@@ -9,6 +9,8 @@ export const button = style([
   }),
 ]);
 
+export const flat = style([]);
+
 export const icon = recipe({
   base: sx({
     w: '$10',

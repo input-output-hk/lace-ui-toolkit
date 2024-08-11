@@ -23,14 +23,16 @@ const TriggerSample = ({
   disabled,
   id,
   active,
+  hasSubtitle = true,
 }: Readonly<{
   disabled?: boolean;
   id?: string;
   active?: boolean;
+  hasSubtitle?: boolean;
 }>): JSX.Element => (
   <Trigger
     title="Alice's wallet"
-    subtitle="Account #0"
+    subtitle={hasSubtitle ? 'Account #0' : undefined}
     disabled={disabled}
     id={id}
     active={active}
@@ -62,8 +64,9 @@ export const Overview = (): JSX.Element => (
   <Grid columns="$1">
     <Cell>
       <Section title="Examples">
-        <Flex flexDirection="column" alignItems="center" w="$fill">
+        <Flex gap="$16" alignItems="center" w="$fill" justifyContent="center">
           <TriggerSample />
+          <TriggerSample hasSubtitle={false} />
         </Flex>
       </Section>
 

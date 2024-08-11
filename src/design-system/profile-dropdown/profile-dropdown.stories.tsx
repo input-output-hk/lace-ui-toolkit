@@ -69,6 +69,28 @@ const WalletStatuses = (): JSX.Element => (
   </Variants.Row>
 );
 
+const WalletStatusesFlat = (): JSX.Element => (
+  <Variants.Row>
+    <Variants.Cell>
+      <WalletStatus type="flat" status="synced" label="Wallet synced (flat)" />
+    </Variants.Cell>
+    <Variants.Cell>
+      <WalletStatus
+        type="flat"
+        status="syncing"
+        label="Wallet syncing (flat)"
+      />
+    </Variants.Cell>
+    <Variants.Cell>
+      <WalletStatus
+        type="flat"
+        status="error"
+        label="Not synced to the blockchain (flat)"
+      />
+    </Variants.Cell>
+  </Variants.Row>
+);
+
 export const Overview = (): JSX.Element => (
   <Grid columns="$1">
     <Cell>
@@ -81,11 +103,13 @@ export const Overview = (): JSX.Element => (
 
         <Variants.Table headers={['Synced', 'Syncing', 'Not synced']}>
           <WalletStatuses />
+          <WalletStatusesFlat />
         </Variants.Table>
 
         <LocalThemeProvider colorScheme={ThemeColorScheme.Dark}>
           <Variants.Table>
             <WalletStatuses />
+            <WalletStatusesFlat />
           </Variants.Table>
         </LocalThemeProvider>
       </Section>

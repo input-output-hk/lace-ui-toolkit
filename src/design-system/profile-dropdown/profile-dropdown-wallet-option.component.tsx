@@ -16,7 +16,7 @@ import type { WalletType } from './profile-dropdown.data';
 export type Props = Omit<ComponentPropsWithoutRef<'button'>, 'type'> & {
   disabled?: boolean;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   profile?: {
     imageSrc: string;
     fallbackText: string;
@@ -57,7 +57,7 @@ export const WalletOption = ({
           type={type}
           testId="wallet-option"
         />
-        {type !== 'shared' && (
+        {type !== 'shared' && onOpenAccountsMenu && (
           <Box ml="$10">
             <Flex
               className={cx.icon}

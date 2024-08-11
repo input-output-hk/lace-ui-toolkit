@@ -6,3 +6,4 @@ export type { AccountData } from './accounts/profile-dropdown-accounts-list.comp
 export type { WalletType } from './profile-dropdown.data';
 export { WalletCard } from './profile-dropdown-wallet-card.component';
 export { WalletIcon } from './profile-dropdown-wallet-icon.component';
+export { Separator } from './profile-dropdown-separator.component';

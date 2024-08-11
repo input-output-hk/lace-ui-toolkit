@@ -8,11 +8,13 @@ import * as cx from './profile-dropdown-wallet-status.css';
 export interface Props {
   status: 'error' | 'synced' | 'syncing';
   label: string;
+  type?: 'button' | 'flat';
 }
 
 export const WalletStatus = ({
   label,
   status,
+  type = 'button',
 }: Readonly<Props>): JSX.Element => {
   return (
     <Flex
@@ -20,7 +22,7 @@ export const WalletStatus = ({
       justifyContent="space-between"
       py="$8"
       px="$12"
-      className={cx.button}
+      className={type === 'button' ? cx.button : cx.flat}
     >
       <Flex
         className={cx.icon({
