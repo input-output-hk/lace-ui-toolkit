@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.3...v1.12.0) (2024-08-11)
+
+
+### Features
+
+* add UncontrolledPasswordBox ([640f70c](https://github.com/input-output-hk/lace-ui-toolkit/commit/640f70c57541182242b0e9cf32c2e082e91c260d))
+
 ## [1.11.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.2...v1.11.3) (2024-08-02)
 
 
