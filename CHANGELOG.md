@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.13.0...v1.14.0) (2024-08-12)
+
+
+### Features
+
+* add data-testid for uncontrolled password box error ([470bc66](https://github.com/input-output-hk/lace-ui-toolkit/commit/470bc6644748a05f9722f7a12e7da4d79a3f9d48))
+
 # [1.13.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.12.0...v1.13.0) (2024-08-12)
 
 
