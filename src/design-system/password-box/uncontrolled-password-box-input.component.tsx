@@ -82,7 +82,12 @@ export const UncontrolledPasswordInput = ({
             {label}
           </Form.Label>
           <PasswordInputButton
-            testId={testId && `${testId}-toggle`}
+            testId={
+              testId &&
+              (isPasswordVisible
+                ? `${testId}-hide-icon`
+                : `${testId}-show-icon`)
+            }
             onClick={(event): void => {
               event.preventDefault();
               setIsPasswordVisible(!isPasswordVisible);
