@@ -53,7 +53,7 @@ export const UncontrolledPasswordInput = ({
     onChange({ input: event.target, value: event.target.value });
 
   return (
-    <div className={cx.root}>
+    <div className={cx.root} data-testid={testId && `${testId}-container`}>
       <Form.Field
         name="field"
         className={cn(cx.container, {
