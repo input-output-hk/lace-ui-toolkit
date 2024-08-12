@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.14.0...v1.15.0) (2024-08-12)
+
+
+### Features
+
+* state-based test id for password toggle ([9537095](https://github.com/input-output-hk/lace-ui-toolkit/commit/95370955e56dde90b179f2c66ae3ec51ebf308f5))
+
 # [1.14.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.13.0...v1.14.0) (2024-08-12)
 
 
