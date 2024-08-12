@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.12.0...v1.13.0) (2024-08-12)
+
+
+### Features
+
+* add data-testid for uncontrolled password box container ([e1c0ce0](https://github.com/input-output-hk/lace-ui-toolkit/commit/e1c0ce056bddb5aee313d2e83947636e02cde58c))
+
 # [1.12.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.11.3...v1.12.0) (2024-08-11)
 
 
