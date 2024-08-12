@@ -93,7 +93,11 @@ export const UncontrolledPasswordInput = ({
         </Flex>
       </Form.Field>
       {errorMessage && (
-        <Text.Label color="error" className={cx.errorMessage}>
+        <Text.Label
+          color="error"
+          className={cx.errorMessage}
+          data-testid={testId && `${testId}-error`}
+        >
           {errorMessage}
         </Text.Label>
       )}
