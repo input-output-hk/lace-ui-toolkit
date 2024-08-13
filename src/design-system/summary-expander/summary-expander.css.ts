@@ -20,3 +20,7 @@ export const header = style([
 export const expanded = style({
   borderBottom: 'none',
 });
+
+export const noBorder = style({
+  border: 'none',
+});

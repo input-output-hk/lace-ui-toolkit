@@ -19,6 +19,7 @@ export type Props = OmitClassName<'button'> &
     title: string;
     disabled?: boolean;
     testId?: string;
+    plain?: boolean;
   }>;
 
 export const SummaryExpander = ({
@@ -28,6 +29,7 @@ export const SummaryExpander = ({
   disabled,
   testId,
   children,
+  plain = false,
   ...props
 }: Readonly<Props>): JSX.Element => {
   return (
@@ -43,6 +45,7 @@ export const SummaryExpander = ({
         justifyContent="space-between"
         className={classNames(cx.header, {
           [cx.expanded]: open,
+          [cx.noBorder]: plain,
         })}
       >
         <Text.Body.Normal weight="$semibold" data-testid="expander-title">

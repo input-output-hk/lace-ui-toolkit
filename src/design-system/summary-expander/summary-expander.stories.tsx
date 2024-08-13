@@ -32,6 +32,9 @@ const MainComponents = (): JSX.Element => (
     <Variants.Cell>
       <SummaryExpander title="Title" open />
     </Variants.Cell>
+    <Variants.Cell>
+      <SummaryExpander title="Title" plain />
+    </Variants.Cell>
   </Variants.Row>
 );
 
@@ -93,7 +96,9 @@ export const Overview = (): JSX.Element => (
         <Divider my="$64" />
 
         <Section title="Main components">
-          <Variants.Table headers={['Collapsed (default)', 'Expanded']}>
+          <Variants.Table
+            headers={['Collapsed (default)', 'Expanded', 'Plain']}
+          >
             <MainComponents />
           </Variants.Table>
 
