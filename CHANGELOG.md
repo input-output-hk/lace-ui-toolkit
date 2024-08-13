@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.15.0...v1.15.1) (2024-08-13)
+
+
+### Bug Fixes
+
+* pass autoFocus prop to uncontrolled pw input element ([beea45a](https://github.com/input-output-hk/lace-ui-toolkit/commit/beea45a34d235af9099b7bc8dd8e599ad67e19c7))
+
 # [1.15.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.14.0...v1.15.0) (2024-08-12)
 
 
