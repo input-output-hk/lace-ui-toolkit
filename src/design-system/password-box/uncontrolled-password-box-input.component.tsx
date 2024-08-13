@@ -41,6 +41,7 @@ export const UncontrolledPasswordInput = ({
   errorMessage = '',
   containerClassName = '',
   onChange,
+  autoFocus,
   defaultIsPasswordVisible = false,
   containerStyle,
   testId,
@@ -68,6 +69,7 @@ export const UncontrolledPasswordInput = ({
               type={isPasswordVisible ? 'text' : 'password'}
               required={required}
               placeholder=""
+              autoFocus={autoFocus}
               className={cn(cx.input, { [cx.largeDots]: !isPasswordVisible })}
               disabled={disabled}
               name={name}
