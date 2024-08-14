@@ -17,7 +17,7 @@ export interface Props {
     text: string;
     type: 'button' | 'content';
   };
-  subtitle: string;
+  subtitle?: string;
   profile?: {
     imageSrc: string;
     fallbackText: string;
@@ -52,24 +52,37 @@ export const WalletCard = ({
           testId={makeTestId(testId, '-icon')}
         />
       )}
-      <Flex flexDirection="column" ml="$10" h="$32" alignItems="flex-start">
-        <Title color="secondary" data-testid={makeTestId(testId, '-title')}>
-          {title.text}
-        </Title>
-        <Box
-          className={cn(cx.subtitleBox, {
-            [cx.subtitleButtonOffset]: title.type === 'button',
-            [cx.subtitleContentOffset]: title.type === 'content',
-          })}
-        >
+
+      {subtitle ? (
+        <Flex flexDirection="column" ml="$10" h="$32" alignItems="flex-start">
+          <Title color="secondary" data-testid={makeTestId(testId, '-title')}>
+            {title.text}
+          </Title>
+          <Box
+            className={cn(cx.subtitleBox, {
+              [cx.subtitleButtonOffset]: title.type === 'button',
+              [cx.subtitleContentOffset]: title.type === 'content',
+            })}
+          >
+            <Text.Body.Small
+              weight="$semibold"
+              data-testid={makeTestId(testId, '-subtitle')}
+            >
+              {subtitle}
+            </Text.Body.Small>
+          </Box>
+        </Flex>
+      ) : (
+        <Flex ml="$10" h="$32" alignItems="center">
           <Text.Body.Small
             weight="$semibold"
-            data-testid={makeTestId(testId, '-subtitle')}
+            color="secondary"
+            data-testid={makeTestId(testId, '-title')}
           >
-            {subtitle}
+            {title.text}
           </Text.Body.Small>
-        </Box>
-      </Flex>
+        </Flex>
+      )}
     </Flex>
   );
 };
