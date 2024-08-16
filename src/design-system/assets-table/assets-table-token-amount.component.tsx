@@ -16,7 +16,9 @@ export const TokenAmount = ({
 }: Readonly<Props>): JSX.Element => {
   return (
     <Flex flexDirection="column" alignItems="flex-end" className={cx.container}>
-      <Text.Body.Large weight="$semibold">{amount}</Text.Body.Large>
+      <Text.Body.Large weight="$semibold" data-testid="token-amount">
+        {amount}
+      </Text.Body.Large>
       <Text.Body.Normal color="secondary" weight="$semibold">
         {fiatPrice}
       </Text.Body.Normal>
