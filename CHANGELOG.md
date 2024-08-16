@@ -1,3 +1,11 @@
+# [1.16.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.15.1...v1.16.0) (2024-08-16)
+
+
+### Features
+
+* add property testId to TokenProfile ([788ef80](https://github.com/input-output-hk/lace-ui-toolkit/commit/788ef80f1f85d218685eb943a6af8d3aebaaa34d))
+* add test ids for tokens table list lw-10959 ([a812114](https://github.com/input-output-hk/lace-ui-toolkit/commit/a8121145060a99111fb9dd732ad774ca64d4e2a1))
+
 ## [1.15.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.15.0...v1.15.1) (2024-08-13)
 
 
