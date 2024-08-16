@@ -21,7 +21,7 @@ export const Image = ({
   alt,
   delayMs = 600,
   selected,
-  testId = 'image',
+  testId = 'profile-picture',
 }: Readonly<Props>): JSX.Element => (
   <RadixUIAvatar.Root
     className={classNames(cx.root, cx.container, {
