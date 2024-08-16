@@ -23,13 +23,19 @@ export const TokenProfile = ({
       <Grid columns="$fitContent" gutters="$0">
         <Cell>
           <Box mr="$24">
-            <Image imageSrc={imageSrc} alt={name} />
+            <Image imageSrc={imageSrc} alt={name} testId="token-icon" />
           </Box>
         </Cell>
         <Cell>
-          <Text.Body.Large weight="$semibold">{name}</Text.Body.Large>
+          <Text.Body.Large weight="$semibold" data-testid="token-name">
+            {name}
+          </Text.Body.Large>
           <Box>
-            <Text.Body.Normal color="secondary" weight="$semibold">
+            <Text.Body.Normal
+              color="secondary"
+              weight="$semibold"
+              data-testid="token-ticker"
+            >
               {description}
             </Text.Body.Normal>
           </Box>

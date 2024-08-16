@@ -12,6 +12,7 @@ interface Props {
   alt?: string;
   delayMs?: number;
   selected?: boolean;
+  testId?: string;
 }
 
 export const Image = ({
@@ -20,13 +21,19 @@ export const Image = ({
   alt,
   delayMs = 600,
   selected,
+  testId = 'image',
 }: Readonly<Props>): JSX.Element => (
   <RadixUIAvatar.Root
     className={classNames(cx.root, cx.container, {
       [cx.selected]: selected,
     })}
   >
-    <RadixUIAvatar.Image className={cx.image} src={imageSrc} alt={alt} />
+    <RadixUIAvatar.Image
+      className={cx.image}
+      src={imageSrc}
+      alt={alt}
+      data-testid={testId}
+    />
     <RadixUIAvatar.Fallback delayMs={delayMs}>
       {fallback}
     </RadixUIAvatar.Fallback>
