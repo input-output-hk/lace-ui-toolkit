@@ -295,6 +295,9 @@ export const colors = {
   $address_tag_own_bgColor: '',
   $address_tag_foreign_color: '',
   $address_tag_foreign_bgColor: '',
+
+  $settings_item_separator_color: '',
+  $settings_item_hover_bgColor: '',
 };
 
 export type Colors = typeof colors;

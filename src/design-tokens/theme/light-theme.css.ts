@@ -422,6 +422,9 @@ const colors: Colors = {
     lightColorScheme.$primary_accent_purple,
     0.1,
   ),
+
+  $settings_item_separator_color: lightColorScheme.$primary_light_grey_plus,
+  $settings_item_hover_bgColor: lightColorScheme.$primary_light_grey,
 };
 
 export const elevation: Elevation = {

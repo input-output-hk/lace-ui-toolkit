@@ -394,6 +394,9 @@ const colors: Colors = {
     darkColorScheme.$primary_accent_purple,
     0.1,
   ),
+
+  $settings_item_separator_color: darkColorScheme.$primary_mid_grey,
+  $settings_item_hover_bgColor: darkColorScheme.$primary_mid_grey,
 };
 
 const elevation: Elevation = {
