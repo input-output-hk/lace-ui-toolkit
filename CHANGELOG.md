@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.16.0...v1.17.0) (2024-08-21)
+
+
+### Features
+
+* add plain prop to summary expander ([2558bbb](https://github.com/input-output-hk/lace-ui-toolkit/commit/2558bbbf152f9ddb534d5467693afff21ae11e6c))
+
 # [1.16.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.15.1...v1.16.0) (2024-08-16)
 
 
