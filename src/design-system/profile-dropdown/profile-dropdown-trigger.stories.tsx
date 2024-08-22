@@ -8,6 +8,8 @@ import { Flex } from '../flex';
 import { Grid, Cell } from '../grid';
 
 import { Trigger } from './profile-dropdown-trigger.component';
+
+import type { ProfileType } from './profile-dropdown-wallet-card.component';
 const subtitle = `Reusable button component for use in a variety of controls containing only an icon for its content.`;
 
 export default {
@@ -24,11 +26,13 @@ const TriggerSample = ({
   id,
   active,
   hasSubtitle = true,
+  profile,
 }: Readonly<{
   disabled?: boolean;
   id?: string;
   active?: boolean;
   hasSubtitle?: boolean;
+  profile?: ProfileType;
 }>): JSX.Element => (
   <Trigger
     title="Alice's wallet"
@@ -37,6 +41,7 @@ const TriggerSample = ({
     id={id}
     active={active}
     type="hot"
+    profile={profile}
   />
 );
 
@@ -67,6 +72,21 @@ export const Overview = (): JSX.Element => (
         <Flex gap="$16" alignItems="center" w="$fill" justifyContent="center">
           <TriggerSample />
           <TriggerSample hasSubtitle={false} />
+          <TriggerSample
+            hasSubtitle={false}
+            profile={{
+              customProfileComponent: (
+                <Flex
+                  alignItems="center"
+                  w={'$32'}
+                  h={'$32'}
+                  justifyContent="center"
+                >
+                  TT
+                </Flex>
+              ),
+            }}
+          />
         </Flex>
       </Section>
 
