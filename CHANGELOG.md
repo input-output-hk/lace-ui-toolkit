@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.17.0...v1.18.0) (2024-08-27)
+
+
+### Features
+
+* allow custom components as profile dropdown profile image ([e2e3e1e](https://github.com/input-output-hk/lace-ui-toolkit/commit/e2e3e1e8c07fd8535dc5bf4fe3c0bd080ff672be))
+
 # [1.17.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.16.0...v1.17.0) (2024-08-21)
 
 
