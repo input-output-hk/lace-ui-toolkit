@@ -12,24 +12,48 @@ import { WalletIcon } from './profile-dropdown-wallet-icon.component';
 
 import type { WalletType } from './profile-dropdown.data';
 
+type UserProfileComponentType = {
+  imageSrc: string;
+  fallbackText: string;
+  alt?: string;
+  delayMs?: number;
+};
+
+type CustomProfileComponentType = {
+  customProfileComponent: React.ReactNode;
+};
+
+export type ProfileType = UserProfileComponentType | CustomProfileComponentType;
+
 export interface Props {
   title: {
     text: string;
     type: 'button' | 'content';
   };
   subtitle?: string;
-  profile?: {
-    imageSrc: string;
-    fallbackText: string;
-    alt?: string;
-    delayMs?: number;
-  };
+  profile?: ProfileType;
   type: WalletType;
   testId?: string;
 }
 
 const makeTestId = (namespace = '', path = ''): string => {
   return namespace === '' ? namespace : `${namespace}${path}`;
+};
+
+const getProfileImage = (
+  profile: ProfileType,
+  testId: string,
+): React.ReactNode => {
+  if ('customProfileComponent' in profile) {
+    return profile.customProfileComponent;
+  }
+  return (
+    <UserProfile
+      {...profile}
+      radius="rounded"
+      testId={makeTestId(testId, '-icon')}
+    />
+  );
 };
 
 export const WalletCard = ({
@@ -43,16 +67,11 @@ export const WalletCard = ({
 
   return (
     <Flex>
-      {profile === undefined ? (
-        <WalletIcon type={type} testId={makeTestId(testId, '-icon')} />
+      {profile ? (
+        getProfileImage(profile, testId)
       ) : (
-        <UserProfile
-          {...profile}
-          radius="rounded"
-          testId={makeTestId(testId, '-icon')}
-        />
+        <WalletIcon type={type} testId={makeTestId(testId, '-icon')} />
       )}
-
       {subtitle ? (
         <Flex flexDirection="column" ml="$10" h="$32" alignItems="flex-start">
           <Title color="secondary" data-testid={makeTestId(testId, '-title')}>

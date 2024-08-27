@@ -11,6 +11,7 @@ import { Flex } from '../flex';
 import * as cx from './profile-dropdown-trigger.css';
 import { WalletCard } from './profile-dropdown-wallet-card.component';
 
+import type { ProfileType } from './profile-dropdown-wallet-card.component';
 import type { WalletType } from './profile-dropdown.data';
 
 export type Props = Omit<ComponentPropsWithoutRef<'button'>, 'type'> & {
@@ -18,12 +19,7 @@ export type Props = Omit<ComponentPropsWithoutRef<'button'>, 'type'> & {
   active?: boolean;
   title: string;
   subtitle?: string;
-  profile?: {
-    imageSrc: string;
-    fallbackText: string;
-    alt?: string;
-    delayMs?: number;
-  };
+  profile?: ProfileType;
   type: WalletType;
 };
 
