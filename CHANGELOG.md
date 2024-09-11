@@ -1,3 +1,11 @@
+## [1.18.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.1...v1.18.2) (2024-09-11)
+
+
+### Bug Fixes
+
+* fix profile dropdown wallet icon test id ([54aaf0c](https://github.com/input-output-hk/lace-ui-toolkit/commit/54aaf0cb10b22f3700fc98e944319c04cb54b1fb))
+* fix table body test id ([3d7d47e](https://github.com/input-output-hk/lace-ui-toolkit/commit/3d7d47ec7a1dc2e8e25a126e7d215dd8bbc28623))
+
 ## [1.18.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.0...v1.18.1) (2024-09-11)
 
 
