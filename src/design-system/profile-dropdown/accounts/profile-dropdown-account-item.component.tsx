@@ -63,7 +63,7 @@ export const AccountItem = ({
     justifyContent="space-between"
     gap="$8"
     className={cx.root}
-    data-testid="wallet-account-item"
+    testId="wallet-account-item"
   >
     <div
       style={{ display: 'contents' }}
