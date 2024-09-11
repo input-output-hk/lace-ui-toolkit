@@ -1,3 +1,15 @@
+# [1.19.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.2...v1.19.0) (2024-09-11)
+
+
+### Bug Fixes
+
+* replace data-testid attributes with props ([bea9c01](https://github.com/input-output-hk/lace-ui-toolkit/commit/bea9c019048a80b94e90db998be7ad3bb03985b9))
+
+
+### Features
+
+* add testId prop to TextLink ([5af6152](https://github.com/input-output-hk/lace-ui-toolkit/commit/5af61524073bb54a740c630592ee2ad1d1da838b))
+
 ## [1.18.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.1...v1.18.2) (2024-09-11)
 
 
