@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.0...v1.18.1) (2024-09-11)
+
+
+### Bug Fixes
+
+* box component now has a new property testId what will be rendered in the data-testid prop ([e0a9e71](https://github.com/input-output-hk/lace-ui-toolkit/commit/e0a9e7112d2bfc709bf3696fb039f73f695cc1ad))
+
 # [1.18.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.17.0...v1.18.0) (2024-08-27)
 
 
