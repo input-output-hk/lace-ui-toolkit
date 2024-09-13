@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.19.0...v1.20.0) (2024-09-13)
+
+
+### Features
+
+* add data-testid to sideDrawer [LW-11491] ([a38aaa8](https://github.com/input-output-hk/lace-ui-toolkit/commit/a38aaa82fdc6488bbc68d7f29af3007b166be293))
+
 # [1.19.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.2...v1.19.0) (2024-09-11)
 
 
