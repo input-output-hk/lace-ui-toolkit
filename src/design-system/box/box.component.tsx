@@ -51,7 +51,7 @@ export const Box = forwardRef<HTMLDivElement | null, Readonly<Props>>(
       px,
       py,
       w,
-      testId = 'box',
+      testId,
       ...props
     },
     ref,
