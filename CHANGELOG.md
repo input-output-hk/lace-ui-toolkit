@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.20.0...v1.21.0) (2024-09-24)
+
+
+### Features
+
+* add data-testid to toggle-switch component [LW-11556] ([6726320](https://github.com/input-output-hk/lace-ui-toolkit/commit/672632027a461a9f8b3f22b0ba0356fb89beb755))
+
 # [1.20.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.19.0...v1.20.0) (2024-09-13)
 
 
