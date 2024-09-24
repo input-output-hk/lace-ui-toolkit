@@ -21,6 +21,7 @@ type Props = Omit<
   defaultChecked?: boolean;
   required?: boolean;
   id?: string;
+  testId?: string;
 };
 
 export const ToggleSwitch = ({
@@ -28,6 +29,7 @@ export const ToggleSwitch = ({
   id,
   icon,
   disabled,
+  testId,
   ...props
 }: Readonly<Props>): JSX.Element => {
   return (
@@ -35,15 +37,24 @@ export const ToggleSwitch = ({
       alignItems="center"
       className={disabled === true ? cx.disabled : undefined}
     >
-      <label className={cx.label} htmlFor={id}>
+      <label
+        className={cx.label}
+        htmlFor={id}
+        data-testid={testId + 'toggle-label'}
+      >
         <Text.Body.Normal color="secondary">{label}</Text.Body.Normal>
       </label>
-      {icon !== undefined && <Box className={cx.iconContainer}>{icon}</Box>}
+      {icon !== undefined && (
+        <Box className={cx.iconContainer} testId={testId + 'toggle-icon'}>
+          {icon}
+        </Box>
+      )}
       <Switch.Root
         {...props}
         disabled={disabled}
         className={cx.toogleSwitch}
         id={id}
+        data-testid={testId + 'toggle-switch'}
       >
         <Switch.Thumb className={cx.thumb} />
       </Switch.Root>
