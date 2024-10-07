@@ -117,3 +117,7 @@ export const content = styleVariants({
     },
   ],
 });
+
+export const triggerFullWidth = sx({
+  width: '$fill',
+});

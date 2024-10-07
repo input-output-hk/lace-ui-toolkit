@@ -3,6 +3,7 @@ import React from 'react';
 
 import ChevronDownIcon from '@icons/ChevronDownComponent';
 import * as Select from '@radix-ui/react-select';
+import cn from 'classnames';
 
 import { Item, ItemRoot } from './select-item';
 import * as cx from './select-root.component.css';
@@ -24,6 +25,7 @@ export type SelectRootProps = Pick<
   value: string | undefined;
   variant?: SelectVariant;
   portalContainer?: HTMLElement;
+  triggerFullWidth?: boolean;
   triggerTestId?: string;
   zIndex?: number;
 };
@@ -54,6 +56,7 @@ const isValidSelectRootChild = (
  * @param showArrow Render arrow icon next to the input value, when the Select is closed.
  * @param value See: https://www.radix-ui.com/primitives/docs/components/select#root
  * @param variant The style variant.
+ * @param triggerFullWidth Make the Select trigger element span the full width of its parent element
  * @param triggerTestId The `data-testid` attribute, passed to the input trigger / root element.
  * @param zIndex The `z-index` applied to the `<Select.Content />`.
  */
@@ -71,6 +74,7 @@ export const Root = ({
   showArrow = false,
   value,
   variant = 'plain',
+  triggerFullWidth,
   triggerTestId,
   zIndex,
 }: Readonly<SelectRootProps>): JSX.Element => {
@@ -87,7 +91,10 @@ export const Root = ({
       onValueChange={onChange}
     >
       <Select.Trigger
-        className={cx.trigger[variant]}
+        className={cn(
+          cx.trigger[variant],
+          triggerFullWidth ? cx.triggerFullWidth : null,
+        )}
         id={id}
         data-testid={triggerTestId}
       >

@@ -77,6 +77,43 @@ const SelectAlignment = (): JSX.Element => (
   </Section>
 );
 
+const SelectTriggerWidth = (): JSX.Element => (
+  <Section
+    title="Trigger Width"
+    subtitle="The trigger element acts like an inline element (default) or can be set to span the full width of its parent element."
+  >
+    <Variants.Table
+      headers={[
+        'Trigger as inline element (default)',
+        'Trigger with full width',
+      ]}
+    >
+      <Variants.Row>
+        {[undefined, true].map(triggerFullWidth => (
+          <Variants.Cell key={`triggerFullWidth-${triggerFullWidth}`}>
+            <Select.Root
+              triggerFullWidth={triggerFullWidth}
+              variant="outline"
+              value={options[2].value}
+              onChange={(): void => void 0}
+              placeholder={placeholder}
+              showArrow
+            >
+              {options.map(option => (
+                <Select.Item
+                  key={option.value}
+                  value={option.value}
+                  title={option.label}
+                />
+              ))}
+            </Select.Root>
+          </Variants.Cell>
+        ))}
+      </Variants.Row>
+    </Variants.Table>
+  </Section>
+);
+
 const SelectVariants = (): JSX.Element => {
   const { darkThemePortalContainer, lightThemePortalContainer } =
     usePortalContainer();
@@ -279,6 +316,8 @@ export const Overview = (): JSX.Element => (
   <Grid>
     <Cell>
       <SelectAlignment />
+      <Divider my="$64" />
+      <SelectTriggerWidth />
       <Divider my="$64" />
       <SelectVariants />
       <Divider my="$64" />
