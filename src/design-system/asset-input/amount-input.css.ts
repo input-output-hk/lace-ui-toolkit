@@ -1,3 +1,5 @@
+import { styleVariants } from '@vanilla-extract/css';
+
 import { style, vars } from '../../design-tokens';
 import { bold } from '../text/text.css';
 
@@ -20,12 +22,11 @@ export const amountInputSizer = style([
   },
 ]);
 
-export const amountInput = style([
+const amountInputBase = style([
   inputTypography,
   bold,
   {
     gridArea: '1 / 2',
-    textAlign: 'right',
     border: 'none',
     width: 'auto',
     background: 'none',
@@ -39,3 +40,18 @@ export const amountInput = style([
     },
   },
 ]);
+
+export const amountInput = styleVariants({
+  left: [
+    amountInputBase,
+    {
+      textAlign: 'left',
+    },
+  ],
+  right: [
+    amountInputBase,
+    {
+      textAlign: 'right',
+    },
+  ],
+});

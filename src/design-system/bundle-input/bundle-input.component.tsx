@@ -16,10 +16,13 @@ import type { Data } from '../asset-input';
 export type Props = PropsWithChildren<{
   state?: Data.AssetState[];
   onAddAsset?: () => void;
-  onRemoveAsset?: (asset: Readonly<Data.Asset>) => void;
-  onAmountChange?: (asset: Readonly<Data.Asset>, amount: string) => void;
-  onTickerClick?: (asset: Readonly<Data.Asset>) => void;
-  onMaxClick?: (asset: Readonly<Data.Asset>) => void;
+  onRemoveAsset?: (asset: Readonly<Data.AssetWithFiat>) => void;
+  onAmountChange?: (
+    asset: Readonly<Data.AssetWithFiat>,
+    amount: string,
+  ) => void;
+  onTickerClick?: (asset: Readonly<Data.AssetWithFiat>) => void;
+  onMaxClick?: (asset: Readonly<Data.AssetWithFiat>) => void;
 }>;
 
 export const BundleInput = ({
