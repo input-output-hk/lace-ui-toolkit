@@ -3,15 +3,18 @@ export interface Asset {
   ticker: string;
   balance: string;
   amount: string;
+}
+
+export interface AssetWithFiat extends Asset {
   fiat: {
     value: string;
     ticker: string;
   };
 }
 
-export type AssetState =
+export type AssetState<A extends Asset = AssetWithFiat> =
   | {
       type: 'valid';
-      asset: Asset;
+      asset: A;
     }
-  | { type: 'invalid'; asset: Asset; error: string };
+  | { type: 'invalid'; asset: A; error: string };

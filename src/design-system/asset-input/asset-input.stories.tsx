@@ -13,14 +13,14 @@ import {
   ColorSchemaTable,
 } from '../decorators';
 import { Divider } from '../divider';
-import { Grid } from '../grid';
-import { Cell } from '../grid/cell.component';
+import { Cell, Grid } from '../grid';
 
 import { AssetInput } from './asset-input.component';
 import { invalidState, validState } from './asset-input.fixtures';
 import { MaxButton } from './max-button.component';
+import { SimpleAssetInput } from './simple-asset-input.component';
 
-import type { Asset, AssetState } from './asset-input.data';
+import type { AssetWithFiat, AssetState } from './asset-input.data';
 
 const subtitle = ``;
 
@@ -61,7 +61,12 @@ export const Overview = (): JSX.Element => (
     <Cell>
       <Section title="Overview">
         <Variants.Table
-          headers={['Browser view — simple', 'Browser view — simple + error']}
+          headers={[
+            'Complex — valid',
+            'Complex — invalid',
+            'Simple - valid',
+            'Simple - invalid',
+          ]}
         >
           <Variants.Row>
             <Variants.Cell>
@@ -69,6 +74,18 @@ export const Overview = (): JSX.Element => (
             </Variants.Cell>
             <Variants.Cell>
               <AssetInput state={invalidState('1')} />
+            </Variants.Cell>
+            <Variants.Cell>
+              <SimpleAssetInput
+                state={validState('1')}
+                balanceLabel="Balance Available"
+              />
+            </Variants.Cell>
+            <Variants.Cell>
+              <SimpleAssetInput
+                state={invalidState('1')}
+                balanceLabel="Balance Available"
+              />
             </Variants.Cell>
           </Variants.Row>
         </Variants.Table>
@@ -105,14 +122,17 @@ type Interactions = ComponentStory<typeof AssetInput>;
 export const Interactions: Interactions = (): JSX.Element => {
   const [state, setState] = useState<AssetState>(validState('1'));
 
-  const onTickerClick = (asset: Readonly<Asset>): void => {
+  const onTickerClick = (asset: Readonly<AssetWithFiat>): void => {
     setState(currentState => ({
       ...currentState,
       asset: { ...currentState.asset, ticker: `Token ${asset.id}` },
     }));
   };
 
-  const onAmountChange = (asset: Readonly<Asset>, amount: string): void => {
+  const onAmountChange = (
+    asset: Readonly<AssetWithFiat>,
+    amount: string,
+  ): void => {
     setState(currentState => {
       if (currentState.asset.id !== asset.id) {
         return currentState;
@@ -141,7 +161,7 @@ export const Interactions: Interactions = (): JSX.Element => {
     });
   };
 
-  const onMaxClick = (asset: Readonly<Asset>): void => {
+  const onMaxClick = (asset: Readonly<AssetWithFiat>): void => {
     setState(currentState => {
       return {
         ...currentState,

@@ -6,7 +6,7 @@ export { Divider } from './divider';
 export { Flex } from './flex';
 export { Grid, Cell } from './grid';
 export { Text } from './text';
-export { AssetInput } from './asset-input';
+export { AssetInput, SimpleAssetInput } from './asset-input';
 export { BundleInput } from './bundle-input';
 export * as SubNavigation from './sub-navigation';
 export * as NavigationButton from './navigation-buttons';
