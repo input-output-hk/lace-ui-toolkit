@@ -12,12 +12,14 @@ interface Props {
   state: AssetState<Asset>;
   balanceLabel: string;
   onAmountChange?: (asset: Readonly<Asset>, amount: string) => void;
+  testId?: string;
 }
 
 export const SimpleAssetInput = ({
   state,
   balanceLabel,
   onAmountChange,
+  testId,
 }: Readonly<Props>): JSX.Element => (
   <div className={cx.root}>
     <Box className={cx.amountBox}>
@@ -28,6 +30,7 @@ export const SimpleAssetInput = ({
         onChange={(value): void => {
           onAmountChange?.(state.asset, value);
         }}
+        testId={testId}
       />
     </Box>
     <Box className={cx.balance}>
