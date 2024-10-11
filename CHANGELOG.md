@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.22.0...v1.23.0) (2024-10-11)
+
+
+### Features
+
+* improve simple asset input [LW-9231] ([e424a0f](https://github.com/input-output-hk/lace-ui-toolkit/commit/e424a0fb88a9fa1075bcf595a12b180ad03fca8a))
+
 # [1.22.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.21.0...v1.22.0) (2024-10-10)
 
 
