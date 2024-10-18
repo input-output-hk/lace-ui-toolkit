@@ -14,6 +14,7 @@ export { default as ChevronRightThinComponent } from './ChevronRightThinComponen
 export { default as ChevronRightComponent } from './ChevronRightComponent';
 export { default as ChevronUpComponent } from './ChevronUpComponent';
 export { default as ChipGradientComponent } from './ChipGradientComponent';
+export { default as ClockGradientComponent } from './ClockGradientComponent';
 export { default as CloseComponent } from './CloseComponent';
 export { default as CodeGradientComponent } from './CodeGradientComponent';
 export { default as Copy } from './Copy';
@@ -21,6 +22,7 @@ export { default as DocumentDownload } from './DocumentDownload';
 export { default as DocumentTextGradientComponent } from './DocumentTextGradientComponent';
 export { default as DocumentComponent } from './DocumentComponent';
 export { default as DownloadComponent } from './DownloadComponent';
+export { default as ExclamationCircleComponent } from './ExclamationCircleComponent';
 export { default as EyeCloseComponent } from './EyeCloseComponent';
 export { default as EyeGradientComponent } from './EyeGradientComponent';
 export { default as EyeOpenComponent } from './EyeOpenComponent';
