@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.23.0...v1.24.0) (2024-10-18)
+
+
+### Features
+
+* add clock and exclamation mark icons [LW-9231] ([a66cff7](https://github.com/input-output-hk/lace-ui-toolkit/commit/a66cff7853b88a53c7e7b8bcb6d2c30b1f73a02f))
+
 # [1.23.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.22.0...v1.23.0) (2024-10-11)
 
 
