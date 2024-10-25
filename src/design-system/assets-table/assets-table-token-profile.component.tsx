@@ -21,7 +21,7 @@ export const TokenProfile = ({
   testId = 'token-profile',
 }: Readonly<Props>): JSX.Element => {
   return (
-    <div className={cx.container}>
+    <div className={cx.container} data-testid={testId}>
       <Grid columns="$fitContent" gutters="$0">
         <Cell>
           <Box mr="$24">
