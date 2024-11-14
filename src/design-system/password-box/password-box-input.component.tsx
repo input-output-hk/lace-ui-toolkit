@@ -9,15 +9,23 @@ import { Text } from '../text';
 import { PasswordInputButton } from './password-box-button.component';
 import * as cx from './password-box-input.css';
 
-export interface PasswordInputProps extends Form.FormControlProps {
+export type Password = {
+  input: HTMLInputElement;
+  // TODO: convert this to UInt8Array
+  value: string;
+};
+
+export type OnPasswordChange = (event: Readonly<Password>) => void;
+
+export interface PasswordInputProps
+  extends Omit<Form.FormControlProps, 'value' | 'onChange'> {
   required?: boolean;
   disabled?: boolean;
   id?: string;
   label: string;
   name?: string;
-  value: string;
   errorMessage?: string;
-  onChange?: (event: Readonly<React.ChangeEvent<HTMLInputElement>>) => void;
+  onChange: OnPasswordChange;
   defaultIsPasswordVisible?: boolean;
   containerClassName?: string;
   containerStyle?: React.CSSProperties;
@@ -30,10 +38,10 @@ export const PasswordInput = ({
   id,
   label,
   name,
-  value,
   errorMessage = '',
   containerClassName = '',
   onChange,
+  autoFocus,
   defaultIsPasswordVisible = false,
   containerStyle,
   testId,
@@ -42,8 +50,11 @@ export const PasswordInput = ({
     defaultIsPasswordVisible,
   );
 
+  const onChangeHandler: React.ChangeEventHandler<HTMLInputElement> = event =>
+    onChange({ input: event.target, value: event.target.value });
+
   return (
-    <div className={cx.root}>
+    <div className={cx.root} data-testid={testId && `${testId}-container`}>
       <Form.Field
         name="field"
         className={cn(cx.container, {
@@ -58,11 +69,11 @@ export const PasswordInput = ({
               type={isPasswordVisible ? 'text' : 'password'}
               required={required}
               placeholder=""
+              autoFocus={autoFocus}
               className={cn(cx.input, { [cx.largeDots]: !isPasswordVisible })}
               disabled={disabled}
               name={name}
-              value={value}
-              onChange={onChange}
+              onChange={onChangeHandler}
               id={id}
               data-testid={testId}
             />
@@ -73,7 +84,12 @@ export const PasswordInput = ({
             {label}
           </Form.Label>
           <PasswordInputButton
-            testId={testId && `${testId}-toggle`}
+            testId={
+              testId &&
+              (isPasswordVisible
+                ? `${testId}-hide-icon`
+                : `${testId}-show-icon`)
+            }
             onClick={(event): void => {
               event.preventDefault();
               setIsPasswordVisible(!isPasswordVisible);
@@ -84,7 +100,11 @@ export const PasswordInput = ({
         </Flex>
       </Form.Field>
       {errorMessage && (
-        <Text.Label color="error" className={cx.errorMessage}>
+        <Text.Label
+          color="error"
+          className={cx.errorMessage}
+          data-testid={testId && `${testId}-error`}
+        >
           {errorMessage}
         </Text.Label>
       )}
