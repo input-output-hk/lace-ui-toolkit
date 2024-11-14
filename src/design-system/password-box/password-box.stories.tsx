@@ -29,15 +29,17 @@ const VariantsTable = (): JSX.Element => (
       <Variants.Row>
         <Variants.Cell>
           <PasswordBox
-            value="Input Text"
+            placeholder="Input Text"
             label="Password"
+            onChange={v => console.log(v.value)}
             defaultIsPasswordVisible
             onSubmit={action('onSubmit')}
           />
         </Variants.Cell>
         <Variants.Cell>
           <PasswordBox
-            value="Input Text"
+            onChange={v => console.log(v.value)}
+            placeholder="Input Text"
             label="Password"
             onSubmit={action('onSubmit')}
           />
@@ -49,11 +51,10 @@ const VariantsTable = (): JSX.Element => (
 
 const PasswordBoxComponent = ({
   label = 'Password',
-  value = '',
   ...props
 }: Readonly<Partial<PasswordBoxProps>>): JSX.Element => (
   <PasswordBox
-    value={value}
+    onChange={v => console.log(v.value)}
     label={label}
     rootStyle={{ width: '200px' }}
     onSubmit={action('onSubmit')}
@@ -85,12 +86,15 @@ const MainComponents = (): JSX.Element => (
         <HoverPasswordBoxComponent />
       </Variants.Cell>
       <Variants.Cell>
-        <PasswordBoxComponent value="Input Text" defaultIsPasswordVisible />
+        <PasswordBoxComponent
+          placeholder="Input Text"
+          defaultIsPasswordVisible
+        />
       </Variants.Cell>
       <Variants.Cell>
-        <PasswordBox
+        <PasswordBoxComponent
           label="Password"
-          value="Input Text"
+          placeholder="Input Text"
           defaultIsPasswordVisible
           errorMessage="Error"
           rootStyle={{ width: '200px' }}
@@ -106,18 +110,18 @@ const MainComponents = (): JSX.Element => (
     </Variants.Row>
     <Variants.Row>
       <Variants.Cell>
-        <PasswordBoxComponent value="" />
+        <PasswordBoxComponent placeholder="" />
       </Variants.Cell>
       <Variants.Cell>
         <HoverPasswordBoxComponent />
       </Variants.Cell>
       <Variants.Cell>
-        <PasswordBoxComponent value="Input Text" />
+        <PasswordBoxComponent placeholder="Input Text" />
       </Variants.Cell>
       <Variants.Cell>
-        <PasswordBox
+        <PasswordBoxComponent
           label="Password"
-          value="Input Text"
+          placeholder="Input Text"
           defaultIsPasswordVisible
           errorMessage="Error"
           rootStyle={{ width: '200px', marginTop: '20px' }}
@@ -135,19 +139,13 @@ const MainComponents = (): JSX.Element => (
 );
 
 export const Overview = (): JSX.Element => {
-  const [value, setValue] = useState('');
-
   return (
     <Grid>
       <Cell>
         <Section title="Copy for use">
           <Flex flexDirection="column" alignItems="center" w="$fill" my="$32">
-            <PasswordBox
-              value={value}
+            <PasswordBoxComponent
               label="Password"
-              onChange={(event): void => {
-                setValue(event.target.value);
-              }}
               rootStyle={{ width: '500px' }}
               onSubmit={action('onSubmit')}
             />
