@@ -1,3 +1,5 @@
+# [2.0.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.24.0...v2.0.0) (2024-11-21)
+
 # [1.24.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.23.0...v1.24.0) (2024-10-18)
 
 
