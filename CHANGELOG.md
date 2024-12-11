@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v2.0.0...v3.0.0) (2024-12-11)
+
+
+* feat!: make token amount details configurable [LW-11733] ([bfab9e7](https://github.com/input-output-hk/lace-ui-toolkit/commit/bfab9e7440ecbe022706e75b093fcfce4d066172))
+
+
+### BREAKING CHANGES
+
+* TokenAmount props changed from a simple fiatPrice prop
+to a more flexible "details" prop which can further be customized by
+passing "detailsColor" and "detailsWeight" to cover more scenarios
+
 # [2.0.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.24.0...v2.0.0) (2024-11-21)
 
 # [1.24.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.23.0...v1.24.0) (2024-10-18)
