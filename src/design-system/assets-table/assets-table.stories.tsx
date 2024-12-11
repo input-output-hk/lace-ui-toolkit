@@ -53,7 +53,22 @@ const SimpleAssetInfo = ({ id }: Readonly<AssetInfoProps>): JSX.Element => (
       name="Token name"
       description="Subtitle"
     />
-    <TokenAmount amount="23,584.48" fiatPrice="24,568.54 USD" />
+    <TokenAmount amount="23,584.48" details="24,568.54 USD" />
+  </AssetsTable>
+);
+
+const PendingAssetInfo = ({ id }: Readonly<AssetInfoProps>): JSX.Element => (
+  <AssetsTable id={id}>
+    <TokenProfile
+      imageSrc={cardanoImage}
+      name="Token with pending amount"
+      description="description"
+    />
+    <TokenAmount
+      amount="21,584.48"
+      details="+ 5 pending"
+      detailsColor="success"
+    />
   </AssetsTable>
 );
 
@@ -72,7 +87,7 @@ const DetailedAssetInfo = ({
       priceChange="+3.21"
       priceTrend={priceTrend}
     />
-    <TokenAmount amount="23,584.48" fiatPrice="24,568.54 USD" />
+    <TokenAmount amount="23,584.48" details="24,568.54 USD" />
   </AssetsTable>
 );
 
@@ -124,6 +139,11 @@ export const Overview = (): JSX.Element => (
           <Variants.Row>
             <Variants.Cell>
               <DetailedAssetInfo />
+            </Variants.Cell>
+          </Variants.Row>
+          <Variants.Row>
+            <Variants.Cell>
+              <PendingAssetInfo />
             </Variants.Cell>
           </Variants.Row>
         </Variants.Table>
@@ -188,7 +208,7 @@ export const Controls: Controls = ({
               priceChange={priceChange}
               priceTrend={priceTrend}
             />
-            <TokenAmount amount={tokenAmount} fiatPrice={fiatPrice} />
+            <TokenAmount amount={tokenAmount} details={fiatPrice} />
           </AssetsTable>
         </Flex>
       </Section>
