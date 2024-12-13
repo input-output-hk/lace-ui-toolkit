@@ -68,6 +68,7 @@ const PendingAssetInfo = ({ id }: Readonly<AssetInfoProps>): JSX.Element => (
       amount="21,584.48"
       details="+ 5 pending"
       detailsColor="success"
+      detailsTooltip="Pending coins represent tokens that the wallet recognizes but are not yet finalized by the network. These coins are currently unspendable until confirmed."
     />
   </AssetsTable>
 );
