@@ -3,6 +3,7 @@ import React from 'react';
 import { Flex } from '../flex';
 import { Text } from '../text';
 import { FontWeights } from '../text/create-text.util';
+import { Tooltip } from '../tooltip';
 
 import * as cx from './assets-table-token-amount.css';
 
@@ -13,6 +14,7 @@ interface Props {
   details: string;
   detailsColor?: TypographyVariants['color'];
   detailsWeight?: FontWeights;
+  detailsTooltip?: string;
 }
 
 export const TokenAmount = ({
@@ -20,6 +22,7 @@ export const TokenAmount = ({
   details,
   detailsColor = 'secondary',
   detailsWeight = '$regular',
+  detailsTooltip,
 }: Readonly<Props>): JSX.Element => {
   return (
     <Flex flexDirection="column" alignItems="flex-end" className={cx.container}>
@@ -27,7 +30,11 @@ export const TokenAmount = ({
         {amount}
       </Text.Body.Large>
       <Text.Body.Normal color={detailsColor} weight={detailsWeight}>
-        {details}
+        {detailsTooltip ? (
+          <Tooltip label={detailsTooltip}>{details}</Tooltip>
+        ) : (
+          details
+        )}
       </Text.Body.Normal>
     </Flex>
   );
