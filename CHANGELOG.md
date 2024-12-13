@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.0.0...v3.1.0) (2024-12-13)
+
+
+### Features
+
+* support TokenAmount details tooltip [LW-11733] ([4836445](https://github.com/input-output-hk/lace-ui-toolkit/commit/4836445eda672f3bff63f98b7474b93af58932dd))
+
 # [3.0.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v2.0.0...v3.0.0) (2024-12-11)
 
 
