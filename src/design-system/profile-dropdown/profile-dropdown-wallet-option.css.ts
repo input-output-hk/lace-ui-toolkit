@@ -42,5 +42,3 @@ export const container = style([
     },
   },
 ]);
-
-export const icon = style({});
