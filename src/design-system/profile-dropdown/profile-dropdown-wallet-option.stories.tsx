@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { action } from '@storybook/addon-actions';
 import type { Meta } from '@storybook/react';
 
 import { page, Variants, Section, UIStateTable } from '../decorators';
@@ -82,6 +83,45 @@ export const Overview = (): JSX.Element => (
                   title="Shared Wallet"
                   subtitle="Lace Team"
                   type="shared"
+                />
+              </Variants.Cell>
+            </Variants.Row>
+          </Variants.Table>
+        </Flex>
+      </Section>
+
+      <Divider my="$64" />
+
+      <Section title="Example with actions">
+        <Flex flexDirection="column" alignItems="center" w="$fill">
+          <Variants.Table
+            headers={['Hot wallet', 'Cold wallet', 'Shared wallet']}
+          >
+            <Variants.Row>
+              <Variants.Cell>
+                <WalletOption
+                  title="Alice's wallet"
+                  subtitle="Account #0"
+                  type="hot"
+                  onOpenAccountsMenu={action('onOpenAccountsMenu')}
+                  onOpenEditWallet={action('onOpenEditWallet')}
+                />
+              </Variants.Cell>
+              <Variants.Cell>
+                <WalletOption
+                  title="Alice's wallet"
+                  subtitle="Account #0"
+                  type="cold"
+                  onOpenAccountsMenu={action('onOpenAccountsMenu')}
+                  onOpenEditWallet={action('onOpenEditWallet')}
+                />
+              </Variants.Cell>
+              <Variants.Cell>
+                <WalletOption
+                  title="Shared Wallet"
+                  subtitle="Lace Team"
+                  type="shared"
+                  onOpenEditWallet={action('onOpenEditWallet')}
                 />
               </Variants.Cell>
             </Variants.Row>

@@ -78,3 +78,4 @@ export { default as WalletComponent } from './WalletComponent';
 export { default as WarningIconCircleComponent } from './WarningIconCircleComponent';
 export { default as WarningIconTriangleSolidComponent } from './WarningIconTriangleSolidComponent';
 export { default as WarningIconTriangleComponent } from './WarningIconTriangleComponent';
+export { default as EditComponent } from './EditComponent';

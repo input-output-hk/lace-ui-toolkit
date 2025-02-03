@@ -2,9 +2,9 @@ import type { ComponentPropsWithoutRef } from 'react';
 import React from 'react';
 
 import ChevronRight from '@icons/ChevronRightThinComponent';
+import EditComponent from '@icons/EditComponent';
 import classNames from 'classnames';
 
-import { Box } from '../box';
 import { Icon as IconButton } from '../control-buttons';
 import { Flex } from '../flex';
 
@@ -21,6 +21,7 @@ export type Props = Omit<ComponentPropsWithoutRef<'button'>, 'type'> & {
   profile?: ProfileType;
   type: WalletType;
   onOpenAccountsMenu?: () => void;
+  onOpenEditWallet?: () => void;
 };
 
 export const WalletOption = ({
@@ -32,6 +33,7 @@ export const WalletOption = ({
   profile,
   type,
   onOpenAccountsMenu,
+  onOpenEditWallet,
   ...props
 }: Readonly<Props>): JSX.Element => {
   return (
@@ -53,15 +55,23 @@ export const WalletOption = ({
           type={type}
           testId="wallet-option"
         />
-        {type !== 'shared' && onOpenAccountsMenu && (
-          <Box ml="$10">
-            <Flex
-              className={cx.icon}
-              w="$24"
-              h="$24"
-              alignItems="center"
-              justifyContent="center"
-            >
+        <Flex ml="$10" gap="$4">
+          {onOpenEditWallet && (
+            <Flex w="$24" h="$24" alignItems="center" justifyContent="center">
+              <IconButton
+                onClick={(event): void => {
+                  onOpenEditWallet?.();
+                  event.stopPropagation();
+                }}
+                icon={<EditComponent />}
+                size="extraSmall"
+                as="div"
+                testId="wallet-option-edit-wallet-button"
+              />
+            </Flex>
+          )}
+          {type !== 'shared' && onOpenAccountsMenu && (
+            <Flex w="$24" h="$24" alignItems="center" justifyContent="center">
               <IconButton
                 onClick={(event): void => {
                   onOpenAccountsMenu?.();
@@ -73,8 +83,8 @@ export const WalletOption = ({
                 testId="wallet-option-accounts-menu-button"
               />
             </Flex>
-          </Box>
-        )}
+          )}
+        </Flex>
       </Flex>
     </button>
   );
