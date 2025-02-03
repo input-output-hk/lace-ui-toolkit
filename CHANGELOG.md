@@ -1,3 +1,10 @@
+## [3.2.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.0...v3.2.1) (2025-02-03)
+
+
+### Bug Fixes
+
+* improve theme adaptation for edit icon ([9606ee4](https://github.com/input-output-hk/lace-ui-toolkit/commit/9606ee4f45562b8ad07d8f00df2a27d632764722))
+
 # [3.2.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.1.0...v3.2.0) (2025-02-03)
 
 
