@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.1.0...v3.2.0) (2025-02-03)
+
+
+### Features
+
+* add edit to wallet option ([2e4be3d](https://github.com/input-output-hk/lace-ui-toolkit/commit/2e4be3d41f994601aaaf14780f38261b6d772cfb))
+
 # [3.1.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.0.0...v3.1.0) (2024-12-13)
 
 
