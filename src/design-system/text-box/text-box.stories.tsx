@@ -24,19 +24,24 @@ export default {
 const MainComponents = (): JSX.Element => (
   <Variants.Row>
     <Variants.Cell>
-      <TextBox label="Label" value="" />
+      <TextBox label="Label" value="" id="empty" />
     </Variants.Cell>
     <Variants.Cell>
       <TextBox label="Label" value="" id="hover" />
     </Variants.Cell>
     <Variants.Cell>
-      <TextBox label="Label" value="Input Text" />
+      <TextBox label="Label" value="Input Text" id="with-value" />
     </Variants.Cell>
     <Variants.Cell>
-      <TextBox label="Label" value="Input Text" errorMessage="Error" />
+      <TextBox
+        label="Label"
+        value="Input Text"
+        errorMessage="Error"
+        id="with-error"
+      />
     </Variants.Cell>
     <Variants.Cell>
-      <TextBox label="Label" value="Input Text" disabled />
+      <TextBox label="Label" value="Input Text" disabled id="disabled" />
     </Variants.Cell>
     <Variants.Cell>
       <TextBox label="Label" value="" id="focus" />
@@ -53,6 +58,7 @@ export const Overview = (): JSX.Element => {
         <Section title="Copy for use">
           <Flex flexDirection="column" alignItems="center" w="$fill" my="$32">
             <TextBox
+              id="default"
               value={value}
               label="Text"
               onChange={(event): void => {
