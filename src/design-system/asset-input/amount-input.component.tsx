@@ -1,5 +1,7 @@
 import React from 'react';
 
+import cn from 'classnames';
+
 import { Box } from '../box';
 
 import * as cx from './amount-input.css';
@@ -11,6 +13,8 @@ interface Props {
   value?: string;
   id: string;
   testId?: string;
+  className?: string;
+  inputClassName?: string;
 }
 
 export const AmountInput = ({
@@ -19,11 +23,13 @@ export const AmountInput = ({
   value,
   id,
   testId,
+  className,
+  inputClassName,
 }: Readonly<Props>): JSX.Element => {
   return (
-    <Box className={cx.amountInputSizer} data-value={value}>
+    <Box className={cn(cx.amountInputSizer, className)} data-value={value}>
       <input
-        className={cx.amountInput[alignment]}
+        className={cn(cx.amountInput[alignment], inputClassName)}
         value={value}
         size={1}
         onChange={({ target }): void => onChange?.(target.value)}

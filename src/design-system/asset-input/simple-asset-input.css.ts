@@ -20,6 +20,10 @@ export const root = style([
 
 export const amountBox = style({ gridArea: 'amount' });
 
+export const amountInputContainer = style({ display: 'flex' });
+
+export const amountInput = style({ width: '100%' });
+
 export const balance = style({ gridArea: 'balance' });
 
 export const error = style({ gridArea: 'error' });

@@ -31,6 +31,8 @@ export const SimpleAssetInput = ({
           onAmountChange?.(state.asset, value);
         }}
         testId={testId}
+        className={cx.amountInputContainer}
+        inputClassName={cx.amountInput}
       />
     </Box>
     <Box className={cx.balance}>
