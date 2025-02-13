@@ -2,6 +2,11 @@ import { sx, style, vars } from '../../design-tokens';
 
 export const button = style({});
 
+export const walletcard = style({
+  flex: '1', // make sure the title etc uses all available space
+  minWidth: 0, // make sure it doesn't overflow width
+});
+
 export const container = style([
   sx({
     height: '$48',

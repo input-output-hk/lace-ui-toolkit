@@ -48,14 +48,16 @@ export const Trigger = ({
       className={classNames(cx.button, cx.container, className)}
       data-testid={makeTestId(id)}
     >
-      <Flex alignItems="center">
-        <WalletCard
-          profile={profile}
-          title={{ text: title, type: 'button' }}
-          subtitle={subtitle}
-          type={type}
-          testId={makeTestId(id)}
-        />
+      <Flex alignItems="center" w="$fill">
+        <Box className={cx.walletcard}>
+          <WalletCard
+            profile={profile}
+            title={{ text: title, type: 'button' }}
+            subtitle={subtitle}
+            type={type}
+            testId={makeTestId(id)}
+          />
+        </Box>
 
         <Box ml="$10">
           <Flex w="$16" h="$16" alignItems="center" justifyContent="center">
