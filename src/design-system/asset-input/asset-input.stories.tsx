@@ -38,6 +38,17 @@ const AssetInputMainComponents = (): JSX.Element => (
   </Variants.Row>
 );
 
+const SimpleAssetInputMainComponents = (): JSX.Element => (
+  <Variants.Row>
+    <Variants.Cell>
+      <SimpleAssetInput
+        state={validState('1')}
+        balanceLabel="Balance Available"
+      />
+    </Variants.Cell>
+  </Variants.Row>
+);
+
 const AssetInputUIStates = (): JSX.Element => (
   <>
     <Variants.Row>
@@ -94,8 +105,11 @@ export const Overview = (): JSX.Element => (
       <Divider my="$64" />
 
       <Section title="Main components">
-        <ColorSchemaTable headers={['Rest']}>
+        <ColorSchemaTable headers={['Asset Input']}>
           <AssetInputMainComponents />
+        </ColorSchemaTable>
+        <ColorSchemaTable headers={['Simple Asset Input']}>
+          <SimpleAssetInputMainComponents />
         </ColorSchemaTable>
       </Section>
 
