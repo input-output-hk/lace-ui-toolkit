@@ -1,3 +1,10 @@
+## [3.2.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.1...v3.2.2) (2025-02-13)
+
+
+### Bug Fixes
+
+* truncate wallet option title [LW-12306] ([8b789cb](https://github.com/input-output-hk/lace-ui-toolkit/commit/8b789cb09120bfaa80483201cf36f25030cee635))
+
 ## [3.2.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.0...v3.2.1) (2025-02-03)
 
 
