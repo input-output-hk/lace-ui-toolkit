@@ -1,3 +1,10 @@
+## [3.2.4](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.3...v3.2.4) (2025-02-13)
+
+
+### Bug Fixes
+
+* expand simple asset input to occupy 100% width ([c8bd477](https://github.com/input-output-hk/lace-ui-toolkit/commit/c8bd477406c9c7dcd2cfb9fa0dbe47ee02b9066a))
+
 ## [3.2.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.2...v3.2.3) (2025-02-13)
 
 
