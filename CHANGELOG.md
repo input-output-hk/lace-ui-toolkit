@@ -1,3 +1,10 @@
+## [3.2.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.2...v3.2.3) (2025-02-13)
+
+
+### Bug Fixes
+
+* truncate profile dropdown trigger title [LW-12306] ([0b1f07f](https://github.com/input-output-hk/lace-ui-toolkit/commit/0b1f07f0f53e5f79070c7a3100f8239f5ad7a5f5))
+
 ## [3.2.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.1...v3.2.2) (2025-02-13)
 
 
