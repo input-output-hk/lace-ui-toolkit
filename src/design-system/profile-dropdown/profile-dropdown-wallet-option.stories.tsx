@@ -66,15 +66,14 @@ export const Overview = (): JSX.Element => (
             <Variants.Row>
               <Variants.Cell>
                 <WalletOption
-                  title="Alice's wallet"
+                  title="WALLET WITH REALLY LONG NAME THAT WILL BE TRUNCATED"
                   subtitle="Account #0"
                   type="hot"
                 />
               </Variants.Cell>
               <Variants.Cell>
                 <WalletOption
-                  title="Alice's wallet"
-                  subtitle="Account #0"
+                  title="WALLET WITH REALLY LONG NAME THAT WILL BE TRUNCATED"
                   type="cold"
                 />
               </Variants.Cell>
@@ -109,8 +108,7 @@ export const Overview = (): JSX.Element => (
               </Variants.Cell>
               <Variants.Cell>
                 <WalletOption
-                  title="Alice's wallet"
-                  subtitle="Account #0"
+                  title="WALLET WITH REALLY LONG NAME THAT WILL BE TRUNCATED"
                   type="cold"
                   onOpenAccountsMenu={action('onOpenAccountsMenu')}
                   onOpenEditWallet={action('onOpenEditWallet')}

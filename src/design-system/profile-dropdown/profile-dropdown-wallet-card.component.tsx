@@ -67,16 +67,24 @@ export const WalletCard = ({
 
   return (
     <Flex>
-      {profile ? (
-        getProfileImage(profile, testId)
-      ) : (
-        <WalletIcon type={type} testId={makeTestId(testId, '-icon')} />
-      )}
+      <Box className={cx.profileBox}>
+        {profile ? (
+          getProfileImage(profile, testId)
+        ) : (
+          <WalletIcon type={type} testId={makeTestId(testId, '-icon')} />
+        )}
+      </Box>
       {subtitle ? (
-        <Flex flexDirection="column" ml="$10" h="$32" alignItems="flex-start">
-          <Title color="secondary" data-testid={makeTestId(testId, '-title')}>
-            {title.text}
-          </Title>
+        <Flex className={cx.titleBox} flexDirection="column" ml="$10" h="$32">
+          <Box w="$fill">
+            <Title
+              className={cx.title}
+              color="secondary"
+              data-testid={makeTestId(testId, '-title')}
+            >
+              {title.text}
+            </Title>
+          </Box>
           <Box
             className={cn(cx.subtitleBox, {
               [cx.subtitleButtonOffset]: title.type === 'button',
@@ -92,8 +100,9 @@ export const WalletCard = ({
           </Box>
         </Flex>
       ) : (
-        <Flex ml="$10" h="$32" alignItems="center">
+        <Flex className={cx.titleBox} ml="$10" h="$32" alignItems="center">
           <Text.Body.Small
+            className={cx.title}
             weight="$semibold"
             color="secondary"
             data-testid={makeTestId(testId, '-title')}
