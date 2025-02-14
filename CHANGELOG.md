@@ -1,3 +1,10 @@
+## [3.2.5](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.4...v3.2.5) (2025-02-14)
+
+
+### Bug Fixes
+
+* apply popup styles on smaller screens [LW-12311] ([a045b32](https://github.com/input-output-hk/lace-ui-toolkit/commit/a045b32fdcf74d76b6a9afd7bca62e691692f816))
+
 ## [3.2.4](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.3...v3.2.4) (2025-02-13)
 
 
