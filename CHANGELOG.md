@@ -1,3 +1,10 @@
+## [3.2.6](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.5...v3.2.6) (2025-02-14)
+
+
+### Bug Fixes
+
+* simple asset input text terminating in the middle of container ([7015872](https://github.com/input-output-hk/lace-ui-toolkit/commit/701587267adfa2df7e6881666d2ef89b835c328b))
+
 ## [3.2.5](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.4...v3.2.5) (2025-02-14)
 
 
