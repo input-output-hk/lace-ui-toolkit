@@ -6,14 +6,13 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import { TooltipContent } from './tooltip-content.component';
 import * as cx from './tooltip-root.css';
 
-export type Props = Pick<
-  Tooltip.PopperContentProps,
-  'align' | 'children' | 'side'
-> &
-  typeof Tooltip.Root & {
-    label: ReactNode | string;
-    zIndex?: number;
-  };
+export type Props = typeof Tooltip.Root & {
+  align?: Tooltip.PopperContentProps['align'];
+  children?: Tooltip.PopperContentProps['children'];
+  side?: Tooltip.PopperContentProps['side'];
+  label: ReactNode | string;
+  zIndex?: number;
+};
 
 export const Root = ({
   label,
