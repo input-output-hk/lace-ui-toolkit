@@ -1,3 +1,10 @@
+## [3.2.7](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.6...v3.2.7) (2025-03-05)
+
+
+### Bug Fixes
+
+* optional Tooltip props [LW-12407] ([6731b2f](https://github.com/input-output-hk/lace-ui-toolkit/commit/6731b2f5b5e90b08a8bb3b04c73a64969f9f953e))
+
 ## [3.2.6](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.5...v3.2.6) (2025-02-14)
 
 
