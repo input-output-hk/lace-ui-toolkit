@@ -49,7 +49,7 @@ interface AssetInfoProps {
 const SimpleAssetInfo = ({ id }: Readonly<AssetInfoProps>): JSX.Element => (
   <AssetsTable id={id}>
     <TokenProfile
-      imageSrc={cardanoImage}
+      image={cardanoImage}
       name="Token name"
       description="Subtitle"
     />
@@ -60,7 +60,7 @@ const SimpleAssetInfo = ({ id }: Readonly<AssetInfoProps>): JSX.Element => (
 const PendingAssetInfo = ({ id }: Readonly<AssetInfoProps>): JSX.Element => (
   <AssetsTable id={id}>
     <TokenProfile
-      imageSrc={cardanoImage}
+      image={cardanoImage}
       name="Token with pending amount"
       description="description"
     />
@@ -79,7 +79,7 @@ const DetailedAssetInfo = ({
 }: Readonly<AssetInfoProps>): JSX.Element => (
   <AssetsTable id={id}>
     <TokenProfile
-      imageSrc={cardanoImage}
+      image={cardanoImage}
       name="Token name"
       description="Subtitle"
     />
@@ -200,7 +200,7 @@ export const Controls: Controls = ({
         <Flex alignItems="center" flexDirection="column">
           <AssetsTable>
             <TokenProfile
-              imageSrc={cardanoImage}
+              image={cardanoImage}
               name={tokenName}
               description={tokenSubtitle}
             />
