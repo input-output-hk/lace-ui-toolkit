@@ -14,7 +14,7 @@ import type { Sx } from '../../design-tokens';
 export interface TextBoxProps extends Form.FormControlProps {
   required?: boolean;
   disabled?: boolean;
-  id?: string;
+  id: string;
   label: string;
   name?: string;
   defaultValue?: string;
@@ -67,7 +67,9 @@ export const TextBox = ({
             data-testid={rest['data-testid']}
           />
         </Form.Control>
-        <Form.Label className={cn(cx.label)}>{label}</Form.Label>
+        <Form.Label htmlFor={id} className={cn(cx.label)}>
+          {label}
+        </Form.Label>
       </Form.Field>
     </Flex>
     {errorMessage && (
