@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { Flex } from '../flex';
 import { Text } from '../text';
@@ -11,7 +11,7 @@ import type { TypographyVariants } from '../text/text.css';
 
 interface Props {
   amount: string;
-  details: string;
+  details: ReactNode;
   detailsColor?: TypographyVariants['color'];
   detailsWeight?: FontWeights;
   detailsTooltip?: string;
