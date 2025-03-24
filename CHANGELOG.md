@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.7...v3.3.0) (2025-03-24)
+
+
+### Features
+
+* allow passing elements to asset table props ([ee6609d](https://github.com/input-output-hk/lace-ui-toolkit/commit/ee6609d15604c1b1d210a3f264430fc5c60a35c3))
+
 ## [3.2.7](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.6...v3.2.7) (2025-03-05)
 
 
