@@ -64,14 +64,35 @@ export const TextBox = ({
             onChange={onChange}
             id={id}
             maxLength={maxLength}
-            data-testid={rest['data-testid']}
+            data-testid={
+              rest['data-testid']
+                ? `${rest['data-testid']}-input`
+                : 'text-box-input'
+            }
           />
         </Form.Control>
-        <Form.Label className={cn(cx.label)}>{label}</Form.Label>
+        <Form.Label
+          className={cn(cx.label)}
+          data-testid={
+            rest['data-testid']
+              ? `${rest['data-testid']}-label`
+              : 'text-box-label'
+          }
+        >
+          {label}
+        </Form.Label>
       </Form.Field>
     </Flex>
     {errorMessage && (
-      <Text.Label color="error" className={cx.errorMessage}>
+      <Text.Label
+        color="error"
+        className={cx.errorMessage}
+        data-testid={
+          rest['data-testid']
+            ? `${rest['data-testid']}-error`
+            : 'text-box-error'
+        }
+      >
         {errorMessage}
       </Text.Label>
     )}
