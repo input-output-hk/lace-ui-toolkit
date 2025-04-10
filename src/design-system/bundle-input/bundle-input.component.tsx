@@ -3,7 +3,7 @@ import type { PropsWithChildren } from 'react';
 
 import PlusSmall from '@icons/PlusSmallComponent';
 
-import { AssetInput } from '../asset-input';
+import { AssetInput, AssetState, AssetWithFiat } from '../asset-input';
 import { Box } from '../box';
 import * as ControlButtons from '../control-buttons';
 import { Divider } from '../divider';
@@ -11,15 +11,13 @@ import { Divider } from '../divider';
 import * as cx from './bundle-input.css';
 import { RemoveButton } from './remove-button.component';
 
-import type { Data } from '../asset-input';
-
 export type Props = PropsWithChildren<{
-  state?: Data.AssetState[];
+  state?: AssetState[];
   onAddAsset?: () => void;
-  onRemoveAsset?: (asset: Readonly<Data.Asset>) => void;
-  onAmountChange?: (asset: Readonly<Data.Asset>, amount: string) => void;
-  onTickerClick?: (asset: Readonly<Data.Asset>) => void;
-  onMaxClick?: (asset: Readonly<Data.Asset>) => void;
+  onRemoveAsset?: (asset: Readonly<AssetWithFiat>) => void;
+  onAmountChange?: (asset: Readonly<AssetWithFiat>, amount: string) => void;
+  onTickerClick?: (asset: Readonly<AssetWithFiat>) => void;
+  onMaxClick?: (asset: Readonly<AssetWithFiat>) => void;
 }>;
 
 export const BundleInput = ({

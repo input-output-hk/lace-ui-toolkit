@@ -9,13 +9,13 @@ import * as cx from './asset-input.css';
 import { MaxButton } from './max-button.component';
 import { TickerButton } from './ticker-button.component';
 
-import type { Asset, AssetState } from './asset-input.data';
+import type { AssetWithFiat, AssetState } from './asset-input.data';
 
 interface Props {
   state: AssetState;
-  onTickerClick?: (asset: Readonly<Asset>) => void;
-  onAmountChange?: (asset: Readonly<Asset>, amount: string) => void;
-  onMaxClick?: (asset: Readonly<Asset>) => void;
+  onTickerClick?: (asset: Readonly<AssetWithFiat>) => void;
+  onAmountChange?: (asset: Readonly<AssetWithFiat>, amount: string) => void;
+  onMaxClick?: (asset: Readonly<AssetWithFiat>) => void;
 }
 
 export const AssetInput = ({

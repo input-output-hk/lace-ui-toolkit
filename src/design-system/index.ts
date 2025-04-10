@@ -6,7 +6,7 @@ export { Divider } from './divider';
 export { Flex } from './flex';
 export { Grid, Cell } from './grid';
 export { Text } from './text';
-export { AssetInput } from './asset-input';
+export * from './asset-input';
 export { BundleInput } from './bundle-input';
 export * as SubNavigation from './sub-navigation';
 export * as NavigationButton from './navigation-buttons';
@@ -24,9 +24,8 @@ export { ToastBar } from './toast-bar';
 export * from './tooltip';
 export { Message } from './message';
 export { Metadata, MetadataLink } from './metadata';
-export { PasswordBox, UncontrolledPasswordBox } from './password-box';
+export { PasswordBox } from './password-box';
 export type {
-  UncontrolledPasswordBoxProps,
   PasswordBoxProps,
   OnPasswordChange,
   Password,

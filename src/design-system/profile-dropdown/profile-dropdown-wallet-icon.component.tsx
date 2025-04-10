@@ -29,7 +29,7 @@ export const WalletIcon = ({ type, testId }: Readonly<Props>): JSX.Element => {
       className={cx.container({
         bg: type,
       })}
-      data-testid={testId}
+      testId={testId}
       data-value={type}
     >
       <Icon />

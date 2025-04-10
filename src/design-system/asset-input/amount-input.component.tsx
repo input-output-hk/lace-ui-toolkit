@@ -1,29 +1,40 @@
 import React from 'react';
 
+import cn from 'classnames';
+
 import { Box } from '../box';
 
 import * as cx from './amount-input.css';
+import { AmountInputAlignments } from './types';
 
 interface Props {
+  alignment?: AmountInputAlignments;
   onChange?: (value: string) => void;
   value?: string;
   id: string;
+  testId?: string;
+  className?: string;
+  inputClassName?: string;
 }
 
 export const AmountInput = ({
+  alignment = 'right',
   onChange,
   value,
   id,
+  testId,
+  className,
+  inputClassName,
 }: Readonly<Props>): JSX.Element => {
   return (
-    <Box className={cx.amountInputSizer} data-value={value}>
+    <Box className={cn(cx.amountInputSizer, className)} data-value={value}>
       <input
-        className={cx.amountInput}
+        className={cn(cx.amountInput[alignment], inputClassName)}
         value={value}
         size={1}
         onChange={({ target }): void => onChange?.(target.value)}
         placeholder="0.0"
-        data-testid={`asset-input-amount-input-${id}`}
+        data-testid={testId ?? `asset-input-amount-input-${id}`}
       />
     </Box>
   );

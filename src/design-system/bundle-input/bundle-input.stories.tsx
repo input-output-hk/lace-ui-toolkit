@@ -20,7 +20,10 @@ import { Cell } from '../grid/cell.component';
 import { BundleInput } from './bundle-input.component';
 import { RemoveButton } from './remove-button.component';
 
-import type { Asset, AssetState } from '../asset-input/asset-input.data';
+import type {
+  AssetWithFiat,
+  AssetState,
+} from '../asset-input/asset-input.data';
 
 const subtitle = ``;
 
@@ -132,7 +135,7 @@ export const Interactions: Interactions = (): JSX.Element => {
     setState([...state, validState((state.length + 1).toString())]);
   };
 
-  const onTickerClick = (asset: Readonly<Asset>): void => {
+  const onTickerClick = (asset: Readonly<AssetWithFiat>): void => {
     setState(
       state.map(currentState => {
         if (currentState.asset.id === asset.id) {
@@ -147,7 +150,10 @@ export const Interactions: Interactions = (): JSX.Element => {
     );
   };
 
-  const onAmountChange = (asset: Readonly<Asset>, amount: string): void => {
+  const onAmountChange = (
+    asset: Readonly<AssetWithFiat>,
+    amount: string,
+  ): void => {
     setState(
       state.map(currentState => {
         if (currentState.asset.id !== asset.id) {
@@ -178,7 +184,7 @@ export const Interactions: Interactions = (): JSX.Element => {
     );
   };
 
-  const onMaxClick = (asset: Readonly<Asset>): void => {
+  const onMaxClick = (asset: Readonly<AssetWithFiat>): void => {
     setState(
       state.map(currentState => {
         if (currentState.asset.id !== asset.id) {
@@ -197,7 +203,7 @@ export const Interactions: Interactions = (): JSX.Element => {
     );
   };
 
-  const onRemoveAsset = (asset: Readonly<Asset>): void => {
+  const onRemoveAsset = (asset: Readonly<AssetWithFiat>): void => {
     setState(state.filter(currentState => currentState.asset.id !== asset.id));
   };
 

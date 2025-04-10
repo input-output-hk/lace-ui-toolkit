@@ -39,7 +39,7 @@ export const Body = <T extends object | undefined>({
     <Flex
       h="$fill"
       ref={tableReference}
-      data-testid="stake-pool-list-scroll-wrapper"
+      testId="stake-pool-list-scroll-wrapper"
     >
       <Virtuoso
         customScrollParent={scrollableTargetReference.current}

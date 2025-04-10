@@ -13,10 +13,16 @@ export const Headline = ({
   description,
 }: Readonly<Props>): JSX.Element => (
   <Box>
-    <Text.SubHeading weight="$bold">{title}</Text.SubHeading>
+    <Text.SubHeading weight="$bold" data-testid="drawer-title">
+      {title}
+    </Text.SubHeading>
     {description !== undefined && (
       <Box mt="$8">
-        <Text.Body.Normal color="secondary" weight="$medium">
+        <Text.Body.Normal
+          color="secondary"
+          weight="$medium"
+          data-testid="drawer-subtitle"
+        >
           {description}
         </Text.Body.Normal>
       </Box>

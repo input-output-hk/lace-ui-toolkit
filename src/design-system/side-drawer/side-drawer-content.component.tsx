@@ -23,6 +23,7 @@ export const Content = ({
       <Backdrop zIndex={zIndex} />
     </Dialog.Overlay>
     <Dialog.Content
+      data-testid="drawer-content"
       {...props}
       className={classNames(cx.container)}
       style={{ zIndex: zIndex === undefined ? undefined : zIndex + 1 }}

@@ -25,7 +25,7 @@ export type BoxProps = Pick<
   | 'px'
   | 'py'
   | 'w'
-> & { className?: string; style?: CSSProperties };
+> & { className?: string; testId?: string; style?: CSSProperties };
 
 export type Props = PropsWithChildren<BoxProps> &
   HTMLAttributes<HTMLDivElement>;
@@ -51,12 +51,14 @@ export const Box = forwardRef<HTMLDivElement | null, Readonly<Props>>(
       px,
       py,
       w,
+      testId,
       ...props
     },
     ref,
   ): JSX.Element => (
     <div
       {...props}
+      data-testid={testId}
       className={classNames(
         sx({ h, m, mb, ml, mr, mt, mx, my, p, pb, pl, pr, pt, px, py, w }),
         className,

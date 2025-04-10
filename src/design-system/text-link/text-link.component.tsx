@@ -13,6 +13,7 @@ import type { OmitClassName } from '../../types';
 export type Props = OmitClassName<'a'> & {
   disabled?: boolean;
   label?: string;
+  testId?: string;
   px?: keyof typeof spacing;
 };
 
@@ -20,6 +21,7 @@ export const TextLink = ({
   disabled = false,
   px = '$8',
   label,
+  testId,
   ...props
 }: Readonly<Props>): JSX.Element => {
   return (
@@ -30,6 +32,7 @@ export const TextLink = ({
       alignItems="center"
       justifyContent="center"
       px={px}
+      testId={testId}
     >
       <Flex alignItems="center" justifyContent="center">
         <Text.Button

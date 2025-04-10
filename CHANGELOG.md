@@ -1,3 +1,149 @@
+# [3.3.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.7...v3.3.0) (2025-03-24)
+
+
+### Features
+
+* allow passing elements to asset table props ([ee6609d](https://github.com/input-output-hk/lace-ui-toolkit/commit/ee6609d15604c1b1d210a3f264430fc5c60a35c3))
+
+## [3.2.7](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.6...v3.2.7) (2025-03-05)
+
+
+### Bug Fixes
+
+* optional Tooltip props [LW-12407] ([6731b2f](https://github.com/input-output-hk/lace-ui-toolkit/commit/6731b2f5b5e90b08a8bb3b04c73a64969f9f953e))
+
+## [3.2.6](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.5...v3.2.6) (2025-02-14)
+
+
+### Bug Fixes
+
+* simple asset input text terminating in the middle of container ([7015872](https://github.com/input-output-hk/lace-ui-toolkit/commit/701587267adfa2df7e6881666d2ef89b835c328b))
+
+## [3.2.5](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.4...v3.2.5) (2025-02-14)
+
+
+### Bug Fixes
+
+* apply popup styles on smaller screens [LW-12311] ([a045b32](https://github.com/input-output-hk/lace-ui-toolkit/commit/a045b32fdcf74d76b6a9afd7bca62e691692f816))
+
+## [3.2.4](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.3...v3.2.4) (2025-02-13)
+
+
+### Bug Fixes
+
+* expand simple asset input to occupy 100% width ([c8bd477](https://github.com/input-output-hk/lace-ui-toolkit/commit/c8bd477406c9c7dcd2cfb9fa0dbe47ee02b9066a))
+
+## [3.2.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.2...v3.2.3) (2025-02-13)
+
+
+### Bug Fixes
+
+* truncate profile dropdown trigger title [LW-12306] ([0b1f07f](https://github.com/input-output-hk/lace-ui-toolkit/commit/0b1f07f0f53e5f79070c7a3100f8239f5ad7a5f5))
+
+## [3.2.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.1...v3.2.2) (2025-02-13)
+
+
+### Bug Fixes
+
+* truncate wallet option title [LW-12306] ([8b789cb](https://github.com/input-output-hk/lace-ui-toolkit/commit/8b789cb09120bfaa80483201cf36f25030cee635))
+
+## [3.2.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.0...v3.2.1) (2025-02-03)
+
+
+### Bug Fixes
+
+* improve theme adaptation for edit icon ([9606ee4](https://github.com/input-output-hk/lace-ui-toolkit/commit/9606ee4f45562b8ad07d8f00df2a27d632764722))
+
+# [3.2.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.1.0...v3.2.0) (2025-02-03)
+
+
+### Features
+
+* add edit to wallet option ([2e4be3d](https://github.com/input-output-hk/lace-ui-toolkit/commit/2e4be3d41f994601aaaf14780f38261b6d772cfb))
+
+# [3.1.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.0.0...v3.1.0) (2024-12-13)
+
+
+### Features
+
+* support TokenAmount details tooltip [LW-11733] ([4836445](https://github.com/input-output-hk/lace-ui-toolkit/commit/4836445eda672f3bff63f98b7474b93af58932dd))
+
+# [3.0.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v2.0.0...v3.0.0) (2024-12-11)
+
+
+* feat!: make token amount details configurable [LW-11733] ([bfab9e7](https://github.com/input-output-hk/lace-ui-toolkit/commit/bfab9e7440ecbe022706e75b093fcfce4d066172))
+
+
+### BREAKING CHANGES
+
+* TokenAmount props changed from a simple fiatPrice prop
+to a more flexible "details" prop which can further be customized by
+passing "detailsColor" and "detailsWeight" to cover more scenarios
+
+# [2.0.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.24.0...v2.0.0) (2024-11-21)
+
+# [1.24.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.23.0...v1.24.0) (2024-10-18)
+
+
+### Features
+
+* add clock and exclamation mark icons [LW-9231] ([a66cff7](https://github.com/input-output-hk/lace-ui-toolkit/commit/a66cff7853b88a53c7e7b8bcb6d2c30b1f73a02f))
+
+# [1.23.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.22.0...v1.23.0) (2024-10-11)
+
+
+### Features
+
+* improve simple asset input [LW-9231] ([e424a0f](https://github.com/input-output-hk/lace-ui-toolkit/commit/e424a0fb88a9fa1075bcf595a12b180ad03fca8a))
+
+# [1.22.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.21.0...v1.22.0) (2024-10-10)
+
+
+### Features
+
+* add simple version of asset input [LW-9231] ([f3ca7f1](https://github.com/input-output-hk/lace-ui-toolkit/commit/f3ca7f18803bcf5f6985d031829cf224a1541b5b))
+
+# [1.21.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.20.0...v1.21.0) (2024-09-24)
+
+
+### Features
+
+* add data-testid to toggle-switch component [LW-11556] ([6726320](https://github.com/input-output-hk/lace-ui-toolkit/commit/672632027a461a9f8b3f22b0ba0356fb89beb755))
+
+# [1.20.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.19.0...v1.20.0) (2024-09-13)
+
+
+### Features
+
+* add data-testid to sideDrawer [LW-11491] ([a38aaa8](https://github.com/input-output-hk/lace-ui-toolkit/commit/a38aaa82fdc6488bbc68d7f29af3007b166be293))
+
+# [1.19.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.2...v1.19.0) (2024-09-11)
+
+
+### Bug Fixes
+
+* replace data-testid attributes with props ([bea9c01](https://github.com/input-output-hk/lace-ui-toolkit/commit/bea9c019048a80b94e90db998be7ad3bb03985b9))
+
+
+### Features
+
+* add testId prop to TextLink ([5af6152](https://github.com/input-output-hk/lace-ui-toolkit/commit/5af61524073bb54a740c630592ee2ad1d1da838b))
+
+## [1.18.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.1...v1.18.2) (2024-09-11)
+
+
+### Bug Fixes
+
+* fix profile dropdown wallet icon test id ([54aaf0c](https://github.com/input-output-hk/lace-ui-toolkit/commit/54aaf0cb10b22f3700fc98e944319c04cb54b1fb))
+* fix table body test id ([3d7d47e](https://github.com/input-output-hk/lace-ui-toolkit/commit/3d7d47ec7a1dc2e8e25a126e7d215dd8bbc28623))
+
+## [1.18.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.18.0...v1.18.1) (2024-09-11)
+
+
+### Bug Fixes
+
+* box component now has a new property testId what will be rendered in the data-testid prop ([e0a9e71](https://github.com/input-output-hk/lace-ui-toolkit/commit/e0a9e7112d2bfc709bf3696fb039f73f695cc1ad))
+
 # [1.18.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v1.17.0...v1.18.0) (2024-08-27)
 
 

@@ -88,6 +88,24 @@ export const Overview = (): JSX.Element => (
             }}
           />
         </Flex>
+        <Flex
+          gap="$16"
+          alignItems="center"
+          w="$fill"
+          justifyContent="center"
+          mt="$16"
+        >
+          <Trigger
+            title="TRIGGER_WITH_LONG_WALLET_NAME_THAT_SHOULD_BE_TRUNCATED"
+            type="hot"
+            style={{ width: '200px' }}
+          />
+          <Trigger
+            title="TRIGGER_WITH_LONG_WALLET_NAME_THAT_SHOULD_BE_TRUNCATED"
+            type="hot"
+            style={{ width: '400px' }}
+          />
+        </Flex>
       </Section>
 
       <Divider my="$64" />

@@ -1,6 +1,6 @@
-import type { Asset, AssetState } from './asset-input.data';
+import type { AssetWithFiat, AssetState } from './asset-input.data';
 
-export const asset: Asset = {
+export const asset: AssetWithFiat = {
   balance: String(10_000_000),
   amount: '',
   id: '',

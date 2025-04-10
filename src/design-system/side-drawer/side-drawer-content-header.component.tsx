@@ -32,11 +32,16 @@ export const Header = ({
         </Flex>
       )}
       <Flex justifyContent="center" w="$fill">
-        <Text.Body.Large weight="$bold">{text}</Text.Body.Large>
+        <Text.Body.Large weight="$bold" data-testid="drawer-header-title">
+          {text}
+        </Text.Body.Large>
       </Flex>
       <Flex w="$40">
         <Close>
-          <NavigationButtons.Close onClick={onCloseClick} />
+          <NavigationButtons.Close
+            onClick={onCloseClick}
+            data-testid="drawer-header-close-button"
+          />
         </Close>
       </Flex>
     </Flex>

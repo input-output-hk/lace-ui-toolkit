@@ -35,7 +35,7 @@ export const AccountsList = ({
   const hasMultipleUnlockedAccounts =
     accounts.filter(a => a.isUnlocked).length > 1;
   return (
-    <Flex gap="$16" flexDirection="column" data-testid="wallet-accounts-list">
+    <Flex gap="$16" flexDirection="column" testId="wallet-accounts-list">
       {accounts.map(a => (
         <AccountItem
           key={a.accountNumber}
