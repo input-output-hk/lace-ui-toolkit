@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.3.0...v3.4.0) (2025-04-10)
+
+
+### Features
+
+* add test ids for text box ([42ad723](https://github.com/input-output-hk/lace-ui-toolkit/commit/42ad7237941be17b2a5dd04db3bfe0ee13302053))
+
 # [3.3.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.2.7...v3.3.0) (2025-03-24)
 
 
