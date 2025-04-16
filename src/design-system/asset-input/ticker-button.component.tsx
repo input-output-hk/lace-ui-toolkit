@@ -2,6 +2,7 @@ import React from 'react';
 
 import ChevronRight from '@icons/ChevronRightComponent';
 
+import { Flex } from '../flex';
 import { Text } from '../text';
 
 import * as cx from './ticker-button.css';
@@ -23,8 +24,10 @@ export const TickerButton = ({
     data-testid={`asset-input-ticker-button-${id}`}
   >
     <Text.SubHeading weight="$bold">
-      {name}
-      <ChevronRight className={cx.chevronIcon} />
+      <Flex justifyContent="center" alignItems="center">
+        {name}
+        <ChevronRight className={cx.chevronIcon} />
+      </Flex>
     </Text.SubHeading>
   </button>
 );

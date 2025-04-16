@@ -203,6 +203,7 @@ export const Controls: Controls = ({
               image={cardanoImage}
               name={tokenName}
               description={tokenSubtitle}
+              badge="Badge"
             />
             <MarketPrice
               tokenPrice={tokenPrice}

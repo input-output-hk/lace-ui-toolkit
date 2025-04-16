@@ -167,6 +167,9 @@ const colors: Colors = {
 
   $assets_table_container_bgColor_hover: darkColorScheme.$primary_mid_grey,
 
+  $assets_table_badge_bgColor: '#0000FE',
+  $assets_table_badge_textColor: lightColorScheme.$primary_white,
+
   $dialog_container_bgColor: darkColorScheme.$primary_light_black,
   $dialog_description_color: darkColorScheme.$primary_light_grey,
 

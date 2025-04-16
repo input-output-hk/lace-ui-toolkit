@@ -1,6 +1,7 @@
 import React, { ReactElement, ReactNode } from 'react';
 
 import { Box } from '../box';
+import { Flex } from '../flex';
 import { Grid, Cell } from '../grid';
 import { Image } from '../profile-picture';
 import { Text } from '../text';
@@ -16,6 +17,7 @@ type TokenProfileProps = {
   alt?: string;
   image: ReactNode;
   name: ReactNode;
+  badge?: string;
   description: ReactNode;
   testId?: string;
 };
@@ -24,6 +26,7 @@ export const TokenProfile = ({
   alt,
   image,
   name,
+  badge,
   description,
   testId = 'token-profile',
 }: Readonly<TokenProfileProps>): ReactElement => {
@@ -45,9 +48,20 @@ export const TokenProfile = ({
           <Box mr="$24">{imageNode}</Box>
         </Cell>
         <Cell>
-          <Text.Body.Large weight="$semibold" data-testid={`${testId}-name`}>
-            {name}
-          </Text.Body.Large>
+          <Flex alignItems="center" gap="$8">
+            <Text.Body.Large weight="$semibold" data-testid={`${testId}-name`}>
+              {name}
+            </Text.Body.Large>
+            {!!badge && (
+              <Text.Label
+                className={cx.badge}
+                weight="$medium"
+                data-testid={`${testId}-badge`}
+              >
+                {badge}
+              </Text.Label>
+            )}
+          </Flex>
           <Box>
             <Text.Body.Normal
               color="secondary"

@@ -109,6 +109,9 @@ export const colors = {
 
   $assets_table_container_bgColor_hover: '',
 
+  $assets_table_badge_bgColor: '',
+  $assets_table_badge_textColor: '',
+
   $dialog_container_bgColor: '',
   $dialog_description_color: '',
 
