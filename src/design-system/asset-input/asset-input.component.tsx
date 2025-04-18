@@ -36,13 +36,15 @@ export const AssetInput = ({
     </Box>
     <Box className={cx.amountBox}>
       <Flex alignItems="center" justifyContent="flex-end">
-        <MaxButton
-          label="MAX"
-          data-testid={`asset-input-max-button-${state.asset.id}`}
-          onClick={(): void => {
-            onMaxClick?.(state.asset);
-          }}
-        />
+        {!!onMaxClick && (
+          <MaxButton
+            label="MAX"
+            data-testid={`asset-input-max-button-${state.asset.id}`}
+            onClick={(): void => {
+              onMaxClick?.(state.asset);
+            }}
+          />
+        )}
         <Box ml="$8">
           <AmountInput
             id={state.asset.id}
@@ -65,9 +67,11 @@ export const AssetInput = ({
         alignItems="flex-end"
         justifyContent="flex-end"
       >
-        <Text.Body.Normal color="secondary">
-          ≈ {state.asset.fiat.value} {state.asset.fiat.ticker}
-        </Text.Body.Normal>
+        {!!state.asset.fiat && (
+          <Text.Body.Normal color="secondary">
+            ≈ {state.asset.fiat.value} {state.asset.fiat.ticker}
+          </Text.Body.Normal>
+        )}
         {state.type === 'invalid' && (
           <Text.Label
             color="error"

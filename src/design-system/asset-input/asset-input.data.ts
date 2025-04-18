@@ -6,7 +6,7 @@ export interface Asset {
 }
 
 export interface AssetWithFiat extends Asset {
-  fiat: {
+  fiat?: {
     value: string;
     ticker: string;
   };
