@@ -1,3 +1,10 @@
+# [3.5.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.4.0...v3.5.0) (2025-04-18)
+
+
+### Features
+
+* [lw-12577] make fiat optional in assett input, add badge into asset table ([0e4c88a](https://github.com/input-output-hk/lace-ui-toolkit/commit/0e4c88aa81a1c1b06f48782fa590623bd1be87d0))
+
 # [3.4.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.3.0...v3.4.0) (2025-04-10)
 
 
