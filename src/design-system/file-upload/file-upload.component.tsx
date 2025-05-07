@@ -48,14 +48,20 @@ export const FileUpload = ({
       alignItems="center"
       justifyContent="center"
     >
-      <UploadIcon />
+      <UploadIcon data-testid="upload-icon" />
     </Flex>
     <Box w="$fill">
       <Box>
         <Box mb="$8">
-          <Text.Body.Normal weight="$medium">{label}</Text.Body.Normal>
+          <Text.Body.Normal weight="$medium" data-testid="file-upload-label">
+            {label}
+          </Text.Body.Normal>
         </Box>
-        <Text.Body.Small color="secondary" weight="$medium">
+        <Text.Body.Small
+          color="secondary"
+          weight="$medium"
+          data-testid="supported-formats-label"
+        >
           {supportedFormats}
         </Text.Body.Small>
       </Box>
@@ -65,13 +71,16 @@ export const FileUpload = ({
           {files.map((file, index) => (
             <Box key={file}>
               <Flex mb="$8">
-                <Text.Body.Small weight="$medium">{file}</Text.Body.Small>
+                <Text.Body.Small weight="$medium" data-testid={'file-name'}>
+                  {file}
+                </Text.Body.Small>
                 <Box className={cx.checkIconBox} ml="$8">
-                  <CheckFileUploadIcon />
+                  <CheckFileUploadIcon data-testid="check-icon" />
                 </Box>
               </Flex>
               <button
                 className={cx.removeButtonBox}
+                data-testid="remove-button"
                 onClick={(event): void => {
                   if (onRemove) {
                     event.preventDefault();
