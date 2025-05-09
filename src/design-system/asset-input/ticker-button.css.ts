@@ -9,7 +9,7 @@ export const button = style({
 });
 
 export const chevronIcon = sx({
-  w: '$16',
-  h: '$16',
+  w: '$auto',
+  h: '$auto',
   marginLeft: '$8',
 });
