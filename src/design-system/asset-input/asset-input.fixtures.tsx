@@ -1,4 +1,7 @@
+import React from 'react';
+
 import cardanoImage from '../../assets/images/cardano-blue-bg.png';
+import { Image } from '../profile-picture';
 
 import type { AssetWithFiat, AssetState } from './asset-input.data';
 
@@ -7,7 +10,7 @@ export const asset: AssetWithFiat = {
   amount: '',
   id: '',
   ticker: 'Token',
-  icon: cardanoImage,
+  icon: <Image imageSrc={cardanoImage} />,
   fiat: {
     value: '0',
     ticker: 'USD',
