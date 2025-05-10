@@ -28,6 +28,7 @@ export const AssetInput = ({
     <Box className={cx.assetNameBox}>
       <TickerButton
         id={state.asset.id}
+        icon={state.asset.icon}
         name={state.asset.ticker}
         onClick={(): void => {
           onTickerClick?.(state.asset);

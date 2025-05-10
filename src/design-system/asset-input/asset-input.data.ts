@@ -3,6 +3,7 @@ export interface Asset {
   ticker: string;
   balance: string;
   amount: string;
+  icon?: string;
 }
 
 export interface AssetWithFiat extends Asset {

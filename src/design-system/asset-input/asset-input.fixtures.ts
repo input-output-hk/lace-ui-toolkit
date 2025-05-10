@@ -1,3 +1,5 @@
+import cardanoImage from '../../assets/images/cardano-blue-bg.png';
+
 import type { AssetWithFiat, AssetState } from './asset-input.data';
 
 export const asset: AssetWithFiat = {
@@ -5,6 +7,7 @@ export const asset: AssetWithFiat = {
   amount: '',
   id: '',
   ticker: 'Token',
+  icon: cardanoImage,
   fiat: {
     value: '0',
     ticker: 'USD',
