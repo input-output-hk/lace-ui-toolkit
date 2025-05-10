@@ -1,3 +1,10 @@
+# [3.6.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.5.0...v3.6.0) (2025-05-10)
+
+
+### Features
+
+* [lw-12215] add asset icon into asset input ([53c0788](https://github.com/input-output-hk/lace-ui-toolkit/commit/53c0788944431d8f5d71c3093b44552471d64cfc))
+
 # [3.5.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.4.0...v3.5.0) (2025-04-18)
 
 
