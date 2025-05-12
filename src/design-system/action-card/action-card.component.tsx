@@ -18,12 +18,14 @@ type Props = Omit<OmitClassName<'div'>, 'title'> & {
   icon: ReactNode;
   rootClassName?: string;
   iconClassName?: string;
+  testId?: string;
 };
 
 export const ActionCard = ({
   title,
   description = '',
   icon,
+  testId,
   ...props
 }: Readonly<Props>): JSX.Element => (
   <Box {...props} className={classNames([cx.root, props.rootClassName])}>
@@ -32,6 +34,7 @@ export const ActionCard = ({
       mr="$24"
       alignItems="center"
       justifyContent="center"
+      data-testid={testId ? `${testId}-icon` : 'action-card-icon'}
     >
       {icon}
     </Flex>
@@ -43,6 +46,7 @@ export const ActionCard = ({
               weight={weight || '$medium'}
               color={highlight ? 'highlight' : 'primary'}
               key={text}
+              data-testid={testId ? `${testId}-title` : 'action-card-title'}
             >
               {text}{' '}
             </Text.Body.Normal>
@@ -50,7 +54,13 @@ export const ActionCard = ({
         </Box>
         {description.length > 0 && (
           <Box mt="$8">
-            <Text.Body.Small weight="$medium" color="secondary">
+            <Text.Body.Small
+              weight="$medium"
+              color="secondary"
+              data-testid={
+                testId ? `${testId}-description` : 'action-card-description'
+              }
+            >
               {description}
             </Text.Body.Small>
           </Box>
