@@ -1,9 +1,11 @@
+import React from 'react';
+
 export interface Asset {
   id: string;
   ticker: string;
   balance: string;
   amount: string;
-  icon?: string;
+  icon?: string | React.ReactNode;
 }
 
 export interface AssetWithFiat extends Asset {
