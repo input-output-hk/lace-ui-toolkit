@@ -1,3 +1,11 @@
+# [3.8.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.7.0...v3.8.0) (2025-05-13)
+
+
+### Features
+
+* add test ids for action card component ([c353578](https://github.com/input-output-hk/lace-ui-toolkit/commit/c353578f38abf2cacaefe3fa82304ef65ebe8d13))
+* add test ids for flow card profile component ([70f975c](https://github.com/input-output-hk/lace-ui-toolkit/commit/70f975c390ca3dd1bfc31562089306bb920b2ab1))
+
 # [3.7.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.6.0...v3.7.0) (2025-05-12)
 
 
