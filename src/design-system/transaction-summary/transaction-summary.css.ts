@@ -8,6 +8,10 @@ export const secondaryText = style({
   wordBreak: 'break-all',
 });
 
+export const textAlignRight = style({
+  textAlign: 'right',
+});
+
 export const tooltipIcon = style([
   sx({
     color: '$text_primary',
