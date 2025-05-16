@@ -1,3 +1,11 @@
+## [3.8.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.0...v3.8.1) (2025-05-16)
+
+
+### Bug Fixes
+
+* add tooltip to transaction summary ([906d1ee](https://github.com/input-output-hk/lace-ui-toolkit/commit/906d1eeda06d2527f2959fd819a6f571eb6c036a))
+* improve formatting for edit component ([002525f](https://github.com/input-output-hk/lace-ui-toolkit/commit/002525f9b13fd42f47bfb0615e0c99e757c45ff4))
+
 # [3.8.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.7.0...v3.8.0) (2025-05-13)
 
 
