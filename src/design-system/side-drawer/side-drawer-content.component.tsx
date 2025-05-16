@@ -27,6 +27,7 @@ export const Content = ({
       {...props}
       className={classNames(cx.container)}
       style={{ zIndex: zIndex === undefined ? undefined : zIndex + 1 }}
+      aria-describedby={undefined}
     >
       <ContentCard>{children}</ContentCard>
     </Dialog.Content>
