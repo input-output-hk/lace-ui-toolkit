@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { DialogTitle } from '@radix-ui/react-dialog';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+
 import { Box } from '../box';
 import { Flex } from '../flex';
 import * as NavigationButtons from '../navigation-buttons';
@@ -32,6 +35,9 @@ export const Header = ({
         </Flex>
       )}
       <Flex justifyContent="center" w="$fill">
+        <VisuallyHidden>
+          <DialogTitle>{text}</DialogTitle>
+        </VisuallyHidden>
         <Text.Body.Large weight="$bold" data-testid="drawer-header-title">
           {text}
         </Text.Body.Large>
