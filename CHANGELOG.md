@@ -1,3 +1,10 @@
+## [3.8.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.2...v3.8.3) (2025-05-16)
+
+
+### Bug Fixes
+
+* explicitly remove aria-describedby in SideDrawer.Content ([03c9022](https://github.com/input-output-hk/lace-ui-toolkit/commit/03c902244918fc3d8e08010df8622ac8a61a9cc5))
+
 ## [3.8.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.1...v3.8.2) (2025-05-16)
 
 
