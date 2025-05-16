@@ -108,6 +108,17 @@ const MainComponents = (): JSX.Element => (
     <Variants.Row>
       <Variants.Cell>
         <Layout>
+          <Other
+            label="Label with tooltip"
+            text="Ut condimentum enim pulvinar, consequat nunc vitae, feugiat nisl. Vestibulum elementum condiment congue et nam quis ipsum diam."
+            tooltip="Ut condimentum enim pulvinar, consequat nunc vitae, feugiat nisl"
+          />
+        </Layout>
+      </Variants.Cell>
+    </Variants.Row>
+    <Variants.Row>
+      <Variants.Cell>
+        <Layout>
           <Metadata
             label="Metadata"
             text="Ut condimentum enim pulvinar, consequat nunc vitae, feugiat nisl. Vestibulum elementum condiment congue et nam quis ipsum diam."
