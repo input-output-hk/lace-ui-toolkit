@@ -1,3 +1,10 @@
+## [3.8.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.1...v3.8.2) (2025-05-16)
+
+
+### Bug Fixes
+
+* add missing DialogTitle in SideDrawer.Header ([60229fc](https://github.com/input-output-hk/lace-ui-toolkit/commit/60229fce0db57d1fafa159055cb745facfe61289))
+
 ## [3.8.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.0...v3.8.1) (2025-05-16)
 
 
