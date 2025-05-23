@@ -15,18 +15,29 @@ export interface Props {
     label?: string;
     onClick?: () => void;
   };
+  testId?: string;
 }
 
 export const InfoBar = ({
   message,
   icon,
   callToAction,
+  testId,
 }: Readonly<Props>): JSX.Element => {
   return (
     <Flex className={cx.container}>
-      <Box className={cx.icon}>{icon}</Box>
+      <Box
+        className={cx.icon}
+        data-testid={testId ? `${testId}-icon` : 'info-bar-icon'}
+      >
+        {icon}
+      </Box>
       <Box>
-        <Text.Button weight="$semibold" className={cx.message}>
+        <Text.Button
+          weight="$semibold"
+          className={cx.message}
+          data-testid={testId ? `${testId}-message` : 'info-bar-message'}
+        >
           {message}
         </Text.Button>
       </Box>
@@ -36,6 +47,7 @@ export const InfoBar = ({
           <CallToAction
             onClick={callToAction.onClick}
             label={callToAction.label}
+            data-testid={testId ? `${testId}-cta` : 'info-bar-cta'}
           />
         </Box>
       )}
