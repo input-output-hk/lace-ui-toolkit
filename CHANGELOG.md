@@ -1,3 +1,10 @@
+## [3.8.4](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.3...v3.8.4) (2025-05-28)
+
+
+### Bug Fixes
+
+* add onsubmit form event handler for text box component ([8c26e2b](https://github.com/input-output-hk/lace-ui-toolkit/commit/8c26e2b1d37318eabd5226bee56ee018357630f9))
+
 ## [3.8.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.2...v3.8.3) (2025-05-16)
 
 
