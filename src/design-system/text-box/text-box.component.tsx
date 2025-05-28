@@ -26,6 +26,7 @@ export interface TextBoxProps extends Form.FormControlProps {
   maxLength?: number;
   'data-testid'?: string;
   w?: Sx['w'];
+  onFormSubmit?: (event: Readonly<React.FormEvent<HTMLFormElement>>) => void;
 }
 
 export const TextBox = ({
@@ -42,9 +43,12 @@ export const TextBox = ({
   containerStyle,
   maxLength,
   w = '$auto',
+  onFormSubmit = event => {
+    event.preventDefault();
+  },
   ...rest
 }: Readonly<TextBoxProps>): JSX.Element => (
-  <Form.Root>
+  <Form.Root onSubmit={onFormSubmit}>
     <Flex justifyContent="space-between" alignItems="center">
       <Form.Field
         name="field"
