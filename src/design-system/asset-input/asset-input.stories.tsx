@@ -33,7 +33,7 @@ export default {
 const AssetInputMainComponents = (): JSX.Element => (
   <Variants.Row>
     <Variants.Cell>
-      <AssetInput state={validState('1')} />
+      <AssetInput onBlur={() => console.log('blur')} state={validState('1')} />
     </Variants.Cell>
   </Variants.Row>
 );

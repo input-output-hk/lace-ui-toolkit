@@ -15,6 +15,7 @@ interface Props {
   testId?: string;
   className?: string;
   inputClassName?: string;
+  onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
 }
 
 export const AmountInput = ({
@@ -25,6 +26,7 @@ export const AmountInput = ({
   testId,
   className,
   inputClassName,
+  onBlur,
 }: Readonly<Props>): JSX.Element => {
   return (
     <Box className={cn(cx.amountInputSizer, className)} data-value={value}>
@@ -35,6 +37,7 @@ export const AmountInput = ({
         onChange={({ target }): void => onChange?.(target.value)}
         placeholder="0.0"
         data-testid={testId ?? `asset-input-amount-input-${id}`}
+        onBlur={onBlur}
       />
     </Box>
   );
