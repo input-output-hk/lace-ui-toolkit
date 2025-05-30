@@ -16,6 +16,7 @@ interface Props {
   onTickerClick?: (asset: Readonly<AssetWithFiat>) => void;
   onAmountChange?: (asset: Readonly<AssetWithFiat>, amount: string) => void;
   onMaxClick?: (asset: Readonly<AssetWithFiat>) => void;
+  onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
 }
 
 export const AssetInput = ({
@@ -23,6 +24,7 @@ export const AssetInput = ({
   onTickerClick,
   onAmountChange,
   onMaxClick,
+  onBlur,
 }: Readonly<Props>): JSX.Element => (
   <div className={cx.root}>
     <Box className={cx.assetNameBox}>
@@ -53,6 +55,7 @@ export const AssetInput = ({
             onChange={(value): void => {
               onAmountChange?.(state.asset, value);
             }}
+            onBlur={onBlur}
           />
         </Box>
       </Flex>
