@@ -1,3 +1,10 @@
+## [3.8.5](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.4...v3.8.5) (2025-05-30)
+
+
+### Bug Fixes
+
+* provide asset input with onblur event handler ([69459f5](https://github.com/input-output-hk/lace-ui-toolkit/commit/69459f552bb68d7983aca267d1da2a0fb00c04c8))
+
 ## [3.8.4](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.3...v3.8.4) (2025-05-28)
 
 
