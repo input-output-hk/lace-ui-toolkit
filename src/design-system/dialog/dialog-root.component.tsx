@@ -27,38 +27,39 @@ export interface DialogRootProps {
   zIndex?: number;
 }
 
-export const Root = ({
-  open,
-  setOpen,
-  onCloseAutoFocusRef,
-  children,
-  portalContainer,
-  zIndex,
-}: Readonly<DialogRootProps>): JSX.Element => (
-  <AlertDialog.Root open={open}>
-    <AlertDialog.Portal container={portalContainer}>
-      <AlertDialog.Overlay asChild>
-        <Backdrop zIndex={zIndex} />
-      </AlertDialog.Overlay>
-      <AlertDialog.Content
-        asChild
-        onEscapeKeyDown={(): void => {
-          setOpen(false);
-        }}
-        onCloseAutoFocus={
-          onCloseAutoFocusRef &&
-          ((): void => {
-            onCloseAutoFocusRef.current?.focus();
-          })
-        }
-      >
-        <Content
-          className={cx.dialogContent}
-          style={{ zIndex: zIndex === undefined ? undefined : zIndex + 1 }}
+export const Root = React.forwardRef<HTMLDivElement, Readonly<DialogRootProps>>(
+  (
+    { open, setOpen, onCloseAutoFocusRef, children, portalContainer, zIndex },
+    forwardReference,
+  ) => (
+    <AlertDialog.Root open={open}>
+      <AlertDialog.Portal container={portalContainer}>
+        <AlertDialog.Overlay asChild>
+          <Backdrop zIndex={zIndex} />
+        </AlertDialog.Overlay>
+        <AlertDialog.Content
+          ref={forwardReference}
+          asChild
+          onEscapeKeyDown={(): void => {
+            setOpen(false);
+          }}
+          onCloseAutoFocus={
+            onCloseAutoFocusRef &&
+            ((): void => {
+              onCloseAutoFocusRef.current?.focus();
+            })
+          }
         >
-          {children}
-        </Content>
-      </AlertDialog.Content>
-    </AlertDialog.Portal>
-  </AlertDialog.Root>
+          <Content
+            className={cx.dialogContent}
+            style={{ zIndex: zIndex === undefined ? undefined : zIndex + 1 }}
+          >
+            {children}
+          </Content>
+        </AlertDialog.Content>
+      </AlertDialog.Portal>
+    </AlertDialog.Root>
+  ),
 );
+
+Root.displayName = 'DialogRoot';
