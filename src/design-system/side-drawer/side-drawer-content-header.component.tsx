@@ -31,7 +31,10 @@ export const Header = ({
     >
       {onBackClick !== undefined && (
         <Flex w="$40">
-          <NavigationButtons.Back onClick={onBackClick} />
+          <NavigationButtons.Back
+            onClick={onBackClick}
+            data-testid="drawer-header-back-button"
+          />
         </Flex>
       )}
       <Flex justifyContent="center" w="$fill">
