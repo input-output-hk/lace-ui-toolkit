@@ -121,7 +121,7 @@
     "prettier": "3.2.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "rollup": "2.79.1",
+    "rollup": "4.46.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-shell": "^1.0.9",
     "semantic-release": "^21.0.2",
