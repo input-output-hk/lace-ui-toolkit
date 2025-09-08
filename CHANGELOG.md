@@ -1,3 +1,10 @@
+# [3.9.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.5...v3.9.0) (2025-09-08)
+
+
+### Features
+
+* allow for hiding clos button in Drawer ([ee83a8b](https://github.com/input-output-hk/lace-ui-toolkit/commit/ee83a8b43109c8bcbe92710d96e3766b1ba5ff95))
+
 ## [3.8.5](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.4...v3.8.5) (2025-05-30)
 
 
