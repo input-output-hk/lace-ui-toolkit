@@ -15,7 +15,7 @@ import { Separator } from './side-drawer-separator.component';
 interface Props {
   text: string;
   onBackClick?: () => void;
-  onCloseClick: () => void;
+  onCloseClick?: () => void;
 }
 
 export const Header = ({
@@ -46,12 +46,14 @@ export const Header = ({
         </Text.Body.Large>
       </Flex>
       <Flex w="$40">
-        <Close>
-          <NavigationButtons.Close
-            onClick={onCloseClick}
-            data-testid="drawer-header-close-button"
-          />
-        </Close>
+        {onCloseClick && (
+          <Close>
+            <NavigationButtons.Close
+              onClick={onCloseClick}
+              data-testid="drawer-header-close-button"
+            />
+          </Close>
+        )}
       </Flex>
     </Flex>
     <Box mb="$32">
