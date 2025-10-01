@@ -1,3 +1,10 @@
+## [3.9.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.0...v3.9.1) (2025-10-01)
+
+
+### Bug Fixes
+
+* disallow icon shrinking in InfoBar component ([971f11d](https://github.com/input-output-hk/lace-ui-toolkit/commit/971f11d2559ca8187023e982ca89d83f4d9e1273))
+
 # [3.9.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.8.5...v3.9.0) (2025-09-08)
 
 
