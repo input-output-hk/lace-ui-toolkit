@@ -10,13 +10,18 @@ export const container = sx({
   alignItems: 'center',
 });
 
-export const icon = sx({
-  width: '$24',
-  height: '$24',
-  fontSize: '$25',
-  mr: '$24',
-  color: '$info_bar_icon_color',
-});
+export const icon = style([
+  sx({
+    width: '$24',
+    height: '$24',
+    fontSize: '$25',
+    mr: '$24',
+    color: '$info_bar_icon_color',
+  }),
+  {
+    flexShrink: 0,
+  },
+]);
 
 export const message = style([
   sx({
