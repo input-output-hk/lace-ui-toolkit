@@ -1,3 +1,10 @@
+## [3.9.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.1...v3.9.2) (2025-10-17)
+
+
+### Bug Fixes
+
+* add full-width support to Select component ([04d30e8](https://github.com/input-output-hk/lace-ui-toolkit/commit/04d30e8ffe949c54b61ddec4127cf8a77e1e8342))
+
 ## [3.9.1](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.0...v3.9.1) (2025-10-01)
 
 
