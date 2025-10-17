@@ -3,6 +3,7 @@ import React from 'react';
 
 import ChevronDownIcon from '@icons/ChevronDownComponent';
 import * as Select from '@radix-ui/react-select';
+import cn from 'classnames';
 
 import { Item, ItemRoot } from './select-item';
 import * as cx from './select-root.component.css';
@@ -26,6 +27,8 @@ export type SelectRootProps = Pick<
   portalContainer?: HTMLElement;
   triggerTestId?: string;
   zIndex?: number;
+  fullWidth?: boolean;
+  className?: string;
 };
 
 const isValidSelectRootChild = (
@@ -56,6 +59,8 @@ const isValidSelectRootChild = (
  * @param variant The style variant.
  * @param triggerTestId The `data-testid` attribute, passed to the input trigger / root element.
  * @param zIndex The `z-index` applied to the `<Select.Content />`.
+ * @param fullWidth If `true`, the select trigger and content will take the full width of the parent container.
+ * @param className The CSS class name applied to the root element.
  */
 export const Root = ({
   align = 'selected',
@@ -73,6 +78,8 @@ export const Root = ({
   variant = 'plain',
   triggerTestId,
   zIndex,
+  fullWidth = false,
+  className,
 }: Readonly<SelectRootProps>): JSX.Element => {
   const [isOpen, setIsOpen] = React.useState(defaultOpen);
 
@@ -87,9 +94,10 @@ export const Root = ({
       onValueChange={onChange}
     >
       <Select.Trigger
-        className={cx.trigger[variant]}
         id={id}
         data-testid={triggerTestId}
+        className={cn(cx.trigger[variant], className)}
+        style={fullWidth ? { width: '100%' } : undefined}
       >
         <Select.Value placeholder={placeholder} />
         {showArrow && (
@@ -100,7 +108,12 @@ export const Root = ({
       </Select.Trigger>
       <Select.Portal container={portalContainer}>
         <Select.Content
-          style={{ zIndex }}
+          style={{
+            zIndex,
+            ...(fullWidth
+              ? { width: 'var(--radix-select-trigger-width)' }
+              : {}),
+          }}
           className={cx.content[variant]}
           position={align === 'selected' ? 'item-aligned' : 'popper'}
         >

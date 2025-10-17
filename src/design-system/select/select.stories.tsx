@@ -275,6 +275,34 @@ const SelectRootVariants = (): JSX.Element => {
   );
 };
 
+const FullWidth = (): JSX.Element => (
+  <Section
+    title="Full width"
+    subtitle="The select stretches to fill its container."
+  >
+    <div style={{ width: '100%', marginBottom: '30px' }}>
+      <Select.Root
+        variant="outline"
+        align="bottom"
+        value={undefined}
+        onChange={(): void => void 0}
+        placeholder={placeholder}
+        showArrow
+        fullWidth
+      >
+        {options.map(option => (
+          <Select.Item
+            key={option.value}
+            value={option.value}
+            title={option.label}
+            disabled={option.disabled}
+          />
+        ))}
+      </Select.Root>
+    </div>
+  </Section>
+);
+
 export const Overview = (): JSX.Element => (
   <Grid>
     <Cell>
@@ -283,6 +311,8 @@ export const Overview = (): JSX.Element => (
       <SelectVariants />
       <Divider my="$64" />
       <SelectRootVariants />
+      <Divider my="$64" />
+      <FullWidth />
     </Cell>
   </Grid>
 );
