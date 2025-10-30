@@ -22,6 +22,8 @@ type Props = Omit<
   required?: boolean;
   id?: string;
   testId?: string;
+  checkedChildren?: ReactNode;
+  unCheckedChildren?: ReactNode;
 };
 
 export const ToggleSwitch = ({
@@ -30,6 +32,9 @@ export const ToggleSwitch = ({
   icon,
   disabled,
   testId,
+  checkedChildren,
+  unCheckedChildren,
+  checked,
   ...props
 }: Readonly<Props>): JSX.Element => {
   return (
@@ -51,12 +56,17 @@ export const ToggleSwitch = ({
       )}
       <Switch.Root
         {...props}
+        checked={checked}
         disabled={disabled}
         className={cx.toogleSwitch}
         id={id}
         data-testid={testId + 'toggle-switch'}
       >
         <Switch.Thumb className={cx.thumb} />
+        {checked && <span className={cx.checkedIcon}>{checkedChildren}</span>}
+        {!checked && (
+          <span className={cx.uncheckedIcon}>{unCheckedChildren}</span>
+        )}
       </Switch.Root>
     </Flex>
   );

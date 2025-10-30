@@ -87,3 +87,32 @@ export const iconContainer = style([
     overflow: 'hidden',
   },
 ]);
+
+const icon = style([
+  sx({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }),
+  {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    pointerEvents: 'none',
+    transition: 'opacity 0.2s',
+  },
+]);
+
+export const checkedIcon = style([
+  icon,
+  {
+    left: '4px',
+  },
+]);
+
+export const uncheckedIcon = style([
+  icon,
+  {
+    right: '2px',
+  },
+]);
