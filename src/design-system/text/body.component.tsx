@@ -11,11 +11,11 @@ export const Small = createText<Exclude<FontWeights, '$regular'>>({
 export const Normal = createText<FontWeights>({
   type: 'body',
   as: 'span',
-  weight: '$regular',
+  weight: '$medium',
 });
 
 export const Large = createText<FontWeights>({
   type: 'bodyLarge',
   as: 'span',
-  weight: '$regular',
+  weight: '$medium',
 });

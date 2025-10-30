@@ -33,9 +33,10 @@ export default {
 
 const SampleTooltip = ({
   label,
+  preventTextWrap,
 }: Readonly<TooltipContentProps>): JSX.Element => (
   <StorybookContentRenderer>
-    <TooltipContent label={label} />
+    <TooltipContent label={label} preventTextWrap={preventTextWrap} />
   </StorybookContentRenderer>
 );
 
@@ -111,6 +112,22 @@ const VariantsTable = (): JSX.Element => (
   </Section>
 );
 
+const LongTextComponents = (): JSX.Element => (
+  <Variants.Table headers={['Long text default', 'Long text on single line']}>
+    <Variants.Row>
+      <Variants.Cell>
+        <SampleTooltip label="This is a very long tooltip text that will not wrap and will display on a single line no matter how long it gets" />
+      </Variants.Cell>
+      <Variants.Cell>
+        <SampleTooltip
+          label="This is a very long tooltip text that will not wrap and will display on a single line no matter how long it gets"
+          preventTextWrap
+        />
+      </Variants.Cell>
+    </Variants.Row>
+  </Variants.Table>
+);
+
 export const Overview = (): JSX.Element => (
   <Grid columns="$1">
     <Cell>
@@ -161,6 +178,15 @@ export const Overview = (): JSX.Element => (
           <Variants.Table>
             <MainComponents />
           </Variants.Table>
+        </LocalThemeProvider>
+      </Section>
+
+      <Divider my="$64" />
+
+      <Section title="Long Text Wrapping">
+        <LongTextComponents />
+        <LocalThemeProvider colorScheme={ThemeColorScheme.Dark}>
+          <LongTextComponents />
         </LocalThemeProvider>
       </Section>
     </Cell>

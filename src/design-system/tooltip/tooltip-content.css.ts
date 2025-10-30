@@ -15,3 +15,8 @@ export const tooltipContent = style([
     wordBreak: 'break-word',
   },
 ]);
+
+export const preventTextWrap = style({
+  whiteSpace: 'nowrap',
+  maxWidth: 'none',
+});
