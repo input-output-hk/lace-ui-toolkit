@@ -1,3 +1,11 @@
+## [3.9.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.2...v3.9.3) (2025-10-30)
+
+
+### Bug Fixes
+
+* add preventTextWrap prop to Tooltip ([d6d2439](https://github.com/input-output-hk/lace-ui-toolkit/commit/d6d24392e9fbcfd63904b1dccb0b71128f7c88d1))
+* update body component font weight to medium ([e268f71](https://github.com/input-output-hk/lace-ui-toolkit/commit/e268f71f54b335c10350c3d58384d574f4ee1074))
+
 ## [3.9.2](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.1...v3.9.2) (2025-10-17)
 
 
