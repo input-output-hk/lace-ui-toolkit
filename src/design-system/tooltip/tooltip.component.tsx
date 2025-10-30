@@ -13,6 +13,7 @@ export type Props = PropsWithChildren<
     delayDuration?: number;
     skipDelayDuration?: number;
     children: ReactNode;
+    preventTextWrap?: boolean;
   }
 >;
 
@@ -22,6 +23,7 @@ export const Tooltip = ({
   label,
   children,
   side,
+  preventTextWrap = false,
   ...props
 }: Readonly<Props>): JSX.Element => {
   return (
@@ -29,7 +31,12 @@ export const Tooltip = ({
       skipDelayDuration={skipDelayDuration}
       delayDuration={delayDuration}
     >
-      <Root side={side} label={label} {...props}>
+      <Root
+        side={side}
+        label={label}
+        preventTextWrap={preventTextWrap}
+        {...props}
+      >
         <Trigger asChild>
           <div>{children}</div>
         </Trigger>

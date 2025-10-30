@@ -4,14 +4,14 @@ import type { ReactNode } from 'react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 
 import { TooltipContent } from './tooltip-content.component';
-import * as cx from './tooltip-root.css';
 
 export type Props = typeof Tooltip.Root & {
-  align?: Tooltip.PopperContentProps['align'];
-  children?: Tooltip.PopperContentProps['children'];
-  side?: Tooltip.PopperContentProps['side'];
+  align?: Tooltip.TooltipContentProps['align'];
+  children?: Tooltip.TooltipContentProps['children'];
+  side?: Tooltip.TooltipContentProps['side'];
   label: ReactNode | string;
   zIndex?: number;
+  preventTextWrap?: boolean;
 };
 
 export const Root = ({
@@ -20,6 +20,7 @@ export const Root = ({
   align = 'center',
   zIndex,
   children,
+  preventTextWrap = false,
 }: Readonly<Props>): JSX.Element => {
   return (
     <Tooltip.Root>
@@ -29,10 +30,9 @@ export const Root = ({
           style={{ zIndex }}
           side={side}
           align={align}
-          className={cx.root}
           data-testid={'tooltip-content'}
         >
-          <TooltipContent label={label} />
+          <TooltipContent label={label} preventTextWrap={preventTextWrap} />
         </Tooltip.Content>
       </Tooltip.Portal>
     </Tooltip.Root>
