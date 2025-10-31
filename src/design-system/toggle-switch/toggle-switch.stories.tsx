@@ -4,6 +4,7 @@ import InfoIcon from '@icons/InfoComponent';
 import type { Meta } from '@storybook/react';
 
 import { ThemeColorScheme, LocalThemeProvider } from '../../design-tokens';
+import { Moon, Sun } from '../../icons';
 import { page, Variants, Section, UIStateTable } from '../decorators';
 import { Divider } from '../divider';
 import { Grid, Cell } from '../grid';
@@ -11,6 +12,25 @@ import { Grid, Cell } from '../grid';
 import { ToggleSwitch } from './toggle-switch.component';
 
 const subtitle = `The toggle switch represents a physical switch that allows users to turn things on or off. Use toggle switch controls to present users with two mutually exclusive options (such as on/off), where choosing an option provides immediate results.`;
+
+const WithCheckedAndUncheckedChildren = (): JSX.Element => {
+  const [checked, setChecked] = React.useState(false);
+
+  return (
+    <Variants.Row>
+      <Variants.Cell>
+        <ToggleSwitch
+          label="Light / Dark mode"
+          id="theme-switch"
+          checked={checked}
+          onCheckedChange={setChecked}
+          checkedChildren={<Sun width={20} height={20} />}
+          unCheckedChildren={<Moon width={20} height={20} />}
+        />
+      </Variants.Cell>
+    </Variants.Row>
+  );
+};
 
 export default {
   title: 'Basic Input/Toggle switch',
@@ -203,6 +223,19 @@ export const Overview = (): JSX.Element => (
         <UIStateTable>
           <SwitchPreview />
         </UIStateTable>
+      </Section>
+
+      <Divider my="$64" />
+
+      <Section title="Toogle switch with icons">
+        <Variants.Table>
+          <WithCheckedAndUncheckedChildren />
+        </Variants.Table>
+        <LocalThemeProvider colorScheme={ThemeColorScheme.Dark}>
+          <Variants.Table>
+            <WithCheckedAndUncheckedChildren />
+          </Variants.Table>
+        </LocalThemeProvider>
       </Section>
     </Cell>
   </Grid>
