@@ -1,3 +1,10 @@
+# [3.10.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.3...v3.10.0) (2025-10-31)
+
+
+### Features
+
+* add icon to toggle switch ([10b3b77](https://github.com/input-output-hk/lace-ui-toolkit/commit/10b3b77cc90f20600ca1874139f68b6d57abcfc4))
+
 ## [3.9.3](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.2...v3.9.3) (2025-10-30)
 
 
