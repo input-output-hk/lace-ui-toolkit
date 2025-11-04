@@ -1,3 +1,10 @@
+# [3.11.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.10.0...v3.11.0) (2025-11-04)
+
+
+### Features
+
+* update CloseComponent SVG to match v1 ([5941a48](https://github.com/input-output-hk/lace-ui-toolkit/commit/5941a48082f6eb2ba388f4c63e2b5055c7ef535d))
+
 # [3.10.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.9.3...v3.10.0) (2025-10-31)
 
 
