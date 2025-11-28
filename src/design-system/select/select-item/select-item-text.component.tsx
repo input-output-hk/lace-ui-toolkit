@@ -8,6 +8,7 @@ import { Text } from '../../text';
 export interface SelectItemTitleProps {
   title: string;
   description?: string;
+  testId?: string;
 }
 
 /**
@@ -15,11 +16,13 @@ export interface SelectItemTitleProps {
  * @param [description] Item description, visible only when input is in `open` state.
  */
 export const ItemText = forwardRef<HTMLSpanElement, SelectItemTitleProps>(
-  ({ title, description }, forwardReference) => (
+  ({ title, description, testId }, forwardReference) => (
     <Flex flexDirection="row" alignItems="center" gap="$24">
       {/* Please do not attempt to use our <Text.* /> component. Radix forbids the styling of ItemText.
       See: https://www.radix-ui.com/primitives/docs/components/select#itemtext */}
-      <Select.ItemText ref={forwardReference}>{title}</Select.ItemText>
+      <Select.ItemText ref={forwardReference} data-testid={testId}>
+        {title}
+      </Select.ItemText>
       {Boolean(description) && <Text.Body.Large>{description}</Text.Body.Large>}
     </Flex>
   ),

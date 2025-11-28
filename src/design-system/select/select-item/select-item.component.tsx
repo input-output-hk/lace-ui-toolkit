@@ -37,7 +37,11 @@ export const Item = forwardRef<HTMLDivElement, SelectItemProps>(
       variant={variant}
       testId={testId}
     >
-      <ItemText title={title} description={description} />
+      <ItemText
+        title={title}
+        description={description}
+        testId={`${testId ?? 'item'}-text`}
+      />
       <ItemIndicator testId={`${testId ?? 'select'}-indicator`} />
     </ItemRoot>
   ),
