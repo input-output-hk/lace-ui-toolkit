@@ -1,3 +1,10 @@
+# [3.12.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.11.0...v3.12.0) (2025-12-04)
+
+
+### Features
+
+* add new wallet types to wallet option component ([cde8d29](https://github.com/input-output-hk/lace-ui-toolkit/commit/cde8d2998f58653060799f0faf82705f775a38e5))
+
 # [3.11.0](https://github.com/input-output-hk/lace-ui-toolkit/compare/v3.10.0...v3.11.0) (2025-11-04)
 
 
