@@ -1,1 +1,1 @@
-export type WalletType = 'cold' | 'hot' | 'shared';
+export type WalletType = 'cold' | 'hot' | 'shared' | 'midnight' | 'bitcoin';

@@ -209,6 +209,7 @@ export const colors = {
   $data_yellow: '',
   $data_orange: '',
   $white: '',
+  $data_bright_blue: '',
 
   $educational_card_root_container_bgColor: '',
   $educational_card_root_container_borderColor: '',
@@ -329,6 +330,7 @@ export const lightColorScheme = {
   $secondary_cream: '#FCF5E3',
   $secondary_data_green: '#2CB67D',
   $secondary_data_blue: '#3489F7',
+  $secondary_data_bright_blue: '#0000FE',
 } as const;
 
 export const darkColorScheme = {
@@ -355,4 +357,5 @@ export const darkColorScheme = {
   $secondary_lace_yellow: '#FDC300',
   $secondary_data_green: '#2CB67D',
   $secondary_data_blue: '#3489F7',
+  $secondary_data_bright_blue: '#0000FE',
 } as const;

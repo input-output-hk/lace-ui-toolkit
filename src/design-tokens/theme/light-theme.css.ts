@@ -180,7 +180,7 @@ const colors: Colors = {
 
   $assets_table_container_bgColor_hover: lightColorScheme.$primary_light_grey,
 
-  $assets_table_badge_bgColor: '#0000FE',
+  $assets_table_badge_bgColor: lightColorScheme.$secondary_data_bright_blue,
   $assets_table_badge_textColor: lightColorScheme.$primary_white,
 
   $dialog_container_bgColor: lightColorScheme.$primary_white,
@@ -316,6 +316,7 @@ const colors: Colors = {
   $data_yellow: lightColorScheme.$secondary_lace_yellow,
   $data_orange: lightColorScheme.$secondary_data_orange,
   $white: lightColorScheme.$primary_white,
+  $data_bright_blue: lightColorScheme.$secondary_data_bright_blue,
 
   $educational_card_root_container_bgColor: lightColorScheme.$primary_white,
   $educational_card_root_container_borderColor:
