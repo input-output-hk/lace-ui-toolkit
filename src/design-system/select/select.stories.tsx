@@ -441,7 +441,7 @@ Interactions.play = async ({ canvasElement }): Promise<void> => {
 
         await sleep(pauseBetweenClicksInMs);
 
-        expect(canvas.getByTestId(optionTestId)).toBeInTheDocument();
+        expect(canvas.getByTestId(`${optionTestId}-text`)).toBeInTheDocument();
         userEvent.click(canvas.getByTestId(optionTestId));
 
         await sleep(pauseBetweenClicksInMs);
