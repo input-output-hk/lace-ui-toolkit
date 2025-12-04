@@ -84,6 +84,20 @@ export const Overview = (): JSX.Element => (
                   type="shared"
                 />
               </Variants.Cell>
+              <Variants.Cell>
+                <WalletOption
+                  title="Bitcoin Wallet"
+                  subtitle="Account #0"
+                  type="bitcoin"
+                />
+              </Variants.Cell>
+              <Variants.Cell>
+                <WalletOption
+                  title="Midnight Wallet"
+                  subtitle="Account #0"
+                  type="midnight"
+                />
+              </Variants.Cell>
             </Variants.Row>
           </Variants.Table>
         </Flex>
@@ -119,6 +133,22 @@ export const Overview = (): JSX.Element => (
                   title="Shared Wallet"
                   subtitle="Lace Team"
                   type="shared"
+                  onOpenEditWallet={action('onOpenEditWallet')}
+                />
+              </Variants.Cell>
+              <Variants.Cell>
+                <WalletOption
+                  title="Bitcoin Wallet"
+                  subtitle="Lace Team"
+                  type="bitcoin"
+                  onOpenEditWallet={action('onOpenEditWallet')}
+                />
+              </Variants.Cell>
+              <Variants.Cell>
+                <WalletOption
+                  title="Midnight Wallet"
+                  subtitle="Lace Team"
+                  type="midnight"
                   onOpenEditWallet={action('onOpenEditWallet')}
                 />
               </Variants.Cell>

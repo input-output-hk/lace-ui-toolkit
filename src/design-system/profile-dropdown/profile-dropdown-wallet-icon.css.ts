@@ -35,6 +35,12 @@ export const container = recipe({
           fontSize: '24px',
         },
       ]),
+      midnight: sx({
+        background: '$data_bright_blue',
+      }),
+      bitcoin: sx({
+        background: '$data_orange',
+      }),
     },
   },
 

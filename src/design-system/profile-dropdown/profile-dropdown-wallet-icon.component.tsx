@@ -20,6 +20,8 @@ const icons: Record<WalletType, FC<React.SVGProps<SVGSVGElement>>> = {
   hot: HotWallet,
   cold: ColdWallet,
   shared: SharedWallet,
+  midnight: HotWallet,
+  bitcoin: HotWallet,
 };
 
 export const WalletIcon = ({ type, testId }: Readonly<Props>): JSX.Element => {
